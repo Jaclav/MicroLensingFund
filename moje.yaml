@@ -1,7 +1,7 @@
 photometry_files:
     ../data/OB08092/phot_ob08092_O4.dat
 starting_parameters:
-    t_0: gauss 2455000. 0.1
+    t_0: gauss 2455380. 0.1
     u_0: uniform 0.001 1.
     t_E: gauss 20. 5.
 min_values:
