@@ -6,7 +6,8 @@ mkdir $1/png
 cd dataPoleski
 ls | while read f;						#read files from dataPoleski
 do
-	t=`python3 ../t1script/t0.py $f` 	#t_0
+	t=`python3 ../scripts/t0.py $f` 	#t_0
+	u=`python3 ../scripts/u0.py $f` 	#u_0
 	file=../$1/yaml/$f.yaml				#result .yaml file
 	#YAML file
 	echo "photometry_files:" > $file
