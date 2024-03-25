@@ -6,7 +6,7 @@ mkdir $1/png
 cd dataPoleski
 ls | while read f;						#read files from dataPoleski
 do
-	python3 ../scripts/super_mega_script.py $f | read t0 u0 tE A
+	read t0 u0 tE A < <(python3 ../scripts/super_mega_script.py $f 2>/dev/null)
 	#t0=`python3 ../scripts/t0.py $f` 	#t_0
 	#u0=`python3 ../scripts/u0.py $f` 	#u_0
 	file=../$1/yaml/$f.yaml				#result .yaml file
@@ -16,7 +16,7 @@ do
 	echo "starting_parameters:" >> $file
 	echo "    t_0: gauss 245$t0 0.1" >> $file	#short Julian to long Julian
 	echo "    u_0: uniform $u0 1." >> $file		#TODO: add uncertanity
-	echo "    t_E: gauss tE 5." >> $file
+	echo "    t_E: gauss $tE 5." >> $file
 	echo "min_values:" >> $file
 	echo "    u_0: 0." >> $file
 	echo "    t_E: 0." >> $file
