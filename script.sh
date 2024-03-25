@@ -1,23 +1,25 @@
 #!/bin/bash
-mkdir $1_yaml
-mkdir $1_png
+mkdir $1
+mkdir $1/yaml
+mkdir $1/png
 cd dataPoleski
 ls | while read f;
 do
 	t=`head $f -n 1 | awk -F ' ' '{print $1}'` # t_0
-	echo "photometry_files:" > ../$1_yaml/$f.yaml
-	echo "    $f" >> ../$1_yaml/$f.yaml
-	echo "starting_parameters:" >> ../$1_yaml/$f.yaml
-	echo "    t_0: gauss $t 0.1" >> ../$1_yaml/$f.yaml
-	echo "    u_0: uniform 0.001 1." >> ../$1_yaml/$f.yaml
-	echo "    t_E: gauss 20. 5." >> ../$1_yaml/$f.yaml
-	echo "min_values:" >> ../$1_yaml/$f.yaml
-	echo "    u_0: 0." >> ../$1_yaml/$f.yaml
-	echo "    t_E: 0." >> ../$1_yaml/$f.yaml
-	echo "fitting_parameters:" >> ../$1_yaml/$f.yaml
-	echo "    n_steps: 5000" >> ../$1_yaml/$f.yaml
-	echo "plots:" >> ../$1_yaml/$f.yaml
-	echo "    best model:" >> ../$1_yaml/$f.yaml
-	echo "        file: ../$1_png/$f.png" >> ../$1_yaml/$f.yaml
+	file=../$1/yaml/$f.yaml
+	echo "photometry_files:" > $file
+	echo "    $f" >> $file
+	echo "starting_parameters:" >> $file
+	echo "    t_0: gauss $t 0.1" >> $file
+	echo "    u_0: uniform 0.001 1." >> $file
+	echo "    t_E: gauss 20. 5." >> $file
+	echo "min_values:" >> $file
+	echo "    u_0: 0." >> $file
+	echo "    t_E: 0." >> $file
+	echo "fitting_parameters:" >> $file
+	echo "    n_steps: 5000" >> $file
+	echo "plots:" >> $file
+	echo "    best model:" >> $file
+	echo "        file: ../$1/png/$f.png" >> $file
 	#python3 ../ulens_model_fit.py moje.yaml
 done
