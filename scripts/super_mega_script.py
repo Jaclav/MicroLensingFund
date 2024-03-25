@@ -29,7 +29,7 @@ for i in range(indeksy.size):
             - A[j] ** 2 / (-1 + A[j] ** 2)
             + np.sqrt(A[j] ** 2 * (-1 + A[j] ** 2)) / (-1 + A[j] ** 2)
         )
-    tE[i] = abs(time[j] - t0) / (np.sqrt(abs(u[i] ** 2 - u0**2)))
+    tE[i] = abs(time[j] - t0) / (np.sqrt(abs(u[j] ** 2 - u0**2)))
 
 tEfinal = np.mean(tE)
 
