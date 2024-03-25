@@ -1,0 +1,11 @@
+/usr/lib/python3/dist-packages/scipy/__init__.py:146: UserWarning: A NumPy version >=1.17.3 and <1.25.0 is required for this version of SciPy (detected version 1.26.3
+  warnings.warn(f"A NumPy version >={np_minversion} and <{np_maxversion}"
+Traceback (most recent call last):
+  File "/home/jacek/astro/MicroLensingFund/ulens_model_fit.py", line 2673, in <module>
+    ulens_model_fit.run_fit()
+  File "/home/jacek/astro/MicroLensingFund/ulens_model_fit.py", line 478, in run_fit
+    self._parse_starting_parameters()
+  File "/home/jacek/astro/MicroLensingFund/ulens_model_fit.py", line 1348, in _parse_starting_parameters
+    raise ValueError(
+ValueError: For uniform distribution, the second parameters has to be larger than the first one.
+ Got 1.0883488257707563 1.0
