@@ -3,7 +3,7 @@ photometry_files:
 starting_parameters:
     t_0: gauss 2454348.5168 0.1
     u_0: uniform 0.0009258915906771969 1.
-    t_E: gauss 20. 5.
+    t_E: gauss 1. 5.
 min_values:
     u_0: 0.
     t_E: 0.
