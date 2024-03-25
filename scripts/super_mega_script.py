@@ -15,21 +15,17 @@ u0 = np.sqrt(2) * np.sqrt(
 )
 
 tE = np.zeros(indeksy.size)
-A = np.zeros(indeksy.size)
-u = np.zeros(indeksy.size)
 
 for i in range(indeksy.size):
     j = indeksy[i]
-    A[j] = 10 ** (-0.4 * (mag[j] - mag[indeksy[-5]]))
-    if u[j] == u0:
-        u[j] = u0
-    else:
-        u[j] = np.sqrt(2) * np.sqrt(
-            1 / (-1 + A[j] ** 2)
-            - A[j] ** 2 / (-1 + A[j] ** 2)
-            + np.sqrt(A[j] ** 2 * (-1 + A[j] ** 2)) / (-1 + A[j] ** 2)
+    A = 10 ** (-0.4 * (mag[j] - mag[indeksy[-5]]))
+
+    u = np.sqrt(2) * np.sqrt(
+            1 / (-1 + A ** 2)
+            - A ** 2 / (-1 + A ** 2)
+            + np.sqrt(A ** 2 * (-1 + A ** 2)) / (-1 + A ** 2)
         )
-    tE[i] = abs(time[j] - t0) / (np.sqrt(abs(u[j] ** 2 - u0**2)))
+    tE[j] = abs(time[j] - t0) / (np.sqrt(abs(u ** 2 - u0**2)))
 
 tEfinal = np.mean(tE)
 
