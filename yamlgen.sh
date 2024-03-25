@@ -14,7 +14,7 @@ do
 	echo "    dataPoleski/$f" >> $file
 	echo "starting_parameters:" >> $file
 	echo "    t_0: gauss 245$t 0.1" >> $file	#short Julian to long Julian
-	echo "    u_0: uniform 0.001 1." >> $file
+	echo "    u_0: uniform $u 1." >> $file		#TODO: add uncertanity
 	echo "    t_E: gauss 20. 5." >> $file
 	echo "min_values:" >> $file
 	echo "    u_0: 0." >> $file
