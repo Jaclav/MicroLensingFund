@@ -15,8 +15,8 @@ u0 = np.sqrt(2) * np.sqrt(
 )
 
 tE = np.zeros(indeksy.size)
-for j in range(indeksy.size):
-
+for i in range(indeksy.size):
+    j = indeksy[i]
     A = 10 ** (-0.4 * (mag[j] - mag[indeksy[-5]]))
 
     u = np.sqrt(2) * np.sqrt(
@@ -26,6 +26,12 @@ for j in range(indeksy.size):
         )
     tE[j] = abs(time[j] - t0) / (np.sqrt(abs(u ** 2 - u0**2)))
 
-tEfinal = tE[j]
+for i in range(indeksy.size):
+    if  np.isnan(tE[i]):
+        tE[i] = tE[i-1]
+    else:
+        continue
+
+tEfinal = tE.mean()
 
 print(t0, "  ", u0, "  ", tEfinal, "  ", A0)
