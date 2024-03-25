@@ -7,6 +7,8 @@ cd dataPoleski
 ls | while read f;						#read files from dataPoleski
 do
 	python3 ../scripts/super_mega_script.py $f | read t0 u0 tE A
+	#t0=`python3 ../scripts/t0.py $f` 	#t_0
+	#u0=`python3 ../scripts/u0.py $f` 	#u_0
 	file=../$1/yaml/$f.yaml				#result .yaml file
 	#YAML file
 	echo "photometry_files:" > $file
