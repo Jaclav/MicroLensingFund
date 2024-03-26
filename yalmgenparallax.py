@@ -34,7 +34,7 @@ for file in listFiles:
                     u0 = float(wyrazy[2])
                 elif wyrazy[0] == "t_E":
                     tE = float(wyrazy[2])
-
+    t0par = round(t0,-1)
     yaml = open(yamlN, "w+")
     yaml.writelines("photometry_files:\n")
     yaml.writelines("    dataPoleski/" + file + "\n")
@@ -48,6 +48,8 @@ for file in listFiles:
     yaml.writelines(
         "   coords: " + ascension[indeks] + " " + declination[indeks] + "\n"
     )
+    yaml.writelines("fixed_parameters:\n")
+    yaml.writelines("    t_0_par: t0par\n")
     yaml.writelines("min_values:\n")
     yaml.writelines("    u_0: 0.\n")
     yaml.writelines("    t_E: 0.\n")
