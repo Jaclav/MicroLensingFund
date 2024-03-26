@@ -1,0 +1,14 @@
+photometry_files:
+    dataPoleski/PAR-52-noaver.dat
+starting_parameters:
+    t_0: gauss 2454585.856450 0.1
+    u_0: gauss 0.2886482546937994 0.08659447640813982
+    t_E: gauss 267.19149668219166 133.59574834109583
+min_values:
+    u_0: 0.
+    t_E: 0.
+fitting_parameters:
+    n_steps: 5000
+plots:
+    best model:
+        file: simulation_26_11_10/png/PAR-52-noaver.dat.png
