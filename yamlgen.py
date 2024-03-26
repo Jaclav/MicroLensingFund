@@ -33,4 +33,4 @@ for file in listFiles:
     yaml.writelines("    n_steps: 5000\n")
     yaml.writelines("plots:\n")
     yaml.writelines("    best model:\n")
-    yaml.writelines("        file: ../" + sys.argv[1] + "/png/" + file + ".png\n")
+    yaml.writelines("        file:" + sys.argv[1] + "/png/" + file + ".png\n")
