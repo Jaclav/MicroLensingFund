@@ -1,5 +1,6 @@
 from math import *
 import matplotlib.pyplot as plt
+import sys
 
 dom = [i / 10 for i in range(-100000, 100000)]
 
@@ -15,7 +16,7 @@ def calculate(domain, fun):
 
 
 lines = []
-with open("simulation_26_11_10/yaml/PAR-01-noaver.dat.OUT", "r") as file:
+with open(sys.argv[1], "r") as file:
     lines = file.readlines()
 str = lines[3][6:]
 t0 = float(str[3 : str[3:].find(" ")])
