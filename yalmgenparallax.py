@@ -52,7 +52,7 @@ for file in listFiles:
         # xallarap https://doi.org/10.3847/1538-3881/ad284f
         yaml.writelines("    xi_Omega_node: uniform -20 380\n")
         yaml.writelines("    xi_inclination: uniform -20 380\n")
-        xi_period = r.gauss((90 ** (n / 9)) * 5, 0.001)
+        xi_period = r.gauss((90 ** ((n - 1) / 9)) * 5, 0.001)
         yaml.writelines(
             "    xi_period: range "
             + str(3 / 4 * xi_period)
