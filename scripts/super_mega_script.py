@@ -1,3 +1,4 @@
+from statistics import median
 import sys
 import numpy as np
 
@@ -32,6 +33,6 @@ for i in range(indeksy.size):
     else:
         continue
 
-tEfinal = tE.mean()
+tEfinal = median(tE)
 
 print(t0, "  ", u0, "  ", tEfinal, "  ", A0)
