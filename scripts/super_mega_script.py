@@ -21,18 +21,16 @@ for i in range(indeksy.size):
     A = 10 ** (-0.4 * (mag[j] - mag[indeksy[-5]]))
 
     u = np.sqrt(2) * np.sqrt(
-            1 / (-1 + A ** 2)
-            - A ** 2 / (-1 + A ** 2)
-            + np.sqrt(A ** 2 * (-1 + A ** 2)) / (-1 + A ** 2)
-        )
-    tE[j] = abs(time[j] - t0) / (np.sqrt(abs(u ** 2 - u0**2)))
+        1 / (-1 + A**2) - A**2 / (-1 + A**2) + np.sqrt(A**2 * (-1 + A**2)) / (-1 + A**2)
+    )
+    tE[j] = abs(time[j] - t0) / (np.sqrt(abs(u**2 - u0**2)))
 
 for i in range(indeksy.size):
-    if  np.isnan(tE[i]):
-        tE[i] = tE[i-1]
+    if np.isnan(tE[i]):
+        tE[i] = tE[i - 1]
     else:
         continue
 
 tEfinal = median(tE)
 
-print(t0, "  ", u0, "  ", tEfinal, "  ", A0)
+print(t0, "  ", u0, "  ", tEfinal, "  ", A0, "  ", time[0], "  ", time[-1])

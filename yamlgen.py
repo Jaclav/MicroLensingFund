@@ -14,7 +14,7 @@ for file in listFiles:
     parameters = os.system(
         "python3 ../scripts/super_mega_script.py " + file + " 2>/dev/null 1>" + parN
     )
-    (t0, u0, tE, A) = np.loadtxt(parN)
+    (t0, u0, tE, A, tmin, tmax) = np.loadtxt(parN)
     yaml = open(yamlN, "w+")
     yaml.writelines("photometry_files:\n")
     yaml.writelines("    dataPoleski/" + file + "\n")
@@ -30,7 +30,8 @@ for file in listFiles:
     yaml.writelines("    u_0: 0.\n")
     yaml.writelines("    t_E: 0.\n")
     yaml.writelines("fitting_parameters:\n")
-    yaml.writelines("    n_steps: 5000\n")
+    yaml.writelines("    n_steps: 10000\n")
     yaml.writelines("plots:\n")
     yaml.writelines("    best model:\n")
     yaml.writelines("        file: " + sys.argv[1] + "/png/" + file + ".png\n")
+    yaml.writelines("        time range: 245" + str(tmin) + " 245" + str(tmax) + "\n")
