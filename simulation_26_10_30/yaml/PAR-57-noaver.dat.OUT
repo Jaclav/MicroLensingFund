@@ -1,0 +1,5 @@
+emcee: Exception while calling your likelihood function:
+  params: [4.55396187e+154 2.29105395e+154 8.22716379e+155]
+  args: []
+  kwargs: {}
+  exception:
