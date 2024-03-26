@@ -1,0 +1,13 @@
+The chain is shorter than 50 times the integrated autocorrelation time for 10 parameter(s). Use this estimate with caution and run a longer chain!
+N/50 = 150;
+tau: [ 923.17545376  746.86164154  597.01265825  536.33475479  861.65880842
+  718.60794798  595.74646627  943.35393366 1034.38340331  769.97532334]
+WARNING:root:Too few points to create valid contours
+ulens_model_fit.py:2865: UserWarning: Existing file sim_26_16_16//png2/PAR-01-noaver.dat.10.trg.png will be overwritten
+  warnings.warn(msg)
+ulens_model_fit.py:2865: UserWarning: Existing file sim_26_16_16//png2/PAR-01-noaver.dat.10.tra.png will be overwritten
+  warnings.warn(msg)
+ulens_model_fit.py:2865: UserWarning: Existing file sim_26_16_16//png2/PAR-01-noaver.dat.10.png will be overwritten
+  warnings.warn(msg)
+ulens_model_fit.py:2865: UserWarning: Existing file sim_26_16_16//png2/PAR-01-noaver.dat.10.trj.png will be overwritten
+  warnings.warn(msg)
