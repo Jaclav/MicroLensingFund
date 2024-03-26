@@ -1,0 +1,27 @@
+Mean acceptance fraction: 0.263
+The chain is shorter than 50 times the integrated autocorrelation time for 10 parameter(s). Use this estimate with caution and run a longer chain!
+N/50 = 150;
+tau: [ 779.51441324  667.70699777  673.25099597  734.32002404 1050.09094374
+  975.41597273 1014.06982187  713.69398864  994.87106261 1017.30025546]
+Mean autocorrelation time [steps]: 862.0
+Fitted parameters:
+t_0 : 2453811.19140 +0.09020 -0.74738
+u_0 : 0.92057 +0.34196 -0.58247
+t_E : 349.37517 +170.74304 -72.48382
+pi_E_N : -0.16844 +0.57822 -0.04828
+pi_E_E : 0.01416 +0.02070 -0.34274
+xi_Omega_node : 181.46797 +202.72548 -26.60778
+xi_inclination : 66.15052 +13.73526 -113.12610
+xi_period : 602.14086 +18.52842 -526.82123
+xi_semimajor_axis : 0.12348 +0.04997 -0.12217
+xi_argument_of_latitude_reference : -22.07471 +24.98819 -49.84767
+Fitted fluxes (source and blending):
+flux_s_1 : 753.60714 +708.86180 -640.82760
+flux_b_1 : 516.15904 +689.93086 -705.46498
+Best model:
+chi2: 11541.4252
+t_0 u_0 t_E pi_E_N pi_E_E xi_Omega_node xi_inclination xi_period xi_semimajor_axis xi_argument_of_latitude_reference
+2453808.725906953 1.626944560004198 242.56376068229162 -0.2251190686542204 0.04529164323786844 186.03930618225067 83.14557656683455 593.3277805700496 0.27779934304194115 -34.56160015567444
+Fluxes:
+2816.152696276898 -1545.2125392705684
+WARNING:root:Too few points to create valid contours

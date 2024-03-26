@@ -6,11 +6,11 @@ starting_parameters:
     t_E: gauss 249.1835969681818 124.5917984840909
     pi_E_N: uniform -1.0 1.0
     pi_E_E: uniform -1.0 1.0
-    xi_Omega_node: uniform -20. 380.
-    xi_inclination: uniform -20. 380.
-    xi_period: uniform 3.7510858337422164 6.66859703776394
+    xi_Omega_node: uniform -20 380
+    xi_inclination: uniform -20 380
+    xi_period: uniform 3.7488149839169402 6.664559971407893
     xi_semimajor_axis: log-uniform 0.001 0.1
-    xi_argument_of_latitude_reference: uniform -20. 380.
+    xi_argument_of_latitude_reference: uniform -20 380
 model:
    coords: 17:49:44.34 -29:28:34.3
 fixed_parameters:
@@ -26,12 +26,12 @@ fitting_parameters:
     n_walkers: 20
 plots:
     best model:
-        file: sim_26_16_16//png2/PAR-01-noaver.dat.1.png
+        file: sim_26_16_16/png2/PAR-01-noaver.dat.1.png
         time range: 2452125.62263 2454955.78022
     trajectory:
-        file: sim_26_16_16//png2/PAR-01-noaver.dat.1.trj.png
+        file: sim_26_16_16/png2/PAR-01-noaver.dat.1.trj.png
         time range: 2452125.62263 2454955.78022
     triangle:
-        file: sim_26_16_16//png2/PAR-01-noaver.dat.1.trg.png
+        file: sim_26_16_16/png2/PAR-01-noaver.dat.1.trg.png
     trace:
-        file: sim_26_16_16//png2/PAR-01-noaver.dat.1.tra.png
+        file: sim_26_16_16/png2/PAR-01-noaver.dat.1.tra.png
