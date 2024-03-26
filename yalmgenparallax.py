@@ -54,7 +54,7 @@ for file in listFiles:
             # xallarap https://doi.org/10.3847/1538-3881/ad284f
             "    xi_Omega_node: uniform -20 380",
             "    xi_inclination: uniform -20 380",
-            "    xi_period: range " + str(3 / 4 * xi_P) + " " + str(4 / 3 * xi_P),
+            "    xi_period: uniform " + str(3 / 4 * xi_P) + " " + str(4 / 3 * xi_P),
             "    xi_semimajor_axis: log-uniform 0.001 0.1",
             "    xi_argument_of_latitude_reference: uniform -20 380",
             # parallax
