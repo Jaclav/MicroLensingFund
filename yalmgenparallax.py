@@ -66,6 +66,8 @@ for file in listFiles:
             "min_values:",
             "    u_0: 0.",
             "    t_E: 0.",
+            "    xi_semimajor_axis: 0.",
+            "    xi_period: 0.",
             "fitting_parameters:",
             "    n_steps: 10000",
             "    n_walkers: 20",
