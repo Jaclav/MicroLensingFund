@@ -8,7 +8,6 @@ os.mkdir(sys.argv[1] + "/yaml")
 os.mkdir(sys.argv[1] + "/png")
 os.chdir("dataPoleski")
 listFiles = os.listdir()
-listFiles = ["PAR-56-noaver.dat"]
 for file in listFiles:
     yamlN = "../" + sys.argv[1] + "/yaml/" + file + ".yaml"
     parN = "../" + sys.argv[1] + "/yaml/" + file + ".par"
