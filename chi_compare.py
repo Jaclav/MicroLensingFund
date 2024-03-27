@@ -3,17 +3,18 @@ import random as r
 import sys
 import numpy as np
 
-plik=open("chi2table.csv","w+")
+plik = open(sys.argv[1] + "chi2table.csv", "w+")
 
 os.chdir("dataPoleski")
 Names = os.listdir()
 
-folder_simulation = "../"+sys.argv[1]
+folder_simulation = "../" + sys.argv[1]
 
-#NOTHING
+# NOTHING
 os.chdir(folder_simulation + "/nothing")
 
-listFiles_nothing = Names
+listFiles_nothing = []
+chi2_table_nothing = []
 
 for i in range(len(Names)):
     listFiles_nothing.append(Names[i] + ".OUT")
@@ -21,20 +22,20 @@ for i in range(len(Names)):
 for i in range(len(listFiles_nothing)):
     f = open(listFiles_nothing[i], "r")
     lines = f.readlines()
-    chi2_table_nothing = []
     for j in range(len(lines)):
         if "chi2" in lines[j]:
             chi2_table_nothing.append(float(lines[j].split()[1]))
     f.close()
 
-#PARALLAX
+# PARALLAX
 os.chdir("../parallax")
 
-listFiles_parallaxp = Names
+listFiles_parallaxp = []
 
-listFiles_parallaxm = Names
+listFiles_parallaxm = []
+chi2_table_parallax = []
 
-
+parallax_pm = []
 for i in range(len(Names)):
     listFiles_parallaxp.append(Names[i] + "+.OUT")
     listFiles_parallaxm.append(Names[i] + "-.OUT")
@@ -54,41 +55,60 @@ for i in range(len(Names)):
         if "chi2" in lines[j]:
             chi2_table_parallaxm.append(float(lines[j].split()[1]))
     f.close()
-
-    chi2_table_parallax = []
-
     for j in range(len(chi2_table_parallaxp)):
         if chi2_table_parallaxp[j] < chi2_table_parallaxm[j]:
-            chi2_table_parallax[j] = chi2_table_parallaxp[j]
+            chi2_table_parallax.append(chi2_table_parallaxp[j])
+            parallax_pm.append(Names[i] + "+.OUT")
         else:
-            chi2_table_parallax[j] = chi2_table_parallaxm[j]
+            chi2_table_parallax.append(chi2_table_parallaxm[j])
+            parallax_pm.append(Names[i] + "-.OUT")
 
-#XALLARAP
+
+# XALLARAP
 os.chdir("../xallarap")
 
-listFiles_xallarap_temp = np.zeroes((len(Names),10))
-listFiles_xallarap =[]
+listFiles_xallarap_temp = np.zeros((len(Names), 10))
+chi2_table_xallarap = []
+table_xallarap = []
 
 for i in range(len(Names)):
     for j in range(10):
-        listFiles_xallarap.append(Names[i] + "." + str(j) + ".OUT")
-        f = open(listFiles_xallarap[i,j], "r")
+        table_xallarap.append(Names[i] + "." + str(j + 1) + ".OUT")
+        f = open(table_xallarap[j], "r")
         lines = f.readlines()
-        chi2_table_xallarap = []
         for k in range(len(lines)):
             if "chi2" in lines[k]:
                 chi2_table_xallarap.append(float(lines[k].split()[1]))
         f.close()
-        listFiles_xallarap_temp[i,j] = chi2_table_xallarap[j]
+        listFiles_xallarap_temp[i, j] = chi2_table_xallarap[j]
 
 for i in range(len(Names)):
     for j in range(10):
-        if listFiles_xallarap_temp[i,j] < chi2_table_xallarap[i]:
-            chi2_table_xallarap[i] = listFiles_xallarap_temp[i,j]
+        if listFiles_xallarap_temp[i, j] < chi2_table_xallarap[i]:
+            chi2_table_xallarap[i] = listFiles_xallarap_temp[i, j]
 
 
 for i in range(len(Names)):
-    plik.write(Names[i] + "," + chi2_table_nothing[i] + "," + chi2_table_parallax[i] + "," + chi2_table_xallarap[i] + "," + "\n")
-
-
-
+    diffXalPar = 30
+    out = ""
+    if (
+        chi2_table_nothing[i] < chi2_table_parallax[i]
+        and chi2_table_nothing[i] < chi2_table_xallarap[i]
+    ):
+        out = "nothing," + Names[i]
+    elif chi2_table_parallax[i] < chi2_table_xallarap[i] + diffXalPar:
+        out = "parallax," + parallax_pm[i]
+    else:
+        out = "xallarap," + table_xallarap[i]
+    plik.write(
+        Names[i]
+        + ","
+        + str(chi2_table_nothing[i])
+        + ","
+        + str(chi2_table_parallax[i])
+        + ","
+        + str(chi2_table_xallarap[i])
+        + ","
+        + out
+        + "\n"
+    )
