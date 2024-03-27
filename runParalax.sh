@@ -7,7 +7,7 @@
 
 for ((i=$1;i<=$2;i++))
 do
-  dataNum=$(($i/10+1))
+  dataNum=$(($i+1))
   if ((dataNum<10))
   then
     dataNum="0${dataNum}"
@@ -15,7 +15,7 @@ do
 
   file=$3/PAR-$dataNum-noaver.dat
   echo $file+.yaml
-  python3 ulens_model_fit.py $file+.yaml 1> $file.OUT 2>$file.ERR&
+  python3 ulens_model_fit.py $file+.yaml 1> $file+.OUT 2>$file+.ERR&
   echo $file-.yaml
-  python3 ulens_model_fit.py $file-.yaml 1> $file.OUT 2>$file.ERR&
+  python3 ulens_model_fit.py $file-.yaml 1> $file-.OUT 2>$file-.ERR&
 done
