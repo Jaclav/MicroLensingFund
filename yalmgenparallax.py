@@ -4,7 +4,7 @@ import sys
 import numpy as np
 
 # run: ./yamlgen.sh P1
-(name, ascension, declination) = np.loadtxt(
+(name, right_ascension, declination) = np.loadtxt(
     "parallaxData/coords.csv", unpack=True, delimiter=",", dtype=str
 )
 indeks = -1
@@ -55,7 +55,7 @@ for file in listFiles:
             #"    xi_argument_of_latitude_reference: uniform -20 380",
             # parallax
             "model:",
-            "   coords: " + ascension[indeks] + " " + declination[indeks],
+            "   coords: " + right_ascension[indeks] + " " + declination[indeks],
             "fixed_parameters:",
             "    t_0_par: 245" + str(t0par),
             "    t_0_xi: 245" + str(t0par),
