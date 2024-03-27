@@ -15,5 +15,6 @@ do
 
   file=$3/PAR-$dataNum-noaver.dat
   echo $file.yaml
-  python3 ulens_model_fit.py $file.yaml 1> $file.OUT 2>$file.ERR&
+  python3 ulens_model_fit.py $file+.yaml 1> $file.OUT 2>$file.ERR&
+  python3 ulens_model_fit.py $file-.yaml 1> $file.OUT 2>$file.ERR&
 done
