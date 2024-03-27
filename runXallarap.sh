@@ -7,13 +7,19 @@
 
 for ((i=$1;i<=$2;i++))
 do
+  xi_P=$(($i%10))
+  if (($xi_P==0))
+  then
+    xi_P=10
+  fi
+
   dataNum=$(($i/10+1))
   if ((dataNum<10))
   then
     dataNum="0${dataNum}"
   fi
 
-  file=$3/PAR-$dataNum-noaver.dat
+  file=$3/PAR-$dataNum-noaver.dat.$xi_P
   echo $file.yaml
   python3 ulens_model_fit.py $file.yaml 1> $file.OUT 2>$file.ERR&
 done
