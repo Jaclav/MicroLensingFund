@@ -22,4 +22,8 @@ do
   file=$3/PAR-$dataNum-noaver.dat.$xi_P
   echo $file.yaml
   python3 ulens_model_fit.py $file.yaml 1> $file.OUT 2>$file.ERR&
+  if(($i%30==29))
+  then
+  sleep 600
+  fi	
 done

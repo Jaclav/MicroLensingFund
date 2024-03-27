@@ -1,0 +1,41 @@
+photometry_files:
+    dataPoleski/PAR-52-noaver.dat
+starting_parameters:
+    t_0: gauss 2454587.59 0.1
+    u_0: gauss 0.24181 0.072543
+    t_E: gauss 61.88585 30.942925
+    xi_Omega_node: uniform -20 380
+    xi_inclination: uniform -20 380
+    xi_period: uniform 184.35951815561734 327.7502544988753
+    xi_semimajor_axis: log-uniform 0.001 0.1
+    xi_argument_of_latitude_reference: uniform -20 380
+model:
+   coords: 17:49:44.34 -29:28:34.3
+fixed_parameters:
+    t_0_xi: 2454590.0
+min_values:
+    u_0: 0.
+    t_E: 0.
+    xi_semimajor_axis: 0.
+    xi_period: 0.
+    xi_Omega_node: -20.
+    xi_inclination: -20.
+    xi_argument_of_latitude_reference: -20.
+max_values:
+    xi_Omega_node: 380.
+    xi_inclination: 380.
+    xi_argument_of_latitude_reference: 380.
+fitting_parameters:
+    n_steps: 50000
+    n_walkers: 20
+plots:
+    best model:
+        file: sim27_12/xallarap/png/PAR-52-noaver.dat.9.png
+        time range: 2452127.55168 2454953.74517
+    trajectory:
+        file: sim27_12/xallarap/png/PAR-52-noaver.dat.9.trj.png
+        time range: 2452127.55168 2454953.74517
+    triangle:
+        file: sim27_12/xallarap/png/PAR-52-noaver.dat.9.trg.png
+    trace:
+        file: sim27_12/xallarap/png/PAR-52-noaver.dat.9.tra.png
