@@ -15,5 +15,5 @@ do
   fi
 
   echo $3/PAR-$dataNum-noaver.dat.$xi_P.yaml
-  python3 ulens_model_fit.py $3/PAR-$dataNum-noaver.dat.yaml 1> $3/PAR-$dataNum-noaver.dat.OUT 2>$3/PAR-$dataNum-noaver.dat.ERR&
+  python3 ulens_model_fit.py $3/PAR-$dataNum-noaver.dat.$xi_P.yaml 1> $3/PAR-$dataNum-noaver.dat.$xi_P.OUT 2>$3/PAR-$dataNum-noaver.dat.$xi_P.ERR&
 done
