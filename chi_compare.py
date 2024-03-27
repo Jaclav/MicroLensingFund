@@ -8,7 +8,7 @@ plik=open("chi2table.csv","w+")
 os.chdir("dataPoleski")
 Names = os.listdir()
 
-folder_simulation = sys.argv[1]
+folder_simulation = "../"+sys.argv[1]
 
 #NOTHING
 os.chdir(folder_simulation + "/nothing")
