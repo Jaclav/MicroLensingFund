@@ -1,0 +1,16 @@
+photometry_files:
+    dataPoleski/PAR-05-noaver.dat
+starting_parameters:
+    t_0: gauss 2453483.69855 0.1
+    u_0: gauss 0.7444849626613063 0.22334548879839186
+    t_E: gauss 222.58862021894714 111.29431010947357
+min_values:
+    u_0: 0.
+    t_E: 0.
+fitting_parameters:
+    n_steps: 50000
+    n_walkers: 12
+plots:
+    best model:
+        file: sim_27_01/png/PAR-05-noaver.dat.png
+        time range: 2452124.71829 2454955.71169
