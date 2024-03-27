@@ -10,19 +10,18 @@ indeks = 0
 for file in listF:
     if file[::5] == file[::5] and file[::-3] == ".OUT":
         indeks += 1
-        with open(f"{f}") as in_file:
-                file = in_file
+        with open(file) as in_file:
+            file_content = in_file.readlines()
 
-        for line in file:
-            line.readline()
+        for line in file_content:
             wyrazy = line.split()
             if wyrazy[0] == "chi2":
-                 chilist.append(float(wyrazy[2]))
-        lowest_chi=chilist.argsort()[-1]
+                chilist.append(float(wyrazy[2]))
+        lowest_chi = chilist.argsort()[-1]
         if indeks < 10:
-            plik.write(f"PAR-0" + str(indeks)+"-noaver.dat."+f"{lowest_chi}"+".yaml")
+            plik.write(f"PAR-0{indeks}-noaver.dat.{lowest_chi}.yaml")
         else:
-             plik.write(f"PAR-" + str(indeks)+"-noaver.dat."+f"{lowest_chi}"+".yaml")
+            plik.write(f"PAR-{indeks}-noaver.dat.{lowest_chi}.yaml")
         chilist = []
 plik.close()
 
