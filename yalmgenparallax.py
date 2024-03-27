@@ -28,7 +28,8 @@ for file in listFiles:
         tE = float(string[: string.find(" ")])
         print(t0, " ", u0, " ", tE)
 
-        newFile = file
+    for sign in ["+", "-"]:
+        newFile = file + sign
         yamlN = "../" + sys.argv[1] + "/parallax/" + newFile + ".yaml"
         yaml = open(yamlN, "w+")
         t0par = round(t0, -1)
@@ -40,7 +41,7 @@ for file in listFiles:
             "    dataPoleski/" + file,
             "starting_parameters:",
             "    t_0: gauss 245" + str(t0) + " 0.1",
-            "    u_0: gauss " + str(u0) + " " + str(0.3 * u0),
+            "    u_0: gauss " + sign + str(u0) + " " + str(0.3 * u0),
             "    t_E: gauss " + str(tE) + " " + str(tE * 0.5),
             # parallax
             "    pi_E_N: uniform -1.0 1.0",
