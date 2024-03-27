@@ -14,25 +14,19 @@ os.chdir("dataPoleski")
 listFiles = os.listdir()
 for file in listFiles:
     parN = "../" + sys.argv[1] + "/yaml/" + file + ".par"
-    print(parN)
-    (t0, u0, tE, A, tmin, tmax) = np.loadtxt(parN)
+    (PARt0, PARu0, PARtE, PARA, PARtmin, PARtmax) = np.loadtxt(parN)
 
     listF = os.listdir("../" + sys.argv[1] + "/yaml")
-    for f in listF:
-        if f[::5] == file[::5] and f[::-3] == ".OUT":
-            indeks += 1
-            with open(f"{f}") as in_file:
-                file = in_file
-
-            for line in file:
-                line.readline()
-                wyrazy = line.split()
-                if wyrazy[0] == "t_0":
-                    t0 = float(wyrazy[2])
-                elif wyrazy[0] == "u_0":
-                    u0 = float(wyrazy[2])
-                elif wyrazy[0] == "t_E":
-                    tE = float(wyrazy[2])
+    with open("../" + sys.argv[1] + "/yaml/" + file + ".OUT", "r") as fileOUT:
+        print("../" + sys.argv[1] + "/yaml/" + file + ".OUT")
+        lines = fileOUT.readlines()
+        string = lines[3][6:]
+        t0 = float(string[3 : string[3:].find(" ")])
+        string = lines[4][6:]
+        u0 = float(string[: string.find(" ")])
+        string = lines[5][6:]
+        tE = float(string[: string.find(" ")])
+        print(t0, " ", u0, " ", tE)
 
     for n in range(1, 11):
         newFile = file + "." + str(n)
@@ -41,6 +35,8 @@ for file in listFiles:
         xi_P = r.gauss((80 ** ((n - 1) / 9)) * 5, 0.001)
         t0par = round(t0, -1)
         graphicF = sys.argv[1] + "/png2/" + newFile
+        tmin = PARtmin
+        tmax = PARtmax
         YAML = [
             "photometry_files:",
             "    dataPoleski/" + file,

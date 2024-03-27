@@ -1,6 +1,0 @@
-/usr/lib/python3/dist-packages/scipy/__init__.py:146: UserWarning: A NumPy version >=1.17.3 and <1.25.0 is required for this version of SciPy (detected version 1.26.3
-  warnings.warn(f"A NumPy version >={np_minversion} and <{np_maxversion}"
-The chain is shorter than 50 times the integrated autocorrelation time for 10 parameter(s). Use this estimate with caution and run a longer chain!
-N/50 = 150;
-tau: [1035.7124878   888.64711414  829.44846274  819.26270788 1054.54629993
- 1016.98152708  915.45588626  886.4805393   441.34461319 1002.86276311]

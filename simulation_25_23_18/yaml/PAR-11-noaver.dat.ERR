@@ -1,9 +1,0 @@
-Traceback (most recent call last):
-  File "/home/pardapetarda/MicroLensingFund/ulens_model_fit.py", line 2673, in <module>
-    ulens_model_fit.run_fit()
-  File "/home/pardapetarda/MicroLensingFund/ulens_model_fit.py", line 478, in run_fit
-    self._parse_starting_parameters()
-  File "/home/pardapetarda/MicroLensingFund/ulens_model_fit.py", line 1348, in _parse_starting_parameters
-    raise ValueError(
-ValueError: For uniform distribution, the second parameters has to be larger than the first one.
- Got 1.162741009819984 1.0
