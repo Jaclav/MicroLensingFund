@@ -1,0 +1,31 @@
+photometry_files:
+    dataPoleski/PAR-07-noaver.dat
+starting_parameters:
+    t_0: gauss 2453857.58 0.1
+    u_0: gauss -0.28639 0.085917
+    t_E: gauss 151.82723 75.913615
+    pi_E_N: uniform -1.0 1.0
+    pi_E_E: uniform -1.0 1.0
+model:
+   coords: 17:49:44.34 -29:28:34.3
+fixed_parameters:
+    t_0_par: 2453860.0
+min_values:
+
+    t_E: 0.
+max_values:
+    u_0: 0.
+fitting_parameters:
+    n_steps: 50000
+    n_walkers: 20
+plots:
+    best model:
+        file: sim27_12/parallax/png/PAR-07-noaver.dat-.png
+        time range: 2452072.6039 2454955.7725
+    trajectory:
+        file: sim27_12/parallax/png/PAR-07-noaver.dat-.trj.png
+        time range: 2452072.6039 2454955.7725
+    triangle:
+        file: sim27_12/parallax/png/PAR-07-noaver.dat-.trg.png
+    trace:
+        file: sim27_12/parallax/png/PAR-07-noaver.dat-.tra.png
