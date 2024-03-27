@@ -7,7 +7,7 @@
 
 for ((i=$1;i<=$2;i++))
 do
-  dataNum=$(($i+1))
+  dataNum=$i
   if ((dataNum<10))
   then
     dataNum="0${dataNum}"
