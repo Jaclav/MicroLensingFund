@@ -16,7 +16,6 @@ for file in listFiles:
     parN = "../" + sys.argv[1] + "/nothing/" + file + ".par"
     (PARt0, PARu0, PARtE, PARA, PARtmin, PARtmax) = np.loadtxt(parN)
 
-    listF = os.listdir("../" + sys.argv[1] + "/yaml")
     with open("../" + sys.argv[1] + "/nothing/" + file + ".OUT", "r") as fileOUT:
         print("../" + sys.argv[1] + "/nothing/" + file + ".OUT")
         lines = fileOUT.readlines()
