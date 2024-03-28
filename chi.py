@@ -50,7 +50,7 @@ for i in range(len(data)):
 
 # difference needed to fit better xallarap than parallax
 DIFF = 80
-csv.write("name,parallax,parallaxPath,xallarap,better,betterPath,deltaChi\n")
+csv.write("name,parallax,parallaxPath,xallarap,xallarapPath,better,deltaChi\n")
 for j in data:
     csv.write(j + ",")
     mini = 100000
@@ -114,16 +114,16 @@ for j in data:
         + str(parallaxName)
         + ","
         + str(xallarapChi)
-        # + ","
-        # + str(paraxalChi)
+        + ","
+        + str(xallarapName)
         + ","
         + chiName[len(j) - 5 : chiName.find("/PAR")]
         + ","
-        + chiName
-        + ","
+        # + chiName
+        # + ","
         # + str(chiValue)
         # + ","
-        + str(parallaxChi - chiValue)
+        + str(parallaxChi - xallarapChi)
         + "\n"
     )
 # awk -F"," '{print $NF, $0}' sim27_12/chi2.csv | sort -g
