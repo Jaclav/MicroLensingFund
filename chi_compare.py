@@ -84,7 +84,7 @@ for i in range(len(Names)):
 
 for i in range(len(Names)):
     for j in range(10):
-        if listFiles_xallarap_temp[i, j] < chi2_table_xallarap[i]:
+        if listFiles_xallarap_temp[i, j] < chi2_table_xallarap[j]:
             chi2_table_xallarap[j] = listFiles_xallarap_temp[i, j]
 
 
