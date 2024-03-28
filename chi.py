@@ -101,9 +101,9 @@ for j in data:
     if xallarapChi + DIFF < parallaxChi:
         chiName = xallarapName
         chiValue = xallarapChi
-    if paraxalChi + DIFF < parallaxChi and paraxalChi + DIFF < xallarapChi:
-        chiName = paraxalName
-        chiValue = paraxalChi
+    # if paraxalChi + DIFF < parallaxChi and paraxalChi + DIFF < xallarapChi:
+    #     chiName = paraxalName
+    #     chiValue = paraxalChi
     else:
         chiName = parallaxName
         chiValue = parallaxChi
@@ -123,6 +123,6 @@ for j in data:
         + ","
         + str(chiValue)
         + ","
-        + str(parallaxChi - chiValue)
+        + str(parallaxChi - xallarapChi)
         + "\n"
     )
