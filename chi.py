@@ -16,8 +16,6 @@ def getChi(name):
             return float(i[6:-1])
 
 
-plik = open("chi2table.csv", "w+")
-
 os.chdir("dataPoleski")
 data = glob.glob("*.dat")
 data.sort()
@@ -52,7 +50,7 @@ for i in range(len(data)):
 
 # difference needed to fit better xallarap than parallax
 DIFF = 80
-csv.write("name,nothing,parallax,xallarap,paraxal,BestType,path,bestVal,delta\n")
+csv.write("name,parallax,parallaxPath,xallarap,better,betterPath,deltaChi\n")
 for j in data:
     csv.write(j + ",")
     mini = 100000
@@ -109,20 +107,23 @@ for j in data:
         chiValue = parallaxChi
 
     csv.write(
-        str(nothingChi)
+        # str(nothingChi)
+        # + ","
+        str(parallaxChi)
         + ","
-        + str(parallaxChi)
+        + str(parallaxName)
         + ","
         + str(xallarapChi)
-        + ","
-        + str(paraxalChi)
+        # + ","
+        # + str(paraxalChi)
         + ","
         + chiName[len(j) - 5 : chiName.find("/PAR")]
         + ","
         + chiName
         + ","
-        + str(chiValue)
-        + ","
-        + str(parallaxChi - xallarapChi)
+        # + str(chiValue)
+        # + ","
+        + str(parallaxChi - chiValue)
         + "\n"
     )
+# awk -F"," '{print $NF, $0}' sim27_12/chi2.csv | sort -g
