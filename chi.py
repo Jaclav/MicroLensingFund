@@ -43,12 +43,25 @@ diff = 30
 for j in data:
     print(j, end=",")
     mini = 100000
-    miniName = ""
+    miniName = "E"
+    miniB = 100000
+    miniNameBest = "E"
     for i in dic[j].keys():
         print(dic[j][i], end=",")
-        if dic[j][i] + diff < mini:
-            mini = dic[j][i]
+        if dic[j][i] < mini:
             miniName = i
+            if dic[j][i] + diff < mini:
+                miniB = dic[j][i]
+                miniNameBest = i
+            mini = dic[j][i]
+
+    if miniNameBest == "E":
+        miniNameBest = miniName
+        miniB = mini
     print(
-        miniName + "," + miniName[len(j) - 5 : miniName.find("/PAR")] + "," + str(mini)
+        miniName
+        + ","
+        + miniNameBest[len(j) - 5 : miniNameBest.find("/PAR")]
+        + ","
+        + str(miniB)
     )
