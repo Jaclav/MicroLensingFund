@@ -61,8 +61,6 @@ for file in listFiles:
             "    t_E: 0.",
             "    pi_E_N: -1.",
             "    pi_E_E: -1.",
-            "    flux_s_1: 0.",
-            "    flux_b_1: 0.",
             "max_values:",
             ("    u_0: 0." if sign == "-" else ""),
             "    pi_E_N: 1.",
