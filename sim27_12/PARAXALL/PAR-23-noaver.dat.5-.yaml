@@ -1,0 +1,45 @@
+photometry_files:
+    dataPoleski/PAR-23-noaver.dat
+starting_parameters:
+    t_0: gauss 2454894.92 0.1
+    u_0: gauss -0.08661 0.025983000000000003
+    t_E: gauss 503.52659 251.763295
+    pi_E_N: uniform -1.0 1.0
+    pi_E_E: uniform -1.0 1.0
+    xi_Omega_node: uniform -20 380
+    xi_inclination: uniform -20 380
+    xi_period: uniform 26.292979863617273 46.74307531309737
+    xi_semimajor_axis: log-uniform 0.001 0.1
+    xi_argument_of_latitude_reference: uniform -20 380
+model:
+   coords: 17:49:44.34 -29:28:34.3
+fixed_parameters:
+    t_0_par: 2454890.0
+    t_0_xi: 2454890.0
+min_values:
+
+    t_E: 0.
+    xi_semimajor_axis: 0.
+    xi_period: 0.
+    xi_Omega_node: -20.
+    xi_inclination: -20.
+    xi_argument_of_latitude_reference: -20.
+max_values:
+    xi_Omega_node: 380.
+    xi_inclination: 380.
+    xi_argument_of_latitude_reference: 380.
+    u_0: 0.
+fitting_parameters:
+    n_steps: 50000
+    n_walkers: 20
+plots:
+    best model:
+        file: sim27_12/PARAXALL/png/PAR-23-noaver.dat.5-.png
+        time range: 2452127.48669 2454955.65218
+    trajectory:
+        file: sim27_12/PARAXALL/png/PAR-23-noaver.dat.5-.trj.png
+        time range: 2452127.48669 2454955.65218
+    triangle:
+        file: sim27_12/PARAXALL/png/PAR-23-noaver.dat.5-.trg.png
+    trace:
+        file: sim27_12/PARAXALL/png/PAR-23-noaver.dat.5-.tra.png
