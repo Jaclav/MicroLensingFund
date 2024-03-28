@@ -24,10 +24,12 @@ for file in listFiles:
         string = lines[4][6:]
         u0 = float(string[: string.find(" ")])
         if abs(u0) > 2.0:
+            print("U:" + file)
             u0 = 0.0
         string = lines[5][6:]
         tE = float(string[: string.find(" ")])
-        if tE > 500.0:
+        if tE > 1000.0:
+            print("E:" + file)
             tE = 100.0
         print(t0, " ", u0, " ", tE)
 
@@ -59,8 +61,6 @@ for file in listFiles:
             "    t_E: 0.",
             "    pi_E_N: -1.",
             "    pi_E_E: -1.",
-            "    flux_s_1: 0.",
-            "    flux_b_1: 0.",
             "max_values:",
             ("    u_0: 0." if sign == "-" else ""),
             "    pi_E_N: 1.",

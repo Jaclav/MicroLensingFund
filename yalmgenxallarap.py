@@ -24,11 +24,13 @@ for file in listFiles:
         string = lines[4][6:]
         u0 = float(string[: string.find(" ")])
         if abs(u0) > 2.0:
-            u0 = 0.0        
+            print("U:" + file)
+            u0 = 0.0
         string = lines[5][6:]
         tE = float(string[: string.find(" ")])
         if tE > 500.0:
             tE = 100.0
+            print("E:" + file)
         print(t0, " ", u0, " ", tE)
 
     for n in range(1, 11):
@@ -75,15 +77,13 @@ for file in listFiles:
             "    xi_inclination: 380.",
             "    xi_argument_of_latitude_reference: 380.",
             "fitting_parameters:",
-            "    n_steps: 50000",
-            "    n_walkers: 20",
+            "    n_steps: 400",
+            "    n_walkers: 1000",
             "plots:",
             "    best model:",
             "        file: " + graphicF + ".png",
-            "        time range: 245" + str(tmin) + " 245" + str(tmax),
             "    trajectory:",
             "        file: " + graphicF + ".trj.png",
-            "        time range: 245" + str(tmin) + " 245" + str(tmax),
             "    triangle:",
             "        file: " + graphicF + ".trg.png",
             "    trace:",
