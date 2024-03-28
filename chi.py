@@ -4,8 +4,10 @@ import sys
 import numpy as np
 import glob
 
+csv = open(sys.argv[1] + "/chi2.csv", "w")
 
-# python3 chi.py sim27_12 > sim27_12/chi.csv
+
+# python3 chi.py sim27_12
 def getChi(name):
     with open(name, "r") as file:
         lines = file.readlines()
@@ -41,15 +43,15 @@ for i in range(len(data)):
         dic[data[i]][xallarap[i * 10 + j]] = getChi(xallarap[i * 10 + j])
 
 diff = 30
-print("data,nothing,parallax+,parallax-,x10,x1,x2,x3,x4,x5,x6,x7,x8,x9")
+csv.write("data,nothing,parallax+,parallax-,x10,x1,x2,x3,x4,x5,x6,x7,x8,x9\n")
 for j in data:
-    print(j, end=",")
+    csv.write(j + ",")
     mini = 100000
     miniName = "E"
     miniB = 100000
     miniNameBest = "E"
     for i in dic[j].keys():
-        print(dic[j][i], end=",")
+        csv.write(str(dic[j][i]) + ",")
         if dic[j][i] < mini:
             miniName = i
             if dic[j][i] + diff < mini:
@@ -60,10 +62,11 @@ for j in data:
     if miniNameBest == "E":
         miniNameBest = miniName
         miniB = mini
-    print(
+    csv.write(
         miniNameBest
         + ","
         + miniNameBest[len(j) - 5 : miniNameBest.find("/PAR")]
         + ","
         + str(miniB)
+        + "\n"
     )
