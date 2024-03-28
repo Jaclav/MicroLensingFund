@@ -42,31 +42,75 @@ for i in range(len(data)):
     for j in range(0, 10):
         dic[data[i]][xallarap[i * 10 + j]] = getChi(xallarap[i * 10 + j])
 
-diff = 30
-csv.write("data,nothing,parallax+,parallax-,x10,x1,x2,x3,x4,x5,x6,x7,x8,x9\n")
+paraxal = glob.glob("../" + sys.argv[1] + "/PARAXALL/*.OUT")
+paraxal.sort()
+for i in range(len(data)):
+    for j in range(0, 20):
+        dic[data[i]][paraxal[i * 20 + j]] = getChi(paraxal[i * 20 + j])
+
+DIFF = 50
+csv.write("name,nothing,parallax,xallarap,BestType,path,bestVal\n")
 for j in data:
     csv.write(j + ",")
     mini = 100000
     miniName = "E"
     miniB = 100000
     miniNameBest = "E"
-    for i in dic[j].keys():
-        csv.write(str(dic[j][i]) + ",")
-        if dic[j][i] < mini:
-            miniName = i
-            if dic[j][i] + diff < mini:
-                miniB = dic[j][i]
-                miniNameBest = i
-            mini = dic[j][i]
+    keys = list(dic[j].keys())
 
-    if miniNameBest == "E":
-        miniNameBest = miniName
-        miniB = mini
+    nothingChi = dic[j][keys[0]]
+    nothingName = keys[0]
+
+    parallaxChi = 0
+    parallaxName = ""
+    if dic[j][keys[1]] < dic[j][keys[2]]:
+        parallaxChi = dic[j][keys[1]]
+        parallaxName = keys[1]
+    else:
+        parallaxChi = dic[j][keys[2]]
+        parallaxName = keys[2]
+
+    xallarapChi = 100000
+    xallarapName = ""
+    for i in range(3, 13):
+        if xallarapChi > dic[j][keys[i]]:
+            xallarapChi = dic[j][keys[i]]
+            xallarapName = keys[i]
+
+    paraxalChi = 100000
+    paraxalName = ""
+    for i in range(14, 32):
+        if dic[j][keys[i]] == None:
+            continue
+        if paraxalChi > dic[j][keys[i]]:
+            paraxalChi = dic[j][keys[i]]
+            paraxalName = keys[i]
+
+    chiName = ""
+    chiValue = 0
+    if nothingChi < parallaxChi and nothingChi < xallarapChi:
+        chiName = nothingName
+        chiValue = nothingChi
+    if xallarapChi + DIFF < parallaxChi:
+        chiName = xallarapName
+        chiValue = xallarapChi
+    else:
+        chiName = parallaxName
+        chiValue = parallaxChi
+
     csv.write(
-        miniNameBest
+        str(nothingChi)
         + ","
-        + miniNameBest[len(j) - 5 : miniNameBest.find("/PAR")]
+        + str(parallaxChi)
         + ","
-        + str(miniB)
+        + str(xallarapChi)
+        + ","
+        + chiName[len(j) - 5 : chiName.find("/PAR")]
+        + ","
+        + chiName
+        + ","
+        + str(chiValue)
+        + ","
+        + str(parallaxChi - xallarapChi)
         + "\n"
     )
