@@ -12,8 +12,8 @@ os.chdir("dataPoleski")
     dtype=str,
 )
 indeks = -1
-os.mkdir(sys.argv[1] + "/paraxall")
-os.mkdir(sys.argv[1] + "/paraxall/png")
+os.mkdir("../" + sys.argv[1] + "/paraxall")
+os.mkdir("../" + sys.argv[1] + "/paraxall/png")
 # os.mkdir(sys.argv[1] + "/paraxallData")
 
 (name, better, parallax, parallaxPath, xallarap, xallarapPath, deltaChi) = np.loadtxt(
