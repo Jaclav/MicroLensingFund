@@ -24,10 +24,12 @@ for file in listFiles:
         string = lines[4][6:]
         u0 = float(string[: string.find(" ")])
         if abs(u0) > 2.0:
+            print("U:" + file)
             u0 = 0.0
         string = lines[5][6:]
         tE = float(string[: string.find(" ")])
         if tE > 500.0:
+            print("E:" + file)
             tE = 100.0
         print(t0, " ", u0, " ", tE)
 
