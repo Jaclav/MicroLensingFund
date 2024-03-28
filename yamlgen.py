@@ -31,4 +31,3 @@ for file in listFiles:
     yaml.writelines("plots:\n")
     yaml.writelines("    best model:\n")
     yaml.writelines("        file: " + sys.argv[1] + "/nothing/png/" + file + ".png\n")
-    yaml.writelines("        time range: 245" + str(tmin) + " 245" + str(tmax) + "\n")
