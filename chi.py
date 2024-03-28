@@ -50,7 +50,7 @@ for i in range(len(data)):
 
 # difference needed to fit better xallarap than parallax
 DIFF = 80
-csv.write("name,parallax,parallaxPath,xallarap,better,betterPath\n")
+csv.write("name,parallax,parallaxPath,xallarap,better,betterPath,deltaChi\n")
 for j in data:
     csv.write(j + ",")
     mini = 100000
