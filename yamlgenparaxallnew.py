@@ -4,8 +4,12 @@ import sys
 import numpy as np
 
 # run: ./yamlgen.sh P1
+os.chdir("dataPoleski")
 (name, right_ascension, declination) = np.loadtxt(
-    "parallaxData/coords.csv", unpack=True, delimiter=",", dtype=str
+    "../" + sys.argv[1] + "/parallaxData/coords.csv",
+    unpack=True,
+    delimiter=",",
+    dtype=str,
 )
 indeks = -1
 os.mkdir(sys.argv[1] + "/paraxall")
@@ -13,9 +17,8 @@ os.mkdir(sys.argv[1] + "/paraxall/png")
 # os.mkdir(sys.argv[1] + "/paraxallData")
 
 (name, better, parallax, parallaxPath, xallarap, xallarapPath, deltaChi) = np.loadtxt(
-    sys.argv[1] + "/chi2.csv", unpack=True, delimiter=",", dtype=str
+    "../" + sys.argv[1] + "/chi2.csv", unpack=True, delimiter=",", dtype=str
 )
-os.chdir("dataPoleski")
 xallarapnames = []
 
 for i in range(len(name)):
@@ -24,9 +27,6 @@ for i in range(len(name)):
 # katalog z xalarap
 
 for i in range(len(xallarapnames)):
-    parN = sys.argv[1] + "/nothing/" + xallarapnames[i] + ".par"
-    (PARt0, PARu0, PARtE, PARA, PARtmin, PARtmax) = np.loadtxt(parN)
-    #
     with open(
         "../" + sys.argv[1] + "/nothing/" + xallarapnames[i] + ".OUT", "r"
     ) as fileOUT:
@@ -48,8 +48,6 @@ for i in range(len(xallarapnames)):
             xi_P = r.gauss((80 ** ((n - 1) / 9)) * 5, 0.001)
             t0par = round(t0, -1)
             graphicF = sys.argv[1] + "/paraxall/png/" + newFile
-            tmin = PARtmin
-            tmax = PARtmax
             YAML = [
                 "photometry_files:",
                 "    dataPoleski/" + xallarapnames,
