@@ -25,6 +25,8 @@ dic = {}
 for i in data:
     dic[i] = {}
 
+# load data
+
 nothings = glob.glob("../" + sys.argv[1] + "/nothing/*.OUT")
 nothings.sort()
 for i in range(len(data)):
@@ -48,8 +50,9 @@ for i in range(len(data)):
     for j in range(0, 20):
         dic[data[i]][paraxal[i * 20 + j]] = getChi(paraxal[i * 20 + j])
 
-DIFF = 50
-csv.write("name,nothing,parallax,xallarap,BestType,path,bestVal\n")
+# difference needed to fit better xallarap than parallax
+DIFF = 80
+csv.write("name,nothing,parallax,xallarap,paraxal,BestType,path,bestVal,delta\n")
 for j in data:
     csv.write(j + ",")
     mini = 100000
@@ -57,6 +60,8 @@ for j in data:
     miniB = 100000
     miniNameBest = "E"
     keys = list(dic[j].keys())
+
+    # find lowest values for nothing, parallax, xallarap, paraxall
 
     nothingChi = dic[j][keys[0]]
     nothingName = keys[0]
@@ -86,6 +91,8 @@ for j in data:
             paraxalChi = dic[j][keys[i]]
             paraxalName = keys[i]
 
+    # which is the lowest, parallax or xallarap or paraxal
+
     chiName = ""
     chiValue = 0
     if nothingChi < parallaxChi and nothingChi < xallarapChi:
@@ -94,6 +101,9 @@ for j in data:
     if xallarapChi + DIFF < parallaxChi:
         chiName = xallarapName
         chiValue = xallarapChi
+    if paraxalChi + DIFF < parallaxChi and paraxalChi + DIFF < xallarapChi:
+        chiName = paraxalName
+        chiValue = paraxalChi
     else:
         chiName = parallaxName
         chiValue = parallaxChi
@@ -105,12 +115,14 @@ for j in data:
         + ","
         + str(xallarapChi)
         + ","
+        + str(paraxalChi)
+        + ","
         + chiName[len(j) - 5 : chiName.find("/PAR")]
         + ","
         + chiName
         + ","
         + str(chiValue)
         + ","
-        + str(parallaxChi - xallarapChi)
+        + str(parallaxChi - chiValue)
         + "\n"
     )
