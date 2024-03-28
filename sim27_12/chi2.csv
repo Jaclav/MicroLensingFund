@@ -1,4 +1,4 @@
-name,parallax,parallaxPath,xallarap,xallarapPath,better,deltaChi
+name,better,parallax,parallaxPath,xallarap,xallarapPath,deltaChi
 PAR-01-noaver.dat,xallarap,9280.1093,../sim27_12/parallax/PAR-01-noaver.dat-.OUT,4703.8701,../sim27_12/xallarap/PAR-01-noaver.dat.10.OUT,4576.2392
 PAR-02-noaver.dat,parallax,8197.9655,../sim27_12/parallax/PAR-02-noaver.dat-.OUT,8190.1322,../sim27_12/xallarap/PAR-02-noaver.dat.10.OUT,7.833300000000236
 PAR-03-noaver.dat,xallarap,10628.1631,../sim27_12/parallax/PAR-03-noaver.dat+.OUT,4420.1654,../sim27_12/xallarap/PAR-03-noaver.dat.8.OUT,6207.9977
