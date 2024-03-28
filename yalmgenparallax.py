@@ -28,7 +28,7 @@ for file in listFiles:
             u0 = 0.0
         string = lines[5][6:]
         tE = float(string[: string.find(" ")])
-        if tE > 500.0:
+        if tE > 1000.0:
             print("E:" + file)
             tE = 100.0
         print(t0, " ", u0, " ", tE)
