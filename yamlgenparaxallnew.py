@@ -15,7 +15,7 @@ os.mkdir(sys.argv[1] + "/paraxall/png")
 (name, better, parallax, parallaxPath, xallarap, xallarapPath, deltaChi) = np.loadtxt(
     sys.argv[1] + "/chi2.csv", unpack=True, delimiter=",", dtype=str
 )
-
+os.chdir("dataPoleski")
 xallarapnames = []
 
 for i in range(len(name)):
@@ -43,11 +43,11 @@ for i in range(len(xallarapnames)):
     for n in range(1, 11):
         for sign in ["+", "-"]:
             newFile = xallarapnames + "." + str(n) + sign
-            yamlN = "../" + sys.argv[1] + "/PARAXALL/" + newFile + ".yaml"
+            yamlN = "../" + sys.argv[1] + "/paraxall/" + newFile + ".yaml"
             yaml = open(yamlN, "w+")
             xi_P = r.gauss((80 ** ((n - 1) / 9)) * 5, 0.001)
             t0par = round(t0, -1)
-            graphicF = sys.argv[1] + "/PARAXALL/png/" + newFile
+            graphicF = sys.argv[1] + "/paraxall/png/" + newFile
             tmin = PARtmin
             tmax = PARtmax
             YAML = [
