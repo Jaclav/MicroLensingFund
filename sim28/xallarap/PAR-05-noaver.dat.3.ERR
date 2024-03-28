@@ -1,0 +1,10 @@
+/usr/local/lib/python3.6/site-packages/emcee/autocorr.py:38: RuntimeWarning: invalid value encountered in true_divide
+  acf /= acf[0]
+/usr/local/lib/python3.6/site-packages/emcee/autocorr.py:43: RuntimeWarning: invalid value encountered in less
+  m = np.arange(len(taus)) < c * taus
+/usr/local/lib/python3.6/site-packages/emcee/autocorr.py:101: RuntimeWarning: invalid value encountered in greater
+  flag = tol * tau_est > n_t
+The chain is shorter than 50 times the integrated autocorrelation time for 6 parameter(s). Use this estimate with caution and run a longer chain!
+N/50 = 6;
+tau: [38.7395029  40.48964606 40.08647606 31.82551312 31.6613556          nan
+ 35.78340365         nan]

@@ -1,0 +1,12 @@
+The chain is shorter than 50 times the integrated autocorrelation time for 8 parameter(s). Use this estimate with caution and run a longer chain!
+N/50 = 6;
+tau: [35.54789585 32.79228102 33.04103048 29.93231717 25.37517236 29.98193344
+ 35.94154181 30.19796605]
+ulens_model_fit.py:2865: UserWarning: Existing file sim28/xallarap/png/PAR-59-noaver.dat.4.trg.png will be overwritten
+  warnings.warn(msg)
+ulens_model_fit.py:2865: UserWarning: Existing file sim28/xallarap/png/PAR-59-noaver.dat.4.tra.png will be overwritten
+  warnings.warn(msg)
+ulens_model_fit.py:2865: UserWarning: Existing file sim28/xallarap/png/PAR-59-noaver.dat.4.png will be overwritten
+  warnings.warn(msg)
+ulens_model_fit.py:2865: UserWarning: Existing file sim28/xallarap/png/PAR-59-noaver.dat.4.trj.png will be overwritten
+  warnings.warn(msg)
