@@ -14,21 +14,21 @@ os.chdir("dataPoleski")
 indeks = -1
 os.mkdir("../" + sys.argv[1] + "/paraxall")
 os.mkdir("../" + sys.argv[1] + "/paraxall/png")
-# os.mkdir(sys.argv[1] + "/paraxallData")
 
 (name, better, parallax, parallaxPath, xallarap, xallarapPath, deltaChi) = np.loadtxt(
     "../" + sys.argv[1] + "/chi2.csv", unpack=True, delimiter=",", dtype=str
 )
 xallarapnames = []
-
+xallarapName = []
 for i in range(len(name)):
-    if better[i] == "xalllarap":
+    if better[i] == "xallarap":
         xallarapnames.append(xallarapPath[i])
+        xallarapName.append(name[i])
 # katalog z xalarap
 
 for i in range(len(xallarapnames)):
     with open(
-        "../" + sys.argv[1] + "/nothing/" + xallarapnames[i] + ".OUT", "r"
+        "../" + sys.argv[1] + "/nothing/" + xallarapName[i] + ".OUT", "r"
     ) as fileOUT:
         print("../" + sys.argv[1] + "/nothing/" + xallarapnames[i] + ".OUT")
         lines = fileOUT.readlines()
@@ -42,7 +42,7 @@ for i in range(len(xallarapnames)):
     # tutaj sie zatrzymałem
     for n in range(1, 11):
         for sign in ["+", "-"]:
-            newFile = xallarapnames + "." + str(n) + sign
+            newFile = xallarapName[i] + "." + str(n) + sign
             yamlN = "../" + sys.argv[1] + "/paraxall/" + newFile + ".yaml"
             yaml = open(yamlN, "w+")
             xi_P = r.gauss((80 ** ((n - 1) / 9)) * 5, 0.001)
@@ -50,7 +50,7 @@ for i in range(len(xallarapnames)):
             graphicF = sys.argv[1] + "/paraxall/png/" + newFile
             YAML = [
                 "photometry_files:",
-                "    dataPoleski/" + xallarapnames,
+                "    dataPoleski/" + xallarapName[i],
                 "starting_parameters:",
                 "    t_0: gauss 245" + str(t0) + " 0.1",
                 "    u_0: gauss " + sign + str(u0) + " " + str(0.3 * u0),
