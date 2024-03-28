@@ -1,7 +1,0 @@
-The chain is shorter than 50 times the integrated autocorrelation time for 10 parameter(s). Use this estimate with caution and run a longer chain!
-N/50 = 750;
-tau: [3559.7486643  3642.170627   3334.03984569 3697.075298   3517.77847821
- 3155.78692872 3498.07465193 3168.29825698 3409.02968823 2638.32782979]
-WARNING:root:Too few points to create valid contours
-WARNING:root:Too few points to create valid contours
-WARNING:root:Too few points to create valid contours
