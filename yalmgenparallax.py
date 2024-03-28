@@ -43,8 +43,8 @@ for file in listFiles:
             "    u_0: gauss " + sign + str(u0) + " " + str(0.3 * u0),
             "    t_E: gauss " + str(tE) + " " + str(tE * 0.5),
             # parallax
-            "    pi_E_N: uniform -1.0 1.0",
-            "    pi_E_E: uniform -1.0 1.0",
+            "    pi_E_N: gauss 0.00 0.01",
+            "    pi_E_E: gauss 0.00 0.01",
             # parallax
             "model:",
             "   coords: " + right_ascension[indeks] + " " + declination[indeks],
