@@ -14,7 +14,7 @@ os.mkdir(sys.argv[1] + "/paraxall/png")
 os.chdir(sys.argv[1])
 
 (name, better, parallax, parallaxPath, xallarap, xallarapPath, deltaChi) = np.loadtxt(
-    sys.argv[1] + "chi2.csv", unpack=True, delimiter=",", dtype=str
+    sys.argv[1] + "/chi2.csv", unpack=True, delimiter=",", dtype=str
 )
 
 xallarapnames = []
