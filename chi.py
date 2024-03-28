@@ -4,8 +4,6 @@ import sys
 import numpy as np
 import glob
 
-csv = open(sys.argv[1] + "/chi2.csv", "w")
-
 
 # python3 chi.py sim27_12
 def getChi(name):
@@ -14,8 +12,10 @@ def getChi(name):
     for i in lines:
         if i[:5] == "chi2:":
             return float(i[6:-1])
+    return 1000000
 
 
+csv = open(sys.argv[1] + "/chi2.csv", "w")
 os.chdir("dataPoleski")
 data = glob.glob("*.dat")
 data.sort()
@@ -25,38 +25,27 @@ for i in data:
 
 # load data
 
-nothings = glob.glob("../" + sys.argv[1] + "/nothing/*.OUT")
-nothings.sort()
-for i in range(len(data)):
-    dic[data[i]][nothings[i]] = getChi(nothings[i])
 
-parallax = glob.glob("../" + sys.argv[1] + "/parallax/*.OUT")
-parallax.sort()
-for i in range(len(data)):
-    dic[data[i]][parallax[i * 2]] = getChi(parallax[i * 2])
-    dic[data[i]][parallax[i * 2 + 1]] = getChi(parallax[i * 2 + 1])
+def load(name, maxJ):
+    mini = 1000000
+    parallax = glob.glob("../" + sys.argv[1] + "/" + name + "/*.OUT")
+    parallax.sort()
+    for i in range(len(data)):
+        for j in range(0, maxJ):
+            chi2 = getChi(parallax[i * maxJ + j])
+            dic[data[i]][parallax[i * maxJ + j]] = chi2
 
-xallarap = glob.glob("../" + sys.argv[1] + "/xallarap/*.OUT")
-xallarap.sort()
-for i in range(len(data)):
-    for j in range(0, 10):
-        dic[data[i]][xallarap[i * 10 + j]] = getChi(xallarap[i * 10 + j])
 
-paraxal = glob.glob("../" + sys.argv[1] + "/PARAXALL/*.OUT")
-paraxal.sort()
-for i in range(len(data)):
-    for j in range(0, 20):
-        dic[data[i]][paraxal[i * 20 + j]] = getChi(paraxal[i * 20 + j])
+load("nothing", 1)
+load("parallax", 2)
+load("xallarap", 10)
+load("PARAXALL", 20)
 
 # difference needed to fit better xallarap than parallax
 DIFF = 80
 csv.write("name,better,parallax,parallaxPath,xallarap,xallarapPath,deltaChi\n")
 for j in data:
     csv.write(j + ",")
-    mini = 100000
-    miniName = "E"
-    miniB = 100000
-    miniNameBest = "E"
     keys = list(dic[j].keys())
 
     # find lowest values for nothing, parallax, xallarap, paraxall
@@ -126,4 +115,4 @@ for j in data:
         + str(parallaxChi - xallarapChi)
         + "\n"
     )
-#awk -F"," '{print $NF, $2, $0}' sim27_12/chi2.csv | sort -g
+# awk -F"," '{print $NF, $2, $0}' sim27_12/chi2.csv | sort -g

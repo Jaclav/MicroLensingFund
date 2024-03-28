@@ -10,33 +10,28 @@ import numpy as np
 indeks = -1
 os.mkdir(sys.argv[1] + "/paraxall")
 os.mkdir(sys.argv[1] + "/paraxall/png")
-#os.mkdir(sys.argv[1] + "/paraxallData")
+# os.mkdir(sys.argv[1] + "/paraxallData")
 os.chdir(sys.argv[1])
-f = open("chi2.csv","r")
+f = open("chi2.csv", "r")
 linie = f.readlines()
 xallaraptable = []
 xallarapnames = []
 for linia in linie:
     slowa = float(linia.split(0))
-    if slowa[-3] == "xallarap" :
+    if slowa[-3] == "xallarap":
         xallaraptable.append(slowa[-2])
         xallarapnames.append(slowa[0])
 
-        
 
-    
-        
-
-
-
-
-#katalog z xalarap
+# katalog z xalarap
 
 for i in range(len(xallaraptable)):
-    parN =  sys.argv[1] + "/nothing/" + xallarapnames[i] + ".par"
+    parN = sys.argv[1] + "/nothing/" + xallarapnames[i] + ".par"
     (PARt0, PARu0, PARtE, PARA, PARtmin, PARtmax) = np.loadtxt(parN)
     #
-    with open("../" + sys.argv[1] + "/nothing/" + xallarapnames[i] + ".OUT", "r") as fileOUT:
+    with open(
+        "../" + sys.argv[1] + "/nothing/" + xallarapnames[i] + ".OUT", "r"
+    ) as fileOUT:
         print("../" + sys.argv[1] + "/nothing/" + xallarapnames[i] + ".OUT")
         lines = fileOUT.readlines()
         string = lines[3][6:]
@@ -46,7 +41,7 @@ for i in range(len(xallaraptable)):
         string = lines[5][6:]
         tE = float(string[: string.find(" ")])
         print(t0, " ", u0, " ", tE)
-#tutaj sie zatrzymałem
+    # tutaj sie zatrzymałem
     for n in range(1, 11):
         for sign in ["+", "-"]:
             newFile = xallarapnames + "." + str(n) + sign
@@ -89,8 +84,6 @@ for i in range(len(xallaraptable)):
                 "    xi_argument_of_latitude_reference: -20.",
                 "    pi_E_N: -1.",
                 "    pi_E_E: -1.",
-                "    flux_s_1: 0.",
-                "    flux_b_1: 0.",                
                 "max_values:",
                 "    xi_Omega_node: 380.",
                 "    xi_inclination: 380.",
@@ -104,10 +97,8 @@ for i in range(len(xallaraptable)):
                 "plots:",
                 "    best model:",
                 "        file: " + graphicF + ".png",
-                "        time range: 245" + str(tmin) + " 245" + str(tmax),
                 "    trajectory:",
                 "        file: " + graphicF + ".trj.png",
-                "        time range: 245" + str(tmin) + " 245" + str(tmax),
                 "    triangle:",
                 "        file: " + graphicF + ".trg.png",
                 "    trace:",
