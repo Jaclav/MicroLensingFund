@@ -5,6 +5,7 @@ import numpy as np
 import glob
 
 
+# python3 chi.py sim27_12 > sim27_12/chi.csv
 def getChi(name):
     with open(name, "r") as file:
         lines = file.readlines()
@@ -36,10 +37,11 @@ for i in range(len(data)):
 xallarap = glob.glob("../" + sys.argv[1] + "/xallarap/*.OUT")
 xallarap.sort()
 for i in range(len(data)):
-    for j in range(1, 10):
+    for j in range(0, 10):
         dic[data[i]][xallarap[i * 10 + j]] = getChi(xallarap[i * 10 + j])
 
 diff = 30
+print("data,nothing,parallax+,parallax-,x10,x1,x2,x3,x4,x5,x6,x7,x8,x9")
 for j in data:
     print(j, end=",")
     mini = 100000
@@ -59,7 +61,7 @@ for j in data:
         miniNameBest = miniName
         miniB = mini
     print(
-        miniName
+        miniNameBest
         + ","
         + miniNameBest[len(j) - 5 : miniNameBest.find("/PAR")]
         + ","
