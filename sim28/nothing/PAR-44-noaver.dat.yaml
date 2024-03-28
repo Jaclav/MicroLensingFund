@@ -1,0 +1,21 @@
+photometry_files:
+    dataPoleski/PAR-44-noaver.dat
+starting_parameters:
+    t_0: gauss 2454373.56265 0.1
+    u_0: gauss 0.9919348462244533 0.29758045386733595
+    t_E: gauss 229.00388941675672 114.50194470837836
+min_values:
+    u_0: 0.
+    t_E: 0.
+max_values:
+    u_0: 2.
+fit_constraints:
+    negative_blending_flux_sigma_mag: 20.
+    prior:
+        t_E: Mroz et al. 2017
+fitting_parameters:
+    n_steps: 10000
+    n_walkers: 12
+plots:
+    best model:
+        file: sim28/nothing/png/PAR-44-noaver.dat.png
