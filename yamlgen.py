@@ -26,7 +26,7 @@ for file in listFiles:
     yaml.writelines("    u_0: 0.\n")
     yaml.writelines("    t_E: 0.\n")
     yaml.writelines("fitting_parameters:\n")
-    yaml.writelines("    n_steps: 50000\n")
+    yaml.writelines("    n_steps: 25000\n")
     yaml.writelines("    n_walkers: 12\n")
     yaml.writelines("plots:\n")
     yaml.writelines("    best model:\n")
