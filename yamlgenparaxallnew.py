@@ -6,7 +6,7 @@ import numpy as np
 # run: ./yamlgen.sh P1
 os.chdir("dataPoleski")
 (name, right_ascension, declination) = np.loadtxt(
-    "../" + sys.argv[1] + "/parallaxData/coords.csv",
+    "../" + "/parallaxData/coords.csv",
     unpack=True,
     delimiter=",",
     dtype=str,
