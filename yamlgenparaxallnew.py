@@ -12,20 +12,19 @@ os.mkdir(sys.argv[1] + "/paraxall")
 os.mkdir(sys.argv[1] + "/paraxall/png")
 # os.mkdir(sys.argv[1] + "/paraxallData")
 os.chdir(sys.argv[1])
-f = open("chi2.csv", "r")
-linie = f.readlines()
-xallaraptable = []
+
+(name, better, parallax, parallaxPath, xallarap, xallarapPath, deltaChi) = np.loadtxt(
+    "parallaxData/coords.csv", unpack=True, delimiter=",", dtype=str
+)
+
 xallarapnames = []
-for linia in linie:
-    slowa = float(linia.split(0))
-    if slowa[-3] == "xallarap":
-        xallaraptable.append(slowa[-2])
-        xallarapnames.append(slowa[0])
 
-
+for i in range(len(name)):
+    if better[i] == "xalllarap":
+        xallarapnames.append(xallarapPath[i])
 # katalog z xalarap
 
-for i in range(len(xallaraptable)):
+for i in range(len(xallarapnames)):
     parN = sys.argv[1] + "/nothing/" + xallarapnames[i] + ".par"
     (PARt0, PARu0, PARtE, PARA, PARtmin, PARtmax) = np.loadtxt(parN)
     #

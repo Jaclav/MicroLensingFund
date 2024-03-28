@@ -42,7 +42,7 @@ load("xallarap", 10)
 # load("PARAXALL", 20)
 
 # difference needed to fit better xallarap than parallax
-DIFF = 80
+DIFF = 30
 csv.write("name,better,parallax,parallaxPath,xallarap,xallarapPath,deltaChi\n")
 for j in data:
     csv.write(j + ",")
@@ -98,7 +98,7 @@ for j in data:
     csv.write(
         # str(nothingChi)
         # + ","
-        chiName[len(j) - 5 : chiName.find("/PAR")]
+        chiName[len(j) - 8 : chiName.find("/PAR")]
         + ","
         + str(parallaxChi)
         + ","
