@@ -109,15 +109,15 @@ for j in data:
     csv.write(
         # str(nothingChi)
         # + ","
-        str(parallaxChi)
+        chiName[len(j) - 5 : chiName.find("/PAR")]
+        + ","
+        + str(parallaxChi)
         + ","
         + str(parallaxName)
         + ","
         + str(xallarapChi)
         + ","
         + str(xallarapName)
-        + ","
-        + chiName[len(j) - 5 : chiName.find("/PAR")]
         + ","
         # + chiName
         # + ","
@@ -126,4 +126,4 @@ for j in data:
         + str(parallaxChi - xallarapChi)
         + "\n"
     )
-# awk -F"," '{print $NF, $0}' sim27_12/chi2.csv | sort -g
+#awk -F"," '{print $NF, $2, $0}' sim27_12/chi2.csv | sort -g
