@@ -11,7 +11,6 @@ indeks = -1
 os.mkdir(sys.argv[1] + "/paraxall")
 os.mkdir(sys.argv[1] + "/paraxall/png")
 # os.mkdir(sys.argv[1] + "/paraxallData")
-os.chdir(sys.argv[1])
 
 (name, better, parallax, parallaxPath, xallarap, xallarapPath, deltaChi) = np.loadtxt(
     sys.argv[1] + "/chi2.csv", unpack=True, delimiter=",", dtype=str
