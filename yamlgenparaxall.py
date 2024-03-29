@@ -48,6 +48,8 @@ for i in range(len(xallarapnames)):
             xi_P = r.gauss((80 ** ((n - 1) / 9)) * 5, 0.001)
             t0par = round(t0, -1)
             graphicF = sys.argv[1] + "/paraxall/png/" + newFile
+            # TODO: gauss do tego
+            # TODO: bez 10 przedziałów
             YAML = [
                 "photometry_files:",
                 "    dataPoleski/" + xallarapName[i],
