@@ -57,7 +57,7 @@ for i in range(len(xallarapnames)):
                 "    t_0: gauss 245" + str(t0) + " 0.1",
                 "    u_0: gauss " + sign + str(u0) + " " + str(0.3 * u0),
                 "    t_E: gauss " + str(tE) + " " + str(tE * 0.5),
-                # parallax
+                # parallax piE=sqrt(PiN^2+pIEE^2)
                 "    pi_E_N: gauss 0.00 0.01",
                 "    pi_E_E: gauss 0.00 0.01",
                 # PARAXALL https://doi.org/10.3847/1538-3881/ad284f
