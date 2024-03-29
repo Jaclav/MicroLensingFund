@@ -112,7 +112,7 @@ for j in data:
         # + ","
         # + str(chiValue)
         # + ","
-        + str(parallaxChi - xallarapChi)
+        + str(round(parallaxChi - xallarapChi,3))
         + "\n"
     )
 # awk -F"," '{print $NF, $2, $0}' sim27_12/chi2.csv | sort -g

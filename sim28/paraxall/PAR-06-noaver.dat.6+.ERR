@@ -1,0 +1,5 @@
+WARNING: leap-second auto-update failed due to the following exception: RuntimeError('Cache is locked after 5.01 s. This may indicate an astropy bug or that kill -9 was used. If you want to unlock the cache remove the directory /home/data/bl407/jwiniarczyk/.astropy/cache/download/py3/lock. Lock claims to be held by process 6608.',) [astropy.time.core]
+The chain is shorter than 50 times the integrated autocorrelation time for 10 parameter(s). Use this estimate with caution and run a longer chain!
+N/50 = 6;
+tau: [26.42127806 37.72885141 33.83035105 25.31512876 39.21132195 28.56029721
+ 26.53715109 38.28086515 39.82471491 26.41010946]

@@ -1,0 +1,6 @@
+WARNING: leap-second auto-update failed due to the following exception: RuntimeError('Cache is locked after 5.04 s. This may indicate an astropy bug or that kill -9 was used. If you want to unlock the cache remove the directory /home/data/bl407/jwiniarczyk/.astropy/cache/download/py3/lock. Lock claims to be held by process 6608.',) [astropy.time.core]
+The chain is shorter than 50 times the integrated autocorrelation time for 10 parameter(s). Use this estimate with caution and run a longer chain!
+N/50 = 6;
+tau: [33.97891163 34.35691034 34.65325572 34.8602619  38.38474095 34.54975392
+ 33.31765124 32.80338747 35.24401867 34.11715604]
+WARNING:root:Too few points to create valid contours
