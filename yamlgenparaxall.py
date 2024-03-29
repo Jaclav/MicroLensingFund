@@ -28,24 +28,25 @@ for i in range(len(name)):
 
 for i in range(len(xallarapnames)):
     with open(
-        "../" + sys.argv[1] + "/nothing/" + xallarapName[i] + ".OUT", "r"
+        "../" + sys.argv[1] + "/xallarap/" + xallarapName[i] + ".OUT", "r"
     ) as fileOUT:
-        print("../" + sys.argv[1] + "/nothing/" + xallarapnames[i] + ".OUT")
+        print("../" + sys.argv[1] + "/xallarap/" + xallarapnames[i] + ".OUT")
         lines = fileOUT.readlines()
-        string = lines[3][6:]
-        t0 = float(string[3 : string[3:].find(" ")])
-        string = lines[4][6:]
-        u0 = float(string[: string.find(" ")])
-        string = lines[5][6:]
-        tE = float(string[: string.find(" ")])
-        print(t0, " ", u0, " ", tE)
+        for line in lines:
+            float(line.split())
+            if "t_0" in line and "u_0":
+                t0 = line[0]
+                u0 = line[1]
+                tE = line[2]
+            elif line[0] =="xi_period":
+                xi_period = str(line)
+
     # tutaj sie zatrzymałem
-    for n in range(1, 11):
-        for sign in ["+", "-"]:
-            newFile = xallarapName[i] + "." + str(n) + sign
+    
+        for sign in ["p", "m"]:
+            newFile = xallarapName[i] + "." + sign
             yamlN = "../" + sys.argv[1] + "/paraxall/" + newFile + ".yaml"
             yaml = open(yamlN, "w+")
-            xi_P = r.gauss((80 ** ((n - 1) / 9)) * 5, 0.001)
             t0par = round(t0, -1)
             graphicF = sys.argv[1] + "/paraxall/png/" + newFile
             # TODO: gauss do tego
@@ -56,14 +57,14 @@ for i in range(len(xallarapnames)):
                 "starting_parameters:",
                 "    t_0: gauss 245" + str(t0) + " 0.1",
                 "    u_0: gauss " + sign + str(u0) + " " + str(0.3 * u0),
-                "    t_E: gauss " + str(tE) + " " + str(tE * 0.5),
+                "    t_E: gauss " + str(tE) + " " + str(tE * 0.1),
                 # parallax piE=sqrt(PiN^2+pIEE^2)
                 "    pi_E_N: gauss 0.00 0.01",
                 "    pi_E_E: gauss 0.00 0.01",
                 # PARAXALL https://doi.org/10.3847/1538-3881/ad284f
                 "    xi_Omega_node: uniform -20 380",
                 "    xi_inclination: uniform -20 380",
-                "    xi_period: uniform " + str(3 / 4 * xi_P) + " " + str(4 / 3 * xi_P),
+                xi_period,
                 "    xi_semimajor_axis: log-uniform 0.001 0.1",
                 "    xi_argument_of_latitude_reference: uniform -20 380",
                 # parallax
@@ -73,7 +74,7 @@ for i in range(len(xallarapnames)):
                 "    t_0_par: 245" + str(t0par),
                 "    t_0_xi: 245" + str(t0par),
                 "min_values:",
-                ("    u_0: 0." if sign == "+" else ""),
+                ("    u_0: 0." if sign == "p" else ""),
                 "    t_E: 0.",
                 "    xi_semimajor_axis: 0.",
                 "    xi_period: 0.",
@@ -86,7 +87,7 @@ for i in range(len(xallarapnames)):
                 "    xi_Omega_node: 380.",
                 "    xi_inclination: 380.",
                 "    xi_argument_of_latitude_reference: 380.",
-                ("    u_0: 0." if sign == "-" else ""),
+                ("    u_0: 0." if sign == "m" else ""),
                 "    pi_E_N: 1.",
                 "    pi_E_E: 1.",
                 "fitting_parameters:",
