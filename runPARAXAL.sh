@@ -8,5 +8,8 @@ do
 
   python3 ulens_model_fit.py $file+.yaml 1> $file+.OUT 2>$file+.ERR&
   python3 ulens_model_fit.py $file-.yaml 1> $file-.OUT 2>$file-.ERR&
-  sleep 600
+  if((i % 2 ==0))
+  then
+    sleep 600
+  fi
 done
