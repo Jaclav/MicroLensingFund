@@ -7,23 +7,16 @@
 
 for ((i=$1;i<=$2;i++))
 do
-  xi_P=$(($i%10))
-  if (($xi_P==0))
-  then
-    xi_P=10
-  fi
 
-  dataNum=$(($i/10+1))
-  if ((dataNum<10))
-  then
-    dataNum="0${dataNum}"
-  fi
+  
 
-  file=$3/PAR-$dataNum-noaver.dat.$xi_P
-  echo $file.yaml
-  python3 ulens_model_fit.py $file+.yaml 1> $file+.OUT 2>$file+.ERR&
-  python3 ulens_model_fit.py $file-.yaml 1> $file-.OUT 2>$file-.ERR&
-  if(($i%60==59))
+  file=$3/PAR-$i-noaver.dat
+  echo $file.p.yaml
+  echo $file.m.yaml
+
+  python3 ulens_model_fit.py $file.p.yaml 1> $file.p.OUT 2>$file.p.ERR&
+  python3 ulens_model_fit.py $file.m.yaml 1> $file.m.OUT 2>$file.m.ERR&
+  if(($i%10==9))
   then
   sleep 1500
   fi	
