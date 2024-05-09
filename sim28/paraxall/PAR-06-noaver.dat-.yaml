@@ -1,7 +1,7 @@
 photometry_files:
     dataPoleski/PAR-06-noaver.dat
 starting_parameters:
-    t_0: gauss 2452454211.9890757194 0.1
+    t_0: gauss 2454211.9890757194 0.1
     u_0: gauss -0.7669117767653404 0.2300735330296021
     t_E: gauss 235.0175997274639 23.50175997274639
     pi_E_N: gauss 0.00 0.01

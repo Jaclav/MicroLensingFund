@@ -54,7 +54,7 @@ for i in range(len(xallarapPath)):
             "photometry_files:",
             "    dataPoleski/" + xallarapName[i],
             "starting_parameters:",
-            "    t_0: gauss 245" + str(t0) + " 0.1",
+            "    t_0: gauss " + str(t0) + " 0.1",
             "    u_0: gauss " + sign + str(u0) + " " + str(0.3 * u0),
             "    t_E: gauss " + str(tE) + " " + str(tE * 0.1),
             # parallax piE=sqrt(PiN^2+pIEE^2)
