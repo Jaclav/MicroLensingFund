@@ -30,8 +30,10 @@ def load(name, maxJ):
     mini = 1000000
     parallax = glob.glob("../" + sys.argv[1] + "/" + name + "/*.OUT")
     parallax.sort()
+    print(parallax)
     for i in range(len(data)):
         for j in range(0, maxJ):
+            print(parallax[i * maxJ + j])
             chi2 = getChi(parallax[i * maxJ + j])
             dic[data[i]][parallax[i * maxJ + j]] = chi2
 
@@ -39,7 +41,7 @@ def load(name, maxJ):
 load("nothing", 1)
 load("parallax", 2)
 load("xallarap", 10)
-# load("PARAXALL", 20)
+load("paraxall", 2)
 
 # difference needed to fit better xallarap than parallax
 DIFF = 30
@@ -69,14 +71,14 @@ for j in data:
             xallarapChi = dic[j][keys[i]]
             xallarapName = keys[i]
 
-    # paraxalChi = 100000
-    # paraxalName = ""
-    # for i in range(14, 32):
-    #    if dic[j][keys[i]] == None:
-    #        continue
-    #    if paraxalChi > dic[j][keys[i]]:
-    #        paraxalChi = dic[j][keys[i]]
-    #        paraxalName = keys[i]
+    paraxalChi = 100000
+    paraxalName = ""
+    for i in range(14, 15):
+        if dic[j][keys[i]] == None:
+            continue
+        if paraxalChi > dic[j][keys[i]]:
+            paraxalChi = dic[j][keys[i]]
+            paraxalName = keys[i]
 
     # which is the lowest, parallax or xallarap or paraxal
 
@@ -88,9 +90,9 @@ for j in data:
     if xallarapChi + DIFF < parallaxChi:
         chiName = xallarapName
         chiValue = xallarapChi
-    # if paraxalChi + DIFF < parallaxChi and paraxalChi + DIFF < xallarapChi:
-    #     chiName = paraxalName
-    #     chiValue = paraxalChi
+    if paraxalChi + DIFF < parallaxChi and paraxalChi + DIFF < xallarapChi:
+        chiName = paraxalName
+        chiValue = paraxalChi
     else:
         chiName = parallaxName
         chiValue = parallaxChi
@@ -112,7 +114,7 @@ for j in data:
         # + ","
         # + str(chiValue)
         # + ","
-        + str(round(parallaxChi - xallarapChi,3))
+        + str(parallaxChi - chiValue)
         + "\n"
     )
 # awk -F"," '{print $NF, $2, $0}' sim27_12/chi2.csv | sort -g
