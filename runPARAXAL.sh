@@ -6,7 +6,7 @@ do
   echo $file+.yaml
   echo $file-.yaml
 
-  python3 ulens_model_fit.py $file+.yaml 1> $file+.OUT 2>$file-.ERR&
+  python3 ulens_model_fit.py $file+.yaml 1> $file+.OUT 2>$file+.ERR&
   python3 ulens_model_fit.py $file-.yaml 1> $file-.OUT 2>$file-.ERR&
   sleep 600
 done
