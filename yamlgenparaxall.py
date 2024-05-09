@@ -93,7 +93,7 @@ for i in range(len(xallarapPath)):
             "    pi_E_N: 1.",
             "    pi_E_E: 1.",
             "fitting_parameters:",
-            "    n_steps: 400",
+            "    n_steps: 5000",
             "    n_walkers: 1000",
             "plots:",
             "    best model:",
