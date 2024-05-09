@@ -43,7 +43,7 @@ for i in range(len(xallarapPath)):
                 break
 
     for sign in ["+", "-"]:
-        newFile = xallarapName[i] + "." + sign
+        newFile = xallarapName[i] + sign
         yamlN = "../" + sys.argv[1] + "/paraxall/" + newFile + ".yaml"
         yaml = open(yamlN, "w+")
         t0par = round(t0, -1)
@@ -63,7 +63,10 @@ for i in range(len(xallarapPath)):
             # PARAXALL https://doi.org/10.3847/1538-3881/ad284f
             "    xi_Omega_node: uniform -20 380",
             "    xi_inclination: uniform -20 380",
-            "    xi_period: uniform " + str(3 / 4 * xi_period) + " " + str(4 / 3 * xi_period),
+            "    xi_period: uniform "
+            + str(3 / 4 * xi_period)
+            + " "
+            + str(4 / 3 * xi_period),
             "    xi_semimajor_axis: log-uniform 0.001 0.1",
             "    xi_argument_of_latitude_reference: uniform -20 380",
             # parallax

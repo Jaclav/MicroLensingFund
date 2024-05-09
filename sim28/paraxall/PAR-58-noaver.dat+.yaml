@@ -38,10 +38,10 @@ fitting_parameters:
     n_walkers: 1000
 plots:
     best model:
-        file: sim28/paraxall/png/PAR-58-noaver.dat.+.png
+        file: sim28/paraxall/png/PAR-58-noaver.dat+.png
     trajectory:
-        file: sim28/paraxall/png/PAR-58-noaver.dat.+.trj.png
+        file: sim28/paraxall/png/PAR-58-noaver.dat+.trj.png
     triangle:
-        file: sim28/paraxall/png/PAR-58-noaver.dat.+.trg.png
+        file: sim28/paraxall/png/PAR-58-noaver.dat+.trg.png
     trace:
-        file: sim28/paraxall/png/PAR-58-noaver.dat.+.tra.png
+        file: sim28/paraxall/png/PAR-58-noaver.dat+.tra.png
