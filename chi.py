@@ -41,7 +41,7 @@ def load(name, maxJ):
 load("nothing", 1)
 load("parallax", 2)
 load("xallarap", 10)
-load("paraxall", 2)
+# load("paraxall", 2)
 
 # difference needed to fit better xallarap than parallax
 DIFF = 30
@@ -71,14 +71,14 @@ for j in data:
             xallarapChi = dic[j][keys[i]]
             xallarapName = keys[i]
 
-    paraxalChi = 100000
-    paraxalName = ""
-    for i in range(14, 15):
-        if dic[j][keys[i]] == None:
-            continue
-        if paraxalChi > dic[j][keys[i]]:
-            paraxalChi = dic[j][keys[i]]
-            paraxalName = keys[i]
+    # paraxalChi = 100000
+    # paraxalName = ""
+    # for i in range(14, 15):
+    #     if dic[j][keys[i]] == None:
+    #         continue
+    #     if paraxalChi > dic[j][keys[i]]:
+    #         paraxalChi = dic[j][keys[i]]
+    #         paraxalName = keys[i]
 
     # which is the lowest, parallax or xallarap or paraxal
 
@@ -90,9 +90,9 @@ for j in data:
     if xallarapChi + DIFF < parallaxChi:
         chiName = xallarapName
         chiValue = xallarapChi
-    if paraxalChi + DIFF < parallaxChi and paraxalChi + DIFF < xallarapChi:
-        chiName = paraxalName
-        chiValue = paraxalChi
+    # if paraxalChi + DIFF < parallaxChi and paraxalChi + DIFF < xallarapChi:
+    #     chiName = paraxalName
+    #     chiValue = paraxalChi
     else:
         chiName = parallaxName
         chiValue = parallaxChi
