@@ -7,8 +7,7 @@ starting_parameters:
     pi_E_N: gauss 0.00 0.01
     pi_E_E: gauss 0.00 0.01
     xi_Omega_node: uniform -20 380
-    xi_inclination: uniform -20 380
-312.36763818168504
+    xi_inclination: uniform -20 380312.36763818168504
     xi_semimajor_axis: log-uniform 0.001 0.1
     xi_argument_of_latitude_reference: uniform -20 380
 model:

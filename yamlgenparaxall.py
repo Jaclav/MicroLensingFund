@@ -62,8 +62,7 @@ for i in range(len(xallarapPath)):
             "    pi_E_E: gauss 0.00 0.01",
             # PARAXALL https://doi.org/10.3847/1538-3881/ad284f
             "    xi_Omega_node: uniform -20 380",
-            "    xi_inclination: uniform -20 380",
-            xi_period,
+            "    xi_inclination: uniform -20 380" + str(xi_period),
             "    xi_semimajor_axis: log-uniform 0.001 0.1",
             "    xi_argument_of_latitude_reference: uniform -20 380",
             # parallax
