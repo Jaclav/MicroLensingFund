@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for i in {05,06,15,39,57,58,59}
+for i in {06,15,39,57,58,59}
 do
   file=$1/PAR-$i-noaver.dat
   echo $file+.yaml
