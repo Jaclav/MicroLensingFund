@@ -13,6 +13,9 @@ def getChi(name):
     return 1000000
 
 
+print(
+    "name,better,parallax,parallaxPath,xallarap,xallarapPath,deltaChi,chiParaxall,pathParaxall"
+)
 a = np.loadtxt(sys.argv[1] + "/chi2.csv", skiprows=1, unpack=True, dtype=str)
 data = {}
 
