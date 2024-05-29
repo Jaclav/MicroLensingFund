@@ -17,7 +17,7 @@ def convert_ra_dec_to_galactic(ra, dec):
 (name, right_ascension, declination) = np.loadtxt(
     "parallaxData/coords.csv", unpack=True, delimiter=",", dtype=str
 )
-(mu_E_source, mu_N_source, mu_E_err_source, mu_N_err_source, pm_corr_source) = np.loadtxt(
+(mu_E_source, mu_E_err_source,mu_N_source, mu_N_err_source, pm_corr_source) = np.loadtxt(
        "parallaxData/proper_motions.csv", unpack=True, delimeter=",", dtype=str
 )
 
