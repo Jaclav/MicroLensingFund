@@ -71,7 +71,7 @@ for i in range(len(xallarapPath)):
             "    xi_argument_of_latitude_reference: uniform -20 380",
             # parallax
             "model:",
-            "   coords: " + right_ascension[indeks] + " " + declination[indeks],
+            "   coords: " + right_ascension[i] + " " + declination[i],
             "fixed_parameters:",
             "    t_0_par: " + str(t0par),
             "    t_0_xi: " + str(t0par),

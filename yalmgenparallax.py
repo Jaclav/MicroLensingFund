@@ -7,12 +7,12 @@ import numpy as np
 (name, right_ascension, declination) = np.loadtxt(
     "parallaxData/coords.csv", unpack=True, delimiter=",", dtype=str
 )
-indeks = -1
+
 os.mkdir(sys.argv[1] + "/parallax")
 os.mkdir(sys.argv[1] + "/parallax/png")
 os.chdir("dataPoleski")
 listFiles = os.listdir()
-for file in listFiles:
+for index, file in enumerate(listFiles):
     parN = "../" + sys.argv[1] + "/nothing/" + file + ".par"
     (PARt0, PARu0, PARtE, PARA, PARtmin, PARtmax) = np.loadtxt(parN)
 
@@ -53,7 +53,7 @@ for file in listFiles:
             "    pi_E_E: gauss 0.00 0.01",
             # parallax
             "model:",
-            "   coords: " + right_ascension[indeks] + " " + declination[indeks],
+            "   coords: " + right_ascension[index] + " " + declination[index],
             "fixed_parameters:",
             "    t_0_par: 245" + str(t0par),
             "min_values:",
