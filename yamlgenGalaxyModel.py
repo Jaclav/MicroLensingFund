@@ -2,7 +2,17 @@ import os
 import random as r
 import sys
 import numpy as np
-from parsuns import velocity_of_Earth_projected
+from astropy import units as u
+from astropy.coordinates import SkyCoord
+
+from microlensing_black_holes.parsubs import velocity_of_Earth_projected
+
+def convert_ra_dec_to_galactic(ra, dec):
+    c = SkyCoord(ra, dec, frame='icrs', unit='deg')
+    l = c.galactic.l.deg
+    b = c.galactic.b.deg
+    return l, b
+
 
 (name, right_ascension, declination) = np.loadtxt(
     "parallaxData/coords.csv", unpack=True, delimiter=",", dtype=str
@@ -10,12 +20,13 @@ from parsuns import velocity_of_Earth_projected
 (mu_E_source, mu_N_source, mu_E_err_source, mu_N_err_source, pm_corr_source) = np.loadtxt(
        "parallaxData/proper_motions.csv", unpack=True, delimeter=",", dtype=str
 )
-           
+
+(l, b) = convert_ra_dec_to_galactic(right_ascension, declination)
 
 
 os.mkdir("../" + sys.argv[1] + "/<galaxymodel")
 os.mkdir("../" +sys.argv[1] + "/galaxymodel/png")
-os.chdir("../" + sys.argv[1] + "/<galaxymodel")
+os.chdir("../" + sys.argv[1] + "/<paraxall")
 listFiles = os.listdir()
 
 
@@ -45,18 +56,17 @@ for index, file in enumerate(listFiles):
         yamlN = "../" + sys.argv[1] + "/galaxymodel/" + file + ".yaml"
         yaml = open(yamlN, "w+")
         t0par = round(t0, -1)
-        graphicF = sys.argv[1] + "/galaxymodel/png/" + file
         v_Earth_perp_N, v_Earth_perp_E =velocity_of_Earth_projected(
     t0, right_ascension[index], declination[index])
         
         YAML = [
             "photfile : " + "dataPoleski/" + file,
-            "alpha : " + right_ascension[index],
-            "delta : " + declination[index],
+            "alpha : " + str(right_ascension[index]),
+            "delta : " + str(declination[index]),
             "t0_par : " + str(t0par),
-            "l : Galactic longitude (deg)",
-            "b : Galactic latitude (deg)",
-            "vN : " + v_Earth_perp_N,
+            "l : " + str(l[index]),
+            "b : " + str(b[index]),
+            "vN : " + str(v_Earth_perp_N),
             "vE : " + v_Earth_perp_E,
             "mu_min : " + "0",
             "mu_max : " + "20",
