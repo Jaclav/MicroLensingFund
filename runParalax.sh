@@ -18,8 +18,8 @@ do
   python3 ulens_model_fit.py $file+.yaml 1> $file+.OUT 2>$file+.ERR&
   echo $file-.yaml
   python3 ulens_model_fit.py $file-.yaml 1> $file-.OUT 2>$file-.ERR&
-  if(($i%60==59))
+  if(($i%4==3))
   then
-  sleep 600
+  sleep 300
   fi	
 done
