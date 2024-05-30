@@ -20,6 +20,6 @@ do
   python3 ulens_model_fit.py $file-.yaml 1> $file-.OUT 2>$file-.ERR&
   if(($i%4==3))
   then
-  sleep 300
+  sleep 400
   fi	
 done
