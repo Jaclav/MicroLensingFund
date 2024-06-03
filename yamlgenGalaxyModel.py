@@ -12,11 +12,18 @@ def convert_ra_dec_to_galactic(ra, dec):
     l = c.galactic.l.deg
     b = c.galactic.b.deg
     return l, b
+def dms_to_dd(dms_str):
+    parts = dms_str.split(":")
+    dd = float(parts[0]) + float(parts[1])/60 + float(parts[2])/(60*60)
+    return dd
 
 
 (name, right_ascension, declination) = np.loadtxt(
     "parallaxData/coords.csv", unpack=True, delimiter=",", dtype=str
 )
+right_ascension = dms_to_dd(right_ascension)
+declination = dms_to_dd(declination)
+
 (mu_E_source, mu_E_err_source,mu_N_source, mu_N_err_source, pm_corr_source) = np.loadtxt(
        "parallaxData/proper_motions.csv", unpack=True, delimeter=",", dtype=str
 )
@@ -37,7 +44,7 @@ for index, file in enumerate(listFiles):
         if "t_0" and "u_0" in line:
                 pass    
         elif "t_0" in line:
-                t0 = float(line.split()[1])
+                t0 = float(line.split()[1]) - 2450000
                 t0_err = max(float(line.split()[2]), - float(line.split()[3])) 
         elif "u_0" in line:
                 u0 = float(line.split()[1])
