@@ -39,7 +39,7 @@ listNames = []
 for i in range(1, len(name)+1):
     if better[i] == "xallarap":
         listFiles.append(pathParaxall[i])
-        listNames.append(pathParaxall[i][15:])
+        listNames.append(pathParaxall[i][15:33])
     else:
          listFiles.append(np.nan)
          listNames.append(np.nan)
@@ -83,13 +83,14 @@ for index, file in enumerate(listNames):
         yamlN = Path("./"+sys.argv[1] + "/galaxymodel/" + file + ".yaml")
         print(yamlN)
 
+
         yaml = open(yamlN, 'w+')
         t0par = round(t0, -1)
         v_Earth_perp_N, v_Earth_perp_E =velocity_of_Earth_projected(
     t0+2450000, right_ascension[index], declination[index])
         
         YAML = [
-        "photfile : " + "dataPoleski/" + file,
+        "photfile : " + "dataPoleski/" + file[:-1],
         "alpha : " + str(right_ascension[index]),
         "delta : " + str(declination[index]),
         "t0_par : " + str(t0par),
@@ -104,7 +105,7 @@ for index, file in enumerate(listNames):
         "mu_E_err_source : " + str(mu_E_err_source[index]),
         "mu_N_err_source : " + str(mu_N_err_source[index]),
         "pm_corr_source : " + str(pm_corr_source[index]),
-        "output : " + "/galaxymodel/" + str(file),
+        "output : " + sys.argv[1] + "/galaxymodel/" + str(file),
         "nwalkers : " + "32",
         "nburnin : " + "1000",
         "nsamples : " + "4000",
