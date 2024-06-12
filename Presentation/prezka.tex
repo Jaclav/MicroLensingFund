@@ -12,6 +12,7 @@
 \usepackage{animate}
 \usepackage{caption}
 \usepackage{graphicx}
+\usepackage{booktabs}
 
 \title{Być albo nie być czarną dziurą}
 \author[F. Hansdorfer \and J. Winiarczyk \and Ł. Parda
@@ -66,8 +67,9 @@
     Dla punktowej masy mamy:
     \[\alpha(\theta) = \frac{4GM}{c^2\theta}\frac{D_s-D_l}{D_s D_l}\]
     \[\theta_E = \sqrt{\frac{4GM}{c^2}\frac{D_s-D_l}{D_s D_l}}\]
+
     Wtedy:
-    \[\beta = \theta - \frac{4GM}{c^2}\frac{D_s-D_l}{D_s D_l}\frac{1}{\theta}\]
+    \[\beta = \theta - \frac{\theta_E^2}{\theta}\]
 
 \end{frame}
 
@@ -96,9 +98,110 @@
 
 \subsection{Odchylenia od modelu punktowego źródła i soczewki}
 
-\section{Modelowanie soczewkowania}
-\subsubsection{MulensModel}
+\begin{frame}{Paralaksa}
+    \begin{columns}
+        \begin{column}{0.4\linewidth}
+            Dla $t_{\text{E}}>30 \text{ d}$ ruchu Ziemi wokół Słońca przestaje być pomijalny. Wtedy:
+            \begin{align*}
+                 & u_{\oplus}(t) = u_{\odot}(t)+ \\&+\pi_{E}\beta\cos(\Omega(t-t_0)+\varphi)+\\&+\Lambda \omega(\sin(\Omega(t-t0)+\varphi))
+            \end{align*}
+
+        \end{column}
+
+        \begin{column}{0.5\linewidth}
+            \begin{figure}
+                \centering
+                \includegraphics[width = \textwidth]{../sim30/parallax/png/PAR-20-noaver.dat-.png}
+                \caption*{\tiny{PAR-20, $u_0<0$}}
+            \end{figure}
+        \end{column}
+    \end{columns}
+
+\end{frame}
+
+\begin{frame}{Xallarap}
+    \begin{columns}
+        \begin{column}{0.5\linewidth}
+            Jeżeli źródło jest częścią układu podwójnego, to jego ruch orbitalny może mieć znaczący wpływ na parametr $u(t)$.
+            Ten feonomen nosi nazwę xallarap (Parallax od tyłu).
+        \end{column}
+        \begin{column}{0.5\linewidth}
+            \begin{figure}
+                \centering
+                \includegraphics[width = \textwidth]{../sim30/xallarap/png/PAR-57-noaver.dat.1.png}
+                \caption*{\tiny{PAR-57.1}}
+            \end{figure}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\section{Modelowanie mikrosoczewkowania}
+\subsection{MulensModel}
+\begin{frame}
+    \begin{columns}
+        \begin{column}{0.5\linewidth}
+            \emph{Mulens Model}, to paczka służąca do modelowania zjawisk mikrosoczewkowania.
+            Do dopasowania krzywej, używany jest algorytm MCMC (Próbkowanie Monte Carlo łańcuchami Markowa).
+
+        \end{column}
+
+        \begin{column}{0.5\linewidth}
+            \begin{figure}
+                \includegraphics[width = \textwidth]{logoMM_crop_4_372x260.png}
+            \end{figure}
+        \end{column}
+    \end{columns}
+\end{frame}
 
 \section{Rezultaty}
+
+\begin{frame}{Wstęp}
+    59 zjawisk wykazujących dominujący wpływ paralaksy?, z przeglądu OGLE-III (Wyżykowski et al. 2016).
+
+    \bigskip
+    \bigskip
+
+    A co jeśli źródło jest w układzie podwójnym?
+\end{frame}
+
+\begin{frame}
+    \centering
+    \begin{columns}
+        \begin{column}{0.45\linewidth}
+            \centering
+            Parallax
+            \includegraphics[width = \textwidth]{../sim30/parallax/png/PAR-57-noaver.dat+.png}
+
+        \end{column}
+        \begin{column}{0.45\linewidth}
+            \centering
+            Xallarap
+            \includegraphics[width = \textwidth]{../sim30/xallarap/png/PAR-57-noaver.dat.1.png}
+
+        \end{column}
+    \end{columns}
+    Parallax + Xallarap\\
+    \includegraphics[width = 0.45\linewidth]{../sim30/paraxall/png/PAR-57-noaver.dat+.png}
+\end{frame}
+
+\begin{frame}{Porównanie modeli}
+    \begin{table}[h]
+        \centering
+        \begin{tabular}{l r r}
+            \toprule
+            Nazwa             & $\Delta\chi^2$ & $\chi^2 _{Paraxall}$ \\
+            \midrule
+            PAR-05-noaver.dat & 52.7989        & 2360.0741            \\
+            PAR-06-noaver.dat & 304.5130       & 4567.5600            \\
+            PAR-14-noaver.dat & 37.3174        & 7164.3571            \\
+            PAR-39-noaver.dat & 129.9147       & 13677.8037           \\
+            PAR-57-noaver.dat & 59681.0222     & 4335.8364            \\
+            PAR-58-noaver.dat & 34.7714        & 1087.9253            \\
+            PAR-59-noaver.dat & 124.1144       & 2175.4949            \\
+            \bottomrule
+        \end{tabular}
+    \end{table}
+
+\end{frame}
 
 \end{document}
