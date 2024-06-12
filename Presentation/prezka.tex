@@ -13,6 +13,8 @@
 \usepackage{caption}
 \usepackage{graphicx}
 \usepackage{booktabs}
+\usepackage{tabularx}
+\renewcommand{\arraystretch}{1.5}
 
 \title{Być albo nie być czarną dziurą}
 \author[F. Hansdorfer \and J. Winiarczyk \and Ł. Parda
@@ -155,8 +157,8 @@
 
 \section{Rezultaty}
 
-\begin{frame}{Wstęp}
-    59 zjawisk wykazujących dominujący wpływ paralaksy?, z przeglądu OGLE-III (Wyżykowski et al. 2016).
+\begin{frame}{Opis projektu}
+    59 zjawisk wykazujących dominujący wpływ paralaksy(?), z przeglądu OGLE-III (Wyżykowski et al. 2016).
 
     \bigskip
     \bigskip
@@ -187,21 +189,37 @@
 \begin{frame}{Porównanie modeli}
     \begin{table}[h]
         \centering
-        \begin{tabular}{l r r}
+        \begin{tabularx}{\linewidth}{X r r}
             \toprule
-            Nazwa             & $\Delta\chi^2$ & $\chi^2 _{Paraxall}$ \\
+            Nazwa  & $\Delta\chi^2$ & $\chi^2 _{Paraxall}$ \\
             \midrule
-            PAR-05-noaver.dat & 52.7989        & 2360.0741            \\
-            PAR-06-noaver.dat & 304.5130       & 4567.5600            \\
-            PAR-14-noaver.dat & 37.3174        & 7164.3571            \\
-            PAR-39-noaver.dat & 129.9147       & 13677.8037           \\
-            PAR-57-noaver.dat & 59681.0222     & 4335.8364            \\
-            PAR-58-noaver.dat & 34.7714        & 1087.9253            \\
-            PAR-59-noaver.dat & 124.1144       & 2175.4949            \\
+            PAR-05 & 52.7989        & 2360.0741            \\
+            PAR-06 & 304.5130       & 4567.5600            \\
+            PAR-14 & 37.3174        & 7164.3571            \\
+            PAR-39 & 129.9147       & 13677.8037           \\
+            PAR-57 & 59681.0222     & 4335.8364            \\
+            PAR-58 & 34.7714        & 1087.9253            \\
+            PAR-59 & 124.1144       & 2175.4949            \\
             \bottomrule
-        \end{tabular}
+        \end{tabularx}
     \end{table}
 
+\end{frame}
+
+\begin{frame}
+    \begin{tabularx}{\linewidth}{X r r r}
+        \toprule
+        Nazwa & $xi_{period}$                 & $\pi_{EN}$                 & $\pi_{EE}$                 \\
+        \midrule
+        PAR-05               & $600.151_{-80.54 } ^{+92.9}$  & $0.065_{-0.0 } ^{+0.02}$   & $0.065_{-0.0 } ^{+0.02}$   \\
+        PAR-06               & $392.271_{-3.58 } ^{+3.46}$   & $-0.014_{-0.01 } ^{+0.02}$ & $-0.014_{-0.01 } ^{+0.02}$ \\
+        PAR-14               & $314.276_{-11.7 } ^{+191.6}$  & $-0.553_{-0.04 } ^{+0.49}$ & $-0.553_{-0.04 } ^{+0.49}$ \\
+        PAR-39               & $0.239_{-0.04 } ^{+0.87}$     & $0.032_{-0.0 } ^{+0.09}$   & $0.032_{-0.0 } ^{+0.09}$   \\
+        PAR-57               & $0.692_{-0.11 } ^{+0.32}$     & $-0.012_{-0.03 } ^{+0.08}$ & $-0.012_{-0.03 } ^{+0.08}$ \\
+        PAR-58               & $159.123_{-14.02 } ^{+10.96}$ & $-0.04_{-0.06 } ^{+0.08}$  & $-0.04_{-0.06 } ^{+0.08}$  \\
+        PAR-59               & $16.886_{-0.95 } ^{+1.52}$    & $-0.566_{-0.22 } ^{+0.74}$ & $-0.566_{-0.22 } ^{+0.74}$ \\
+        \bottomrule
+    \end{tabularx}
 \end{frame}
 
 \end{document}

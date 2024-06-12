@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.5.6)  12 JUN 2024 02:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.5.6)  12 JUN 2024 14:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -781,38 +781,57 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@thisruleclass=\count374
 \@lastruleclass=\count375
 \@thisrulewidth=\dimen346
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+ (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen347
+\ar@mcellbox=\box85
+\extrarowheight=\dimen348
+\NC@list=\toks54
+\extratabsurround=\skip68
+\backup@length=\skip69
+\ar@cellbox=\box86
+)
+\TX@col@width=\dimen349
+\TX@old@table=\dimen350
+\TX@old@col=\dimen351
+\TX@target=\dimen352
+\TX@delta=\dimen353
+\TX@cols=\count376
+\TX@ftn=\toks55
 )
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 20.
+(hyperref)                removing `\\' on input line 22.
 
 (./prezka.aux)
 \openout1 = `prezka.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 23.
-LaTeX Font Info:    Trying to load font information for OT4+cmr on input line 23.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 25.
+LaTeX Font Info:    Trying to load font information for OT4+cmr on input line 25.
  (/usr/share/texlive/texmf-dist/tex/latex/polski/ot4cmr.fd
 File: ot4cmr.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
-LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    ... okay on input line 25.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -850,24 +869,24 @@ LaTeX Font Info:    ... okay on input line 23.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count376
-\scratchdimen=\dimen347
-\scratchbox=\box85
-\nofMPsegments=\count377
-\nofMParguments=\count378
-\everyMPshowfont=\toks54
-\MPscratchCnt=\count379
-\MPscratchDim=\dimen348
-\MPnumerator=\count380
-\makeMPintoPDFobject=\count381
-\everyMPtoPDFconversion=\toks55
+\scratchcounter=\count377
+\scratchdimen=\dimen354
+\scratchbox=\box87
+\nofMPsegments=\count378
+\nofMParguments=\count379
+\everyMPshowfont=\toks56
+\MPscratchCnt=\count380
+\MPscratchDim=\dimen355
+\MPnumerator=\count381
+\makeMPintoPDFobject=\count382
+\everyMPtoPDFconversion=\toks57
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 23.
+Package hyperref Info: Link coloring OFF on input line 25.
  (./prezka.out) (./prezka.out)
 \@outlinefile=\write5
 \openout5 = `prezka.out'.
@@ -892,40 +911,40 @@ Package caption Info: End \AtBeginDocument code.
 (./prezka.nav) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-LaTeX Font Info:    Trying to load font information for OML+plm on input line 50.
+LaTeX Font Info:    Trying to load font information for OML+plm on input line 52.
  (/usr/share/texlive/texmf-dist/tex/latex/polski/omlplm.fd
 File: omlplm.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
-LaTeX Font Info:    Trying to load font information for OMS+plsy on input line 50.
+LaTeX Font Info:    Trying to load font information for OMS+plsy on input line 52.
  (/usr/share/texlive/texmf-dist/tex/latex/polski/omsplsy.fd
 File: omsplsy.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
-LaTeX Font Info:    Trying to load font information for OMX+plex on input line 50.
+LaTeX Font Info:    Trying to load font information for OMX+plex on input line 52.
  (/usr/share/texlive/texmf-dist/tex/latex/polski/omxplex.fd
 File: omxplex.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <10.95> on input line 50.
+(Font)              <10.95> on input line 52.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <8> on input line 50.
+(Font)              <8> on input line 52.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <6> on input line 50.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 50.
+(Font)              <6> on input line 52.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 52.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 50.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 52.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 50.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 52.
  (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 <A_Horseshoe_Einstein_Ring_from_Hubble.jpeg, id=103, 763.35187pt x 504.38437pt>
 File: A_Horseshoe_Einstein_Ring_from_Hubble.jpeg Graphic file (type jpg)
 <use A_Horseshoe_Einstein_Ring_from_Hubble.jpeg>
-Package pdftex.def Info: A_Horseshoe_Einstein_Ring_from_Hubble.jpeg  used on input line 50.
+Package pdftex.def Info: A_Horseshoe_Einstein_Ring_from_Hubble.jpeg  used on input line 52.
 (pdftex.def)             Requested size: 153.64493pt x 101.52156pt.
  [2
 
@@ -933,7 +952,7 @@ Package pdftex.def Info: A_Horseshoe_Einstein_Ring_from_Hubble.jpeg  used on inp
 <Screenshot from 2024-06-10 13-41-41.png, id=143, 1429.34pt x 789.95125pt>
 File: Screenshot from 2024-06-10 13-41-41.png Graphic file (type png)
 <use Screenshot from 2024-06-10 13-41-41.png>
-Package pdftex.def Info: Screenshot from 2024-06-10 13-41-41.png  used on input line 62.
+Package pdftex.def Info: Screenshot from 2024-06-10 13-41-41.png  used on input line 64.
 (pdftex.def)             Requested size: 184.3758pt x 101.88966pt.
  [3
 
@@ -943,429 +962,429 @@ Package pdftex.def Info: Screenshot from 2024-06-10 13-41-41.png  used on input 
 <animation1/Scott_Gaudi_anim-0.png, id=216, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-0.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-0.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-0.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-0.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-0.png> <a0,fr0>
 <animation1/Scott_Gaudi_anim-1.png, id=220, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-1.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-1.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-1.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-1.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-1.png> <a0,fr1>
 <animation1/Scott_Gaudi_anim-2.png, id=224, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-2.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-2.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-2.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-2.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-2.png> <a0,fr2>
 <animation1/Scott_Gaudi_anim-3.png, id=228, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-3.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-3.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-3.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-3.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-3.png> <a0,fr3>
 <animation1/Scott_Gaudi_anim-4.png, id=232, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-4.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-4.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-4.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-4.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-4.png> <a0,fr4>
 <animation1/Scott_Gaudi_anim-5.png, id=236, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-5.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-5.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-5.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-5.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-5.png> <a0,fr5>
 <animation1/Scott_Gaudi_anim-6.png, id=240, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-6.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-6.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-6.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-6.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-6.png> <a0,fr6>
 <animation1/Scott_Gaudi_anim-7.png, id=244, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-7.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-7.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-7.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-7.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-7.png> <a0,fr7>
 <animation1/Scott_Gaudi_anim-8.png, id=248, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-8.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-8.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-8.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-8.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-8.png> <a0,fr8>
 <animation1/Scott_Gaudi_anim-9.png, id=252, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-9.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-9.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-9.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-9.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-9.png> <a0,fr9>
 <animation1/Scott_Gaudi_anim-10.png, id=256, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-10.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-10.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-10.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-10.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-10.png> <a0,fr10>
 <animation1/Scott_Gaudi_anim-11.png, id=260, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-11.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-11.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-11.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-11.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-11.png> <a0,fr11>
 <animation1/Scott_Gaudi_anim-12.png, id=264, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-12.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-12.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-12.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-12.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-12.png> <a0,fr12>
 <animation1/Scott_Gaudi_anim-13.png, id=268, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-13.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-13.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-13.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-13.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-13.png> <a0,fr13>
 <animation1/Scott_Gaudi_anim-14.png, id=272, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-14.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-14.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-14.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-14.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-14.png> <a0,fr14>
 <animation1/Scott_Gaudi_anim-15.png, id=276, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-15.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-15.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-15.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-15.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-15.png> <a0,fr15>
 <animation1/Scott_Gaudi_anim-16.png, id=280, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-16.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-16.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-16.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-16.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-16.png> <a0,fr16>
 <animation1/Scott_Gaudi_anim-17.png, id=284, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-17.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-17.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-17.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-17.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-17.png> <a0,fr17>
 <animation1/Scott_Gaudi_anim-18.png, id=288, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-18.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-18.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-18.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-18.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-18.png> <a0,fr18>
 <animation1/Scott_Gaudi_anim-19.png, id=292, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-19.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-19.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-19.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-19.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-19.png> <a0,fr19>
 <animation1/Scott_Gaudi_anim-20.png, id=296, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-20.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-20.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-20.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-20.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-20.png> <a0,fr20>
 <animation1/Scott_Gaudi_anim-21.png, id=300, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-21.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-21.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-21.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-21.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-21.png> <a0,fr21>
 <animation1/Scott_Gaudi_anim-22.png, id=304, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-22.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-22.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-22.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-22.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-22.png> <a0,fr22>
 <animation1/Scott_Gaudi_anim-23.png, id=308, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-23.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-23.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-23.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-23.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-23.png> <a0,fr23>
 <animation1/Scott_Gaudi_anim-24.png, id=312, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-24.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-24.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-24.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-24.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-24.png> <a0,fr24>
 <animation1/Scott_Gaudi_anim-25.png, id=316, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-25.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-25.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-25.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-25.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-25.png> <a0,fr25>
 <animation1/Scott_Gaudi_anim-26.png, id=320, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-26.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-26.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-26.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-26.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-26.png> <a0,fr26>
 <animation1/Scott_Gaudi_anim-27.png, id=324, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-27.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-27.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-27.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-27.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-27.png> <a0,fr27>
 <animation1/Scott_Gaudi_anim-28.png, id=328, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-28.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-28.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-28.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-28.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-28.png> <a0,fr28>
 <animation1/Scott_Gaudi_anim-29.png, id=332, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-29.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-29.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-29.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-29.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-29.png> <a0,fr29>
 <animation1/Scott_Gaudi_anim-30.png, id=336, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-30.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-30.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-30.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-30.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-30.png> <a0,fr30>
 <animation1/Scott_Gaudi_anim-31.png, id=340, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-31.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-31.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-31.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-31.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-31.png> <a0,fr31>
 <animation1/Scott_Gaudi_anim-32.png, id=344, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-32.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-32.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-32.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-32.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-32.png> <a0,fr32>
 <animation1/Scott_Gaudi_anim-33.png, id=348, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-33.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-33.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-33.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-33.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-33.png> <a0,fr33>
 <animation1/Scott_Gaudi_anim-34.png, id=352, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-34.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-34.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-34.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-34.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-34.png> <a0,fr34>
 <animation1/Scott_Gaudi_anim-35.png, id=356, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-35.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-35.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-35.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-35.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-35.png> <a0,fr35>
 <animation1/Scott_Gaudi_anim-36.png, id=360, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-36.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-36.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-36.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-36.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-36.png> <a0,fr36>
 <animation1/Scott_Gaudi_anim-37.png, id=364, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-37.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-37.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-37.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-37.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-37.png> <a0,fr37>
 <animation1/Scott_Gaudi_anim-38.png, id=368, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-38.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-38.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-38.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-38.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-38.png> <a0,fr38>
 <animation1/Scott_Gaudi_anim-39.png, id=372, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-39.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-39.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-39.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-39.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-39.png> <a0,fr39>
 <animation1/Scott_Gaudi_anim-40.png, id=376, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-40.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-40.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-40.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-40.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-40.png> <a0,fr40>
 <animation1/Scott_Gaudi_anim-41.png, id=380, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-41.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-41.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-41.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-41.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-41.png> <a0,fr41>
 <animation1/Scott_Gaudi_anim-42.png, id=384, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-42.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-42.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-42.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-42.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-42.png> <a0,fr42>
 <animation1/Scott_Gaudi_anim-43.png, id=388, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-43.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-43.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-43.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-43.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-43.png> <a0,fr43>
 <animation1/Scott_Gaudi_anim-44.png, id=392, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-44.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-44.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-44.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-44.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-44.png> <a0,fr44>
 <animation1/Scott_Gaudi_anim-45.png, id=396, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-45.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-45.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-45.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-45.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-45.png> <a0,fr45>
 <animation1/Scott_Gaudi_anim-46.png, id=400, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-46.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-46.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-46.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-46.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-46.png> <a0,fr46>
 <animation1/Scott_Gaudi_anim-47.png, id=405, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-47.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-47.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-47.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-47.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-47.png> <a0,fr47>
 <animation1/Scott_Gaudi_anim-48.png, id=409, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-48.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-48.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-48.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-48.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-48.png> <a0,fr48>
 <animation1/Scott_Gaudi_anim-49.png, id=413, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-49.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-49.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-49.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-49.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-49.png> <a0,fr49>
 <animation1/Scott_Gaudi_anim-50.png, id=417, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-50.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-50.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-50.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-50.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-50.png> <a0,fr50>
 <animation1/Scott_Gaudi_anim-51.png, id=421, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-51.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-51.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-51.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-51.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-51.png> <a0,fr51>
 <animation1/Scott_Gaudi_anim-52.png, id=425, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-52.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-52.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-52.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-52.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-52.png> <a0,fr52>
 <animation1/Scott_Gaudi_anim-53.png, id=429, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-53.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-53.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-53.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-53.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-53.png> <a0,fr53>
 <animation1/Scott_Gaudi_anim-54.png, id=433, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-54.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-54.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-54.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-54.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-54.png> <a0,fr54>
 <animation1/Scott_Gaudi_anim-55.png, id=437, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-55.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-55.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-55.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-55.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-55.png> <a0,fr55>
 <animation1/Scott_Gaudi_anim-56.png, id=441, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-56.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-56.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-56.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-56.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-56.png> <a0,fr56>
 <animation1/Scott_Gaudi_anim-57.png, id=445, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-57.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-57.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-57.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-57.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-57.png> <a0,fr57>
 <animation1/Scott_Gaudi_anim-58.png, id=449, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-58.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-58.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-58.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-58.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-58.png> <a0,fr58>
 <animation1/Scott_Gaudi_anim-59.png, id=453, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-59.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-59.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-59.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-59.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-59.png> <a0,fr59>
 <animation1/Scott_Gaudi_anim-60.png, id=457, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-60.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-60.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-60.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-60.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-60.png> <a0,fr60>
 <animation1/Scott_Gaudi_anim-61.png, id=461, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-61.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-61.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-61.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-61.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-61.png> <a0,fr61>
 <animation1/Scott_Gaudi_anim-62.png, id=465, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-62.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-62.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-62.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-62.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-62.png> <a0,fr62>
 <animation1/Scott_Gaudi_anim-63.png, id=469, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-63.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-63.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-63.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-63.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-63.png> <a0,fr63>
 <animation1/Scott_Gaudi_anim-64.png, id=473, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-64.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-64.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-64.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-64.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-64.png> <a0,fr64>
 <animation1/Scott_Gaudi_anim-65.png, id=477, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-65.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-65.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-65.png  used on input line 97.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-65.png  used on input line 99.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-65.png> <a0,fr65> [5
 
 ]
-Overfull \hbox (7.19267pt too wide) detected at line 120
+Overfull \hbox (7.19267pt too wide) detected at line 122
 []
  []
 
 <../sim30/parallax/png/PAR-20-noaver.dat-.png, id=588, 462.528pt x 346.896pt>
 File: ../sim30/parallax/png/PAR-20-noaver.dat-.png Graphic file (type png)
 <use ../sim30/parallax/png/PAR-20-noaver.dat-.png>
-Package pdftex.def Info: ../sim30/parallax/png/PAR-20-noaver.dat-.png  used on input line 120.
+Package pdftex.def Info: ../sim30/parallax/png/PAR-20-noaver.dat-.png  used on input line 122.
 (pdftex.def)             Requested size: 153.64493pt x 115.23296pt.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <5> on input line 120.
+(Font)              <5> on input line 122.
 [6
 
  <../sim30/parallax/png/PAR-20-noaver.dat-.png>]
 <../sim30/xallarap/png/PAR-57-noaver.dat.1.png, id=624, 462.528pt x 346.896pt>
 File: ../sim30/xallarap/png/PAR-57-noaver.dat.1.png Graphic file (type png)
 <use ../sim30/xallarap/png/PAR-57-noaver.dat.1.png>
-Package pdftex.def Info: ../sim30/xallarap/png/PAR-57-noaver.dat.1.png  used on input line 136.
+Package pdftex.def Info: ../sim30/xallarap/png/PAR-57-noaver.dat.1.png  used on input line 138.
 (pdftex.def)             Requested size: 153.64493pt x 115.23296pt.
  [7
 
  <../sim30/xallarap/png/PAR-57-noaver.dat.1.png>]
 LaTeX Font Info:    Font shape `OT4/cmss/m/it' in size <10.95> not available
-(Font)              Font shape `OT4/cmss/m/sl' tried instead on input line 154.
+(Font)              Font shape `OT4/cmss/m/sl' tried instead on input line 156.
 <logoMM_crop_4_372x260.png, id=659, 67.2111pt x 46.9755pt>
 File: logoMM_crop_4_372x260.png Graphic file (type png)
 <use logoMM_crop_4_372x260.png>
-Package pdftex.def Info: logoMM_crop_4_372x260.png  used on input line 154.
+Package pdftex.def Info: logoMM_crop_4_372x260.png  used on input line 156.
 (pdftex.def)             Requested size: 153.64493pt x 107.39838pt.
  [8
 
@@ -1375,20 +1394,22 @@ Package pdftex.def Info: logoMM_crop_4_372x260.png  used on input line 154.
 <../sim30/parallax/png/PAR-57-noaver.dat+.png, id=723, 462.528pt x 346.896pt>
 File: ../sim30/parallax/png/PAR-57-noaver.dat+.png Graphic file (type png)
 <use ../sim30/parallax/png/PAR-57-noaver.dat+.png>
-Package pdftex.def Info: ../sim30/parallax/png/PAR-57-noaver.dat+.png  used on input line 185.
+Package pdftex.def Info: ../sim30/parallax/png/PAR-57-noaver.dat+.png  used on input line 187.
 (pdftex.def)             Requested size: 138.2795pt x 103.70966pt.
 File: ../sim30/xallarap/png/PAR-57-noaver.dat.1.png Graphic file (type png)
 <use ../sim30/xallarap/png/PAR-57-noaver.dat.1.png>
-Package pdftex.def Info: ../sim30/xallarap/png/PAR-57-noaver.dat.1.png  used on input line 185.
+Package pdftex.def Info: ../sim30/xallarap/png/PAR-57-noaver.dat.1.png  used on input line 187.
 (pdftex.def)             Requested size: 138.2795pt x 103.70966pt.
 <../sim30/paraxall/png/PAR-57-noaver.dat+.png, id=724, 462.528pt x 346.896pt>
 File: ../sim30/paraxall/png/PAR-57-noaver.dat+.png Graphic file (type png)
 <use ../sim30/paraxall/png/PAR-57-noaver.dat+.png>
-Package pdftex.def Info: ../sim30/paraxall/png/PAR-57-noaver.dat+.png  used on input line 185.
+Package pdftex.def Info: ../sim30/paraxall/png/PAR-57-noaver.dat+.png  used on input line 187.
 (pdftex.def)             Requested size: 138.2795pt x 103.70966pt.
  [10
 
  <../sim30/parallax/png/PAR-57-noaver.dat+.png> <../sim30/paraxall/png/PAR-57-noaver.dat+.png>] [11
+
+] [12
 
 ]
 \tf@nav=\write6
@@ -1405,18 +1426,18 @@ Package rerunfilecheck Info: File `prezka.out' has not changed.
 (rerunfilecheck)             Checksum: E1759DE44829FCC6CEFD53E2EEC57270;1334.
  ) 
 Here is how much of TeX's memory you used:
- 39580 strings out of 476091
- 953214 string characters out of 5794082
+ 39713 strings out of 476091
+ 955335 string characters out of 5794082
  1867330 words of memory out of 5000000
- 59131 multiletter control sequences out of 15000+600000
+ 59257 multiletter control sequences out of 15000+600000
  523957 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,19n,122p,784b,779s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plrm.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plsc.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plmi.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plms.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plme.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/pl/plex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plsy8.pfb>
-Output written on prezka.pdf (11 pages, 1463991 bytes).
+Output written on prezka.pdf (12 pages, 1471008 bytes).
 PDF statistics:
- 863 PDF objects out of 1000 (max. 8388607)
- 580 compressed objects within 6 object streams
- 30 named destinations out of 1000 (max. 500000)
+ 895 PDF objects out of 1000 (max. 8388607)
+ 610 compressed objects within 7 object streams
+ 32 named destinations out of 1000 (max. 500000)
  938 words of extra memory for PDF output out of 10000 (max. 10000000)
 
