@@ -1,7 +1,7 @@
 \beamer@sectionintoc {1}{Wprowadzenie do soczewkowania grawitacyjnego}{2}{0}{1}
 \beamer@subsectionintoc {1}{1}{Soczewkowanie grawitacyjne}{2}{0}{1}
-\beamer@subsectionintoc {1}{2}{Mikrosoczewkowanie}{5}{0}{1}
-\beamer@subsectionintoc {1}{3}{Odchylenia od modelu punktowego źródła i soczewki}{6}{0}{1}
-\beamer@sectionintoc {2}{Modelowanie mikrosoczewkowania}{8}{0}{2}
-\beamer@subsectionintoc {2}{1}{MulensModel}{8}{0}{2}
-\beamer@sectionintoc {3}{Rezultaty}{9}{0}{3}
+\beamer@subsectionintoc {1}{2}{Mikrosoczewkowanie}{4}{0}{1}
+\beamer@subsectionintoc {1}{3}{Odchylenia od modelu punktowego źródła i soczewki}{5}{0}{1}
+\beamer@sectionintoc {2}{Modelowanie mikrosoczewkowania}{7}{0}{2}
+\beamer@subsectionintoc {2}{1}{MulensModel}{7}{0}{2}
+\beamer@sectionintoc {3}{Rezultaty}{8}{0}{3}
