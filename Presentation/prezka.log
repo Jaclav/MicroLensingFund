@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.5.6)  13 JUN 2024 15:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.5.6)  13 JUN 2024 15:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1578,17 +1578,21 @@ Overfull \vbox (16.73904pt too high) detected at line 217
 ] [12
 
 ]
-LaTeX Font Info:    Font shape `OT4/cmss/m/it' in size <6> not available
+LaTeX Font Info:    Font shape `OT4/cmss/m/it' in size <8> not available
 (Font)              Font shape `OT4/cmss/m/sl' tried instead on input line 245.
 
 
-LaTeX Font Warning: Font shape `OT4/cmss/m/sc' in size <6> not available
+LaTeX Font Warning: Font shape `OT4/cmss/m/sc' in size <8> not available
 (Font)              Font shape `OT4/cmr/m/sc' tried instead on input line 245.
 
 LaTeX Font Info:    Trying to load font information for OT4+cmtt on input line 245.
 (/usr/share/texlive/texmf-dist/tex/latex/polski/ot4cmtt.fd
 File: ot4cmtt.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
-) [13
+)
+Overfull \vbox (2.2241pt too high) detected at line 245
+ []
+
+[13
 
 ]
 \tf@nav=\write7
@@ -1614,9 +1618,9 @@ Here is how much of TeX's memory you used:
  53254 multiletter control sequences out of 15000+600000
  524640 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,19n,122p,1188b,1794s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,19n,122p,1188b,1792s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/pltt.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plsc.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plrm.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plmi.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plms.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plme.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/pl/plcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/pltt8.pfb>
-Output written on prezka.pdf (13 pages, 1536112 bytes).
+Output written on prezka.pdf (13 pages, 1535915 bytes).
 PDF statistics:
  717 PDF objects out of 1000 (max. 8388607)
  425 compressed objects within 5 object streams

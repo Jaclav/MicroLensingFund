@@ -48,7 +48,6 @@
       \field{isbn}{9783030021221}
       \field{title}{Principles of Gravitational Lensing: Light Deflection as a Probe of Astrophysics and Cosmology}
       \field{year}{2018}
-      \true{nocite}
       \verb{doi}
       \verb 10.1007/978-3-030-02122-1
       \endverb
@@ -157,7 +156,6 @@
       \field{journaltitle}{Astronomy and Astrophysics Library}
       \field{title}{Gravitational Lenses}
       \field{year}{1992}
-      \true{nocite}
       \verb{doi}
       \verb 10.1007/978-3-662-03758-4
       \endverb
@@ -260,7 +258,6 @@
       \field{title}{{Black hole, neutron star and white dwarf candidates from microlensing with OGLE-III}}
       \field{volume}{458}
       \field{year}{2016}
-      \true{nocite}
       \field{pages}{3012\bibrangedash 3026}
       \range{pages}{15}
       \verb{doi}
@@ -499,7 +496,6 @@
       \field{title}{{OGLE-2017-BLG-0448Lb: A Low Mass{–}Ratio Wide-orbit Microlensing Planet?}}
       \field{volume}{167}
       \field{year}{2024}
-      \true{nocite}
       \field{pages}{162}
       \range{pages}{1}
       \verb{doi}

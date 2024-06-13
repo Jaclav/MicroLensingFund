@@ -1571,9 +1571,9 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/pl/plss8.tfm
 INPUT ./prezka.nav
 INPUT prezka.nav
 INPUT prezka.nav
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/pl/plss8.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/pl/plss12.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/pl/plss10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/pl/plss8.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/pl/plss8.tfm
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/pl/plr10.tfm
