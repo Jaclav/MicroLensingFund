@@ -1,0 +1,17 @@
+[1] Config.pm:306> INFO - This is Biber 2.18
+[1] Config.pm:309> INFO - Logfile is 'prezka.blg'
+[317] biber:340> INFO - === Thu Jun 13, 2024, 15:00:05
+[370] Biber.pm:418> INFO - Reading 'prezka.bcf'
+[544] Biber.pm:975> INFO - Using all citekeys in bib section 0
+[583] Biber.pm:4401> INFO - Processing section 0
+[622] Biber.pm:4592> INFO - Looking for bibtex file 'bibliography.bib' for section 0
+[625] bibtex.pm:1713> INFO - LaTeX decoding ...
+[673] bibtex.pm:1518> INFO - Found BibTeX data source 'bibliography.bib'
+[1057] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1057] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1057] Biber.pm:4221> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[1058] Biber.pm:4227> INFO - No sort tailoring available for locale 'en-US'
+[1087] bbl.pm:654> INFO - Writing 'prezka.bbl' with encoding 'UTF-8'
+[1123] bbl.pm:757> INFO - Output to prezka.bbl
+[1123] Biber.pm:130> WARN - BibTeX subsystem: /tmp/biber_tmp_UX5y/f4d088b3f9f145b5c3058da33afd57d4_88278.utf8, line 2, warning: 10 characters of junk seen at toplevel
+[1123] Biber.pm:132> INFO - WARNINGS: 1
