@@ -1,11 +1,11 @@
 # Fdb version 4
-["pdflatex"] 1718233103 "/home/franciszek/Documents/MicroLensingFund/Presentation/prezka.tex" "prezka.pdf" "prezka" 1718233118 0
+["pdflatex"] 1718238583 "/home/franciszek/Documents/MicroLensingFund/Presentation/prezka.tex" "prezka.pdf" "prezka" 1718238591 0
   "../sim30/parallax/png/PAR-06-noaver.dat-.png" 1717414035 150025 90b8de093a363541e1e04f2c354ba88a ""
   "../sim30/parallax/png/PAR-20-noaver.dat-.png" 1717414036 135185 094b405b2570b051dad5750ea4e36883 ""
   "../sim30/paraxall/png/PAR-06-noaver.dat-.png" 1717414037 179680 7c37600b10a4685ffe1e95a16b7eb548 ""
   "../sim30/xallarap/png/PAR-06-noaver.dat.10.png" 1717414040 167516 e3bfaf6bac7ba968f0ea3c7c3477518e ""
   "/etc/texmf/web2c/texmf.cnf" 1715022795 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/franciszek/Documents/MicroLensingFund/Presentation/prezka.tex" 1718233102 8104 3668c2d89fc800eb8c60ccf63d7dc652 ""
+  "/home/franciszek/Documents/MicroLensingFund/Presentation/prezka.tex" 1718238575 8128 a01d3170af1fe496a1e3ffd98f5493cc ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plme.enc" 1136849721 3126 59f33ff3e396436ebc36f4e7b444d5c4 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plmi.enc" 1136849721 2005 f094775651a1386335c158fb632529f1 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plms.enc" 1136849721 2468 3f9e2f3088bcf5b581dfc367d71e7d95 ""
@@ -374,10 +374,10 @@
   "animation1/Scott_Gaudi_anim-8.png" 1718057957 5539 5dcdc15f781995f5f84c5b35a8cffb18 ""
   "animation1/Scott_Gaudi_anim-9.png" 1718057957 5532 a2e4dc29ebc505da22e77b5a8e9134e1 ""
   "logoMM_crop_4_372x260.png" 1718120705 34946 9066fff72c35241dc89bc41cc0466db0 ""
-  "prezka.aux" 1718233118 4659 c54ce350db580c3f22f7c0854285f340 "pdflatex"
-  "prezka.nav" 1718233118 2546 b204e6369a091491d535ca3d7deaceca "pdflatex"
-  "prezka.out" 1718233118 1334 8dbc6aa7413d729565942e50b0658fc2 "pdflatex"
-  "prezka.tex" 1718233102 8104 3668c2d89fc800eb8c60ccf63d7dc652 ""
+  "prezka.aux" 1718238591 4659 c54ce350db580c3f22f7c0854285f340 "pdflatex"
+  "prezka.nav" 1718238591 2546 b204e6369a091491d535ca3d7deaceca "pdflatex"
+  "prezka.out" 1718238591 1334 8dbc6aa7413d729565942e50b0658fc2 "pdflatex"
+  "prezka.tex" 1718238575 8128 a01d3170af1fe496a1e3ffd98f5493cc ""
   (generated)
   "prezka.aux"
   "prezka.log"

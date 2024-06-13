@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.5.6)  13 JUN 2024 00:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.5.6)  13 JUN 2024 02:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1410,30 +1410,30 @@ Package pdftex.def Info: logoMM_crop_4_372x260.png  used on input line 147.
 
  <./logoMM_crop_4_372x260.png>] [8
 
+] [9
+
 ]
-<../sim30/parallax/png/PAR-06-noaver.dat-.png, id=527, 462.528pt x 346.896pt>
+<../sim30/parallax/png/PAR-06-noaver.dat-.png, id=537, 462.528pt x 346.896pt>
 File: ../sim30/parallax/png/PAR-06-noaver.dat-.png Graphic file (type png)
 <use ../sim30/parallax/png/PAR-06-noaver.dat-.png>
-Package pdftex.def Info: ../sim30/parallax/png/PAR-06-noaver.dat-.png  used on input line 193.
+Package pdftex.def Info: ../sim30/parallax/png/PAR-06-noaver.dat-.png  used on input line 213.
 (pdftex.def)             Requested size: 153.64493pt x 115.23296pt.
 File: ../sim30/xallarap/png/PAR-06-noaver.dat.10.png Graphic file (type png)
 <use ../sim30/xallarap/png/PAR-06-noaver.dat.10.png>
-Package pdftex.def Info: ../sim30/xallarap/png/PAR-06-noaver.dat.10.png  used on input line 193.
+Package pdftex.def Info: ../sim30/xallarap/png/PAR-06-noaver.dat.10.png  used on input line 213.
 (pdftex.def)             Requested size: 153.64493pt x 115.23296pt.
-<../sim30/paraxall/png/PAR-06-noaver.dat-.png, id=528, 462.528pt x 346.896pt>
+<../sim30/paraxall/png/PAR-06-noaver.dat-.png, id=538, 462.528pt x 346.896pt>
 File: ../sim30/paraxall/png/PAR-06-noaver.dat-.png Graphic file (type png)
 <use ../sim30/paraxall/png/PAR-06-noaver.dat-.png>
-Package pdftex.def Info: ../sim30/paraxall/png/PAR-06-noaver.dat-.png  used on input line 193.
+Package pdftex.def Info: ../sim30/paraxall/png/PAR-06-noaver.dat-.png  used on input line 213.
 (pdftex.def)             Requested size: 153.64493pt x 115.23296pt.
 
-Overfull \vbox (10.23907pt too high) detected at line 193
+Overfull \vbox (10.23907pt too high) detected at line 213
  []
 
-[9
+[10
 
- <../sim30/parallax/png/PAR-06-noaver.dat-.png> <../sim30/paraxall/png/PAR-06-noaver.dat-.png>] [10
-
-] [11
+ <../sim30/parallax/png/PAR-06-noaver.dat-.png> <../sim30/paraxall/png/PAR-06-noaver.dat-.png>] [11
 
 ] [12
 
@@ -1460,7 +1460,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  128i,19n,122p,784b,779s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plrm.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plsc.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plmi.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plms.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plme.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/pl/plex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plsy8.pfb>
-Output written on prezka.pdf (12 pages, 1504157 bytes).
+Output written on prezka.pdf (12 pages, 1504178 bytes).
 PDF statistics:
  649 PDF objects out of 1000 (max. 8388607)
  367 compressed objects within 4 object streams
