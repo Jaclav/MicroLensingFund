@@ -1,0 +1,512 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{Congdon2018}{book}{}
+      \name{author}{2}{}{%
+        {{hash=f8b4f7b5e0e011f63b54b020f6f3eeb6}{%
+           family={Congdon},
+           familyi={C\bibinitperiod},
+           given={Arthur\bibnamedelima B.},
+           giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=313c6dd6f660e4d631639d2cc552ed1a}{%
+           family={Keeton},
+           familyi={K\bibinitperiod},
+           given={Charles\bibnamedelima R.},
+           giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{e814ac207cec797b492ec8eecf9aaddb}
+      \strng{fullhash}{e814ac207cec797b492ec8eecf9aaddb}
+      \strng{bibnamehash}{e814ac207cec797b492ec8eecf9aaddb}
+      \strng{authorbibnamehash}{e814ac207cec797b492ec8eecf9aaddb}
+      \strng{authornamehash}{e814ac207cec797b492ec8eecf9aaddb}
+      \strng{authorfullhash}{e814ac207cec797b492ec8eecf9aaddb}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9783030021221}
+      \field{title}{Principles of Gravitational Lensing: Light Deflection as a Probe of Astrophysics and Cosmology}
+      \field{year}{2018}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.1007/978-3-030-02122-1
+      \endverb
+    \endentry
+    \entry{MassFunction_paper}{article}{}
+      \name{author}{2}{}{%
+        {{hash=60e641209e5932e51561352ba1adc2d3}{%
+           family={{Mróz}},
+           familyi={M\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=d09073c1ecccf7fcc1d649f971140d92}{%
+           family={{Wyrzykowski}},
+           familyi={W\bibinitperiod},
+           given={{Ł}.},
+           giveni={Ł\bibinitperiod}}}%
+      }
+      \strng{namehash}{901c50ea13232bb10d2d606078124d05}
+      \strng{fullhash}{901c50ea13232bb10d2d606078124d05}
+      \strng{bibnamehash}{901c50ea13232bb10d2d606078124d05}
+      \strng{authorbibnamehash}{901c50ea13232bb10d2d606078124d05}
+      \strng{authornamehash}{901c50ea13232bb10d2d606078124d05}
+      \strng{authorfullhash}{901c50ea13232bb10d2d606078124d05}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{\actaa}
+      \field{month}{6}
+      \field{title}{{Measuring the Mass Function of Isolated Stellar Remnants with Gravitational Microlensing I. Revisiting the OGLE-III Dark Lens Candidates}}
+      \field{volume}{71}
+      \field{year}{2021}
+      \true{nocite}
+      \field{pages}{89\bibrangedash 102}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.32023/0001-5237/71.2.1
+      \endverb
+    \endentry
+    \entry{MulensModel_paper}{article}{}
+      \name{author}{2}{}{%
+        {{hash=b9b65a6756c18962d6ee46e48b1888dd}{%
+           family={{Poleski}},
+           familyi={P\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=eb9c78f0788650ee9198782ab17e58af}{%
+           family={{Yee}},
+           familyi={Y\bibinitperiod},
+           given={J.\bibnamedelimi C.},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{6d654859f06e746eb8d89194301fb881}
+      \strng{fullhash}{6d654859f06e746eb8d89194301fb881}
+      \strng{bibnamehash}{6d654859f06e746eb8d89194301fb881}
+      \strng{authorbibnamehash}{6d654859f06e746eb8d89194301fb881}
+      \strng{authornamehash}{6d654859f06e746eb8d89194301fb881}
+      \strng{authorfullhash}{6d654859f06e746eb8d89194301fb881}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Astronomy and Computing}
+      \field{month}{1}
+      \field{title}{{Modeling microlensing events with MulensModel}}
+      \field{volume}{26}
+      \field{year}{2019}
+      \field{pages}{35}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.ascom.2018.11.001
+      \endverb
+    \endentry
+    \entry{Schneider1992}{book}{}
+      \name{author}{3}{}{%
+        {{hash=974c56abd961d7fc57e527b6b1225647}{%
+           family={Schneider},
+           familyi={S\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=6c065302ebdbf55105326e8631076c6c}{%
+           family={Ehlers},
+           familyi={E\bibinitperiod},
+           given={Jürgen},
+           giveni={J\bibinitperiod}}}%
+        {{hash=8a17e75c87d8eebf9a7b15812537b049}{%
+           family={Falco},
+           familyi={F\bibinitperiod},
+           given={Emilio\bibnamedelima E.},
+           giveni={E\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Berlin Heidelberg}%
+      }
+      \strng{namehash}{f245b0bce0409b0e39ea29c0eb9d032b}
+      \strng{fullhash}{f245b0bce0409b0e39ea29c0eb9d032b}
+      \strng{bibnamehash}{f245b0bce0409b0e39ea29c0eb9d032b}
+      \strng{authorbibnamehash}{f245b0bce0409b0e39ea29c0eb9d032b}
+      \strng{authornamehash}{f245b0bce0409b0e39ea29c0eb9d032b}
+      \strng{authorfullhash}{f245b0bce0409b0e39ea29c0eb9d032b}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9783662037584}
+      \field{journaltitle}{Astronomy and Astrophysics Library}
+      \field{title}{Gravitational Lenses}
+      \field{year}{1992}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.1007/978-3-662-03758-4
+      \endverb
+    \endentry
+    \entry{Basis_paper}{article}{}
+      \name{author}{16}{}{%
+        {{hash=d09073c1ecccf7fcc1d649f971140d92}{%
+           family={{Wyrzykowski}},
+           familyi={W\bibinitperiod},
+           given={{Ł}.},
+           giveni={Ł\bibinitperiod}}}%
+        {{hash=86817e976266ab2a922ee4e93c89f16f}{%
+           family={{Kostrzewa-Rutkowska}},
+           familyi={K\bibinitperiod},
+           given={Z.},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=42fabbb66642e256f1c07bd927f18934}{%
+           family={{Skowron}},
+           familyi={S\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=3d37f801c3fd00b373da7afe1d41d471}{%
+           family={{Rybicki}},
+           familyi={R\bibinitperiod},
+           given={K.\bibnamedelimi A.},
+           giveni={K\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=60e641209e5932e51561352ba1adc2d3}{%
+           family={{Mróz}},
+           familyi={M\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=08b99965deb7ce2fc554604096325dbc}{%
+           family={{Koz{ł}owski}},
+           familyi={K\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=ade5b18e290a983ab0e3d6cdf30da346}{%
+           family={{Udalski}},
+           familyi={U\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=f8860938f6a6f69b56c715c1cb762a90}{%
+           family={{Szymański}},
+           familyi={S\bibinitperiod},
+           given={M.\bibnamedelimi K.},
+           giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=9f20aca64d18f7c05374279bdc5fe2e9}{%
+           family={{Pietrzyński}},
+           familyi={P\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=b248d30b59bd0927edeb9712f8ade9a6}{%
+           family={{Soszyński}},
+           familyi={S\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod}}}%
+        {{hash=0e20f7c1c63421b1b058086828a001c0}{%
+           family={{Ulaczyk}},
+           familyi={U\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=5584353f26f287ec4ad784a6bdd4ccd3}{%
+           family={{Pietrukowicz}},
+           familyi={P\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=b9b65a6756c18962d6ee46e48b1888dd}{%
+           family={{Poleski}},
+           familyi={P\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=c9f2e4a33a98cc483f6d2b5f7e43b959}{%
+           family={{Pawlak}},
+           familyi={P\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=0901c514ed20c7921120838db8d032dd}{%
+           family={{I{ł}kiewicz}},
+           familyi={I\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=df9b93d1a7bd92f6cb88f94afb37148f}{%
+           family={{Rattenbury}},
+           familyi={R\bibinitperiod},
+           given={N.\bibnamedelimi J.},
+           giveni={N\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{e7af39ee6ceef15fc936934d6ebd4661}
+      \strng{fullhash}{3266b610b1ba0fbce35944b3b93c79cd}
+      \strng{bibnamehash}{e7af39ee6ceef15fc936934d6ebd4661}
+      \strng{authorbibnamehash}{e7af39ee6ceef15fc936934d6ebd4661}
+      \strng{authornamehash}{e7af39ee6ceef15fc936934d6ebd4661}
+      \strng{authorfullhash}{3266b610b1ba0fbce35944b3b93c79cd}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{\mnras}
+      \field{month}{5}
+      \field{title}{{Black hole, neutron star and white dwarf candidates from microlensing with OGLE-III}}
+      \field{volume}{458}
+      \field{year}{2016}
+      \true{nocite}
+      \field{pages}{3012\bibrangedash 3026}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1093/mnras/stw426
+      \endverb
+    \endentry
+    \entry{Xallarap_paper}{article}{}
+      \name{author}{44}{}{%
+        {{hash=7fb48ada60ffe7f99e50e745b47e9a54}{%
+           family={{Zhai}},
+           familyi={Z\bibinitperiod},
+           given={Ruocheng},
+           giveni={R\bibinitperiod}}}%
+        {{hash=fee6cc56646f1dbc90429df2d05cdeb0}{%
+           family={{Poleski}},
+           familyi={P\bibinitperiod},
+           given={Rados{ł}aw},
+           giveni={R\bibinitperiod}}}%
+        {{hash=2354561384786e4d75e5ffb5dc9aabed}{%
+           family={{Zang}},
+           familyi={Z\bibinitperiod},
+           given={Weicheng},
+           giveni={W\bibinitperiod}}}%
+        {{hash=bc35751bc582c8d1a9607d66ff781ab7}{%
+           family={{Jung}},
+           familyi={J\bibinitperiod},
+           given={Youn\bibnamedelima Kil},
+           giveni={Y\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=1efb96e1a1aec1feabb1f40de26b81e2}{%
+           family={{Udalski}},
+           familyi={U\bibinitperiod},
+           given={Andrzej},
+           giveni={A\bibinitperiod}}}%
+        {{hash=5760bc14879c30df052aa96d39b7b8c4}{%
+           family={{Kuang}},
+           familyi={K\bibinitperiod},
+           given={Renkun},
+           giveni={R\bibinitperiod}}}%
+        {{hash=07631856f6fe812e19c9cf5a1d71981b}{%
+           family={{Albrow}},
+           familyi={A\bibinitperiod},
+           given={Michael\bibnamedelima D.},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=bb0f0addc03d8f9bfb8cc0fb1f1bdf5a}{%
+           family={{Chung}},
+           familyi={C\bibinitperiod},
+           given={Sun-Ju},
+           giveni={S\bibinithyphendelim J\bibinitperiod}}}%
+        {{hash=84b58845303665d158a4e427fd98c383}{%
+           family={{Gould}},
+           familyi={G\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+        {{hash=ef26bad44126eb30abb45acb31334e4c}{%
+           family={{Han}},
+           familyi={H\bibinitperiod},
+           given={Cheongho},
+           giveni={C\bibinitperiod}}}%
+        {{hash=b88535200044d4377376dfc6d6dbfe2d}{%
+           family={{Hwang}},
+           familyi={H\bibinitperiod},
+           given={Kyu-Ha},
+           giveni={K\bibinithyphendelim H\bibinitperiod}}}%
+        {{hash=ef6ccd966f82632ee3709ad627a0f222}{%
+           family={{Ryu}},
+           familyi={R\bibinitperiod},
+           given={Yoon-Hyun},
+           giveni={Y\bibinithyphendelim H\bibinitperiod}}}%
+        {{hash=87295698ec8027afc223d3ffd6fecb66}{%
+           family={{Shin}},
+           familyi={S\bibinitperiod},
+           given={In-Gu},
+           giveni={I\bibinithyphendelim G\bibinitperiod}}}%
+        {{hash=79f3048d491934204014f91e5c5f7f9d}{%
+           family={{Shvartzvald}},
+           familyi={S\bibinitperiod},
+           given={Yossi},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=a5bd2041b34357361adff32284fafc2d}{%
+           family={{Yang}},
+           familyi={Y\bibinitperiod},
+           given={Hongjing},
+           giveni={H\bibinitperiod}}}%
+        {{hash=8f8e0e44b57a7a2a04e43f08627e150e}{%
+           family={{Yee}},
+           familyi={Y\bibinitperiod},
+           given={Jennifer\bibnamedelima C.},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=f2c69ea02bbce0dffb43519bb6bafb03}{%
+           family={{Cha}},
+           familyi={C\bibinitperiod},
+           given={Sang-Mok},
+           giveni={S\bibinithyphendelim M\bibinitperiod}}}%
+        {{hash=34c75480567af06a36e7dc5ad0686e03}{%
+           family={{Kim}},
+           familyi={K\bibinitperiod},
+           given={Dong-Jin},
+           giveni={D\bibinithyphendelim J\bibinitperiod}}}%
+        {{hash=5b7e74326fca5aefccd61a2c3107186c}{%
+           family={{Kim}},
+           familyi={K\bibinitperiod},
+           given={Hyoun-Woo},
+           giveni={H\bibinithyphendelim W\bibinitperiod}}}%
+        {{hash=9457c5e2678da490d826b934f34748b5}{%
+           family={{Kim}},
+           familyi={K\bibinitperiod},
+           given={Seung-Lee},
+           giveni={S\bibinithyphendelim L\bibinitperiod}}}%
+        {{hash=2412eb9f2c89535207f3dcbc22c06cd1}{%
+           family={{Lee}},
+           familyi={L\bibinitperiod},
+           given={Chung-Uk},
+           giveni={C\bibinithyphendelim U\bibinitperiod}}}%
+        {{hash=7a24f29e239e0e306547f2085337d687}{%
+           family={{Lee}},
+           familyi={L\bibinitperiod},
+           given={Dong-Joo},
+           giveni={D\bibinithyphendelim J\bibinitperiod}}}%
+        {{hash=3468ed18efe8314f6f12813bd9690fec}{%
+           family={{Lee}},
+           familyi={L\bibinitperiod},
+           given={Yongseok},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=612f52126c59fae8021d46f640ea2e9e}{%
+           family={{Park}},
+           familyi={P\bibinitperiod},
+           given={Byeong-Gon},
+           giveni={B\bibinithyphendelim G\bibinitperiod}}}%
+        {{hash=2d6d3e3b7d50e184a57d432e727b9b37}{%
+           family={{Pogge}},
+           familyi={P\bibinitperiod},
+           given={Richard\bibnamedelima W.},
+           giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=9467a2b5f78331d4eb2edd795c941c02}{%
+           family={{KMTNet Collaboration}},
+           familyi={K\bibinitperiod}}}%
+        {{hash=fbcdb4632ae56f8b14c7737630a32910}{%
+           family={{Skowron}},
+           familyi={S\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a4286662c5e82a7f27b22eef1613aba7}{%
+           family={{Szymański}},
+           familyi={S\bibinitperiod},
+           given={Micha{ł}\bibnamedelima K.},
+           giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=8786129796f0d343cca455f17fc1b253}{%
+           family={{Soszyński}},
+           familyi={S\bibinitperiod},
+           given={Igor},
+           giveni={I\bibinitperiod}}}%
+        {{hash=b43609c16471c2aab7004f8e1e30a6cf}{%
+           family={{Ulaczyk}},
+           familyi={U\bibinitperiod},
+           given={Krzysztof},
+           giveni={K\bibinitperiod}}}%
+        {{hash=f0065a8c48f22d4e05796996ee4a7349}{%
+           family={{Pietrukowicz}},
+           familyi={P\bibinitperiod},
+           given={Pawe{ł}},
+           giveni={P\bibinitperiod}}}%
+        {{hash=7b0e52a9b78af0ad8be0a6a6effe0609}{%
+           family={{Koz{ł}owski}},
+           familyi={K\bibinitperiod},
+           given={Szymon},
+           giveni={S\bibinitperiod}}}%
+        {{hash=86d19a3fe0eb8a345abed578e1363eaf}{%
+           family={{Mróz}},
+           familyi={M\bibinitperiod},
+           given={Przemek},
+           giveni={P\bibinitperiod}}}%
+        {{hash=32e70957ba927ee5575393d04b4b706e}{%
+           family={{Rybicki}},
+           familyi={R\bibinitperiod},
+           given={Krzysztof\bibnamedelima A.},
+           giveni={K\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=0900c3b22d4667cd55aacee4fa539225}{%
+           family={{Iwanek}},
+           familyi={I\bibinitperiod},
+           given={Patryk},
+           giveni={P\bibinitperiod}}}%
+        {{hash=4db76f64a840bf3b0f2aa792f47bea17}{%
+           family={{Wrona}},
+           familyi={W\bibinitperiod},
+           given={Marcin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=2039fed110733e26c6bbfc2d90e1ebb3}{%
+           family={{Gromadzki}},
+           familyi={G\bibinitperiod},
+           given={Mariusz},
+           giveni={M\bibinitperiod}}}%
+        {{hash=d3fd10e6053fa602ca172e14ce91d19d}{%
+           family={{OGLE Collaboration}},
+           familyi={O\bibinitperiod}}}%
+        {{hash=cac419d8ada4c95ef073d319b91d713f}{%
+           family={{Wang}},
+           familyi={W\bibinitperiod},
+           given={Hanyue},
+           giveni={H\bibinitperiod}}}%
+        {{hash=e2a6e837624abc7a1452d94a8c6da7d3}{%
+           family={{Mao}},
+           familyi={M\bibinitperiod},
+           given={Shude},
+           giveni={S\bibinitperiod}}}%
+        {{hash=086553b647d5d81fff169e3cd33c2ed8}{%
+           family={{Zhang}},
+           familyi={Z\bibinitperiod},
+           given={Jiyuan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=1f66e903f21e31ab40bf7e2b35e8dde6}{%
+           family={{Qian}},
+           familyi={Q\bibinitperiod},
+           given={Qiyue},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=fc4852b16d7781e961ea767c9873c2c0}{%
+           family={{Zhu}},
+           familyi={Z\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod}}}%
+        {{hash=9ffa911f67bad45230ed457f2818f8ca}{%
+           family={{MAP Collaboration}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{6877a54489e51484b86abec39a5b6e87}
+      \strng{fullhash}{7bf79ce2aa021792ec2c3d4006c2829a}
+      \strng{bibnamehash}{6877a54489e51484b86abec39a5b6e87}
+      \strng{authorbibnamehash}{6877a54489e51484b86abec39a5b6e87}
+      \strng{authornamehash}{6877a54489e51484b86abec39a5b6e87}
+      \strng{authorfullhash}{7bf79ce2aa021792ec2c3d4006c2829a}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{\aj}
+      \field{month}{4}
+      \field{title}{{OGLE-2017-BLG-0448Lb: A Low Mass{–}Ratio Wide-orbit Microlensing Planet?}}
+      \field{volume}{167}
+      \field{year}{2024}
+      \true{nocite}
+      \field{pages}{162}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3847/1538-3881/ad284f
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

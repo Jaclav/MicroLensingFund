@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.5.6)  13 JUN 2024 02:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.5.6)  13 JUN 2024 15:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -580,110 +580,7 @@ LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
 (Font)                  OML/cmm/b/it --> OML/plm/b/it on input line 362.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
 (Font)                  OMS/cmsy/b/n --> OMS/plsy/b/n on input line 362.
-) (/usr/share/texlive/texmf-dist/tex/latex/pgfplots/pgfplots.sty (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
-Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
- (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
-Package: pgf 2023-01-15 v3.1.10 (3.1.10)
- (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
-File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfnodeparttextbox=\box76
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
-File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
-Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
-\pgf@nodesepstart=\dimen294
-\pgf@nodesepend=\dimen295
-) (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
-Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
-)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
-Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
-\pgffor@iter=\dimen296
-\pgffor@skip=\dimen297
-\pgffor@stack=\toks45
-\pgffor@toks=\toks46
-)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
-Package: tikz 2023-01-15 v3.1.10 (3.1.10)
- (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
-File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@plot@mark@count=\count334
-\pgfplotmarksize=\dimen298
-)
-\tikz@lastx=\dimen299
-\tikz@lasty=\dimen300
-\tikz@lastxsaved=\dimen301
-\tikz@lastysaved=\dimen302
-\tikz@lastmovetox=\dimen303
-\tikz@lastmovetoy=\dimen304
-\tikzleveldistance=\dimen305
-\tikzsiblingdistance=\dimen306
-\tikz@figbox=\box77
-\tikz@figbox@bg=\box78
-\tikz@tempbox=\box79
-\tikz@tempbox@bg=\box80
-\tikztreelevel=\count335
-\tikznumberofchildren=\count336
-\tikznumberofcurrentchild=\count337
-\tikz@fig@count=\count338
- (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
-File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfmatrixcurrentrow=\count339
-\pgfmatrixcurrentcolumn=\count340
-\pgf@matrix@numberofcolumns=\count341
-)
-\tikz@expandcount=\count342
- (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
-File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
-\t@pgfplots@toka=\toks47
-\t@pgfplots@tokb=\toks48
-\t@pgfplots@tokc=\toks49
-\pgfplots@tmpa=\dimen307
-\c@pgfplots@coordindex=\count343
-\c@pgfplots@scanlineindex=\count344
- (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_loader.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex)
-Package pgfplots: loading complementary utilities for your pgf version...
-\t@pgf@toka=\toks50
-\t@pgf@tokb=\toks51
-\t@pgf@tokc=\toks52
-(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_pgfutil-common-lists.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructure.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructureext.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray.code.tex
-\c@pgfplotsarray@tmp=\count345
-) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatrix.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshared.code.tex
-\c@pgfplotstable@counta=\count346
-\t@pgfplotstable@a=\toks53
-) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count347
- (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.pgfsys-pdftex.def))) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.code.tex))) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
-\pgfdecoratedcompleteddistance=\dimen308
-\pgfdecoratedremainingdistance=\dimen309
-\pgfdecoratedinputsegmentcompleteddistance=\dimen310
-\pgfdecoratedinputsegmentremainingdistance=\dimen311
-\pgf@decorate@distancetomove=\dimen312
-\pgf@decorate@repeatstate=\count348
-\pgfdecorationsegmentamplitude=\dimen313
-\pgfdecorationsegmentlength=\dimen314
-)
-\tikz@lib@dec@box=\box81
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathmorphing.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathreplacing.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.contourlua.code.tex)
-\pgfplots@numplots=\count349
-\pgfplots@xmin@reg=\dimen315
-\pgfplots@xmax@reg=\dimen316
-\pgfplots@ymin@reg=\dimen317
-\pgfplots@ymax@reg=\dimen318
-\pgfplots@zmin@reg=\dimen319
-\pgfplots@zmax@reg=\dimen320
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryplotmarks.code.tex
-File: tikzlibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
- (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
-File: pgflibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))) (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
-Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
-\symrsfs=\mathgroup6
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryarrows.code.tex
-File: tikzlibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
- (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
-File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\arrowsize=\dimen321
-)) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerthemeWarsaw.sty (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerinnerthemerounded.sty) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemeshadow.sty (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemesplit.sty)) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamercolorthemeorchid.sty) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamercolorthemewhale.sty)) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerfontthemeserif.sty) (/usr/share/texlive/texmf-dist/tex/latex/animate/animate.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerthemeWarsaw.sty (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerinnerthemerounded.sty) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemeshadow.sty (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemesplit.sty)) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamercolorthemeorchid.sty) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamercolorthemewhale.sty)) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerfontthemeserif.sty) (/usr/share/texlive/texmf-dist/tex/latex/animate/animate.sty
 Package: animate 2022/09/15 PDF & SVG animations from files and inline graphics
  (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
@@ -691,25 +588,25 @@ Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 Package: ifdraft 2016/05/16 v1.4 Detect class options draft and final (HO)
 ) (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count350
-\calc@Bcount=\count351
-\calc@Adimen=\dimen322
-\calc@Bdimen=\dimen323
+\calc@Acount=\count334
+\calc@Bcount=\count335
+\calc@Adimen=\dimen294
+\calc@Bdimen=\dimen295
 \calc@Askip=\skip65
 \calc@Bskip=\skip66
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count352
+\calc@Ccount=\count336
 \calc@Cskip=\skip67
 ) (/usr/share/texlive/texmf-dist/tex/latex/media9/pdfbase.sty
 Package: pdfbase 2022/08/04 v0.55 driver independent access to low-level PDF features
  (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count353
-\l__pdf_internal_box=\box82
+\l__color_backend_stack_int=\count337
+\l__pdf_internal_box=\box76
 )
-\g_pbs_page_int=\count354
-\g_pbs_oc_int=\count355
+\g_pbs_page_int=\count338
+\g_pbs_oc_int=\count339
 ) (/usr/share/texlive/texmf-dist/tex/latex/zref/zref-abspage.sty
 Package: zref-abspage 2022-04-07 v2.34 Module abspage for zref (HO)
  (/usr/share/texlive/texmf-dist/tex/latex/zref/zref-base.sty
@@ -718,142 +615,372 @@ Package zref Info: New property list: main on input line 767.
 Package zref Info: New property: default on input line 768.
 Package zref Info: New property: page on input line 769.
 )
-\c@abspage=\count356
+\c@abspage=\count340
 Package zref Info: New property: abspage on input line 65.
 ) (/usr/share/texlive/texmf-dist/tex/latex/ocgx2/ocgbase.sty
 Package: ocgbase 2022/08/04 v0.22 support package for ocgx2.sty
-\g_ocgbase_nd_int=\count357
+\g_ocgbase_nd_int=\count341
 )
-\@anim@box=\box83
-\@anim@measbox=\box84
-\@anim@tmpdima=\dimen324
-\@anim@tmpdimb=\dimen325
-\@anim@num=\count358
-\@anim@curframe=\count359
-\@anim@curframe@zb=\count360
-\@anim@resizeflags=\count361
-\@anim@skipfram=\count362
-\@anim@mulframecnt=\count363
+\@anim@box=\box77
+\@anim@measbox=\box78
+\@anim@tmpdima=\dimen296
+\@anim@tmpdimb=\dimen297
+\@anim@num=\count342
+\@anim@curframe=\count343
+\@anim@curframe@zb=\count344
+\@anim@resizeflags=\count345
+\@anim@skipfram=\count346
+\@anim@mulframecnt=\count347
 \@anim@@tmlnfile=\read3
-\@anim@tmpcnt=\count364
-\c@@anim@ltxcnt=\count365
-\@anim@curlayer=\count366
-\@anim@lineno=\count367
-\@anim@curfield=\count368
-\@anim@@resizeflags=\count369
+\@anim@tmpcnt=\count348
+\c@@anim@ltxcnt=\count349
+\@anim@curlayer=\count350
+\@anim@lineno=\count351
+\@anim@curfield=\count352
+\@anim@@resizeflags=\count353
 ) (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2022/03/01 v3.6b Customizing captions (AR)
  (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
-\caption@tempdima=\dimen326
-\captionmargin=\dimen327
-\caption@leftmargin=\dimen328
-\caption@rightmargin=\dimen329
-\caption@width=\dimen330
-\caption@indent=\dimen331
-\caption@parindent=\dimen332
-\caption@hangindent=\dimen333
+\caption@tempdima=\dimen298
+\captionmargin=\dimen299
+\caption@leftmargin=\dimen300
+\caption@rightmargin=\dimen301
+\caption@width=\dimen302
+\caption@indent=\dimen303
+\caption@parindent=\dimen304
+\caption@hangindent=\dimen305
 Package caption Info: beamer document class detected.
  (/usr/share/texlive/texmf-dist/tex/latex/caption/caption-beamer.sto
 File: caption-beamer.sto 2022/01/06 v2.0c Adaption of the caption package to the beamer document classes (AR)
 ))
-\c@caption@flags=\count370
-\c@continuedfloat=\count371
+\c@caption@flags=\count354
+\c@continuedfloat=\count355
 Package caption Info: hyperref package is loaded.
 Package caption Info: Hyperref support is turned off
 (caption)             because hyperref has stopped early.
 ) (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen334
-\lightrulewidth=\dimen335
-\cmidrulewidth=\dimen336
-\belowrulesep=\dimen337
-\belowbottomsep=\dimen338
-\aboverulesep=\dimen339
-\abovetopsep=\dimen340
-\cmidrulesep=\dimen341
-\cmidrulekern=\dimen342
-\defaultaddspace=\dimen343
-\@cmidla=\count372
-\@cmidlb=\count373
-\@aboverulesep=\dimen344
-\@belowrulesep=\dimen345
-\@thisruleclass=\count374
-\@lastruleclass=\count375
-\@thisrulewidth=\dimen346
+\heavyrulewidth=\dimen306
+\lightrulewidth=\dimen307
+\cmidrulewidth=\dimen308
+\belowrulesep=\dimen309
+\belowbottomsep=\dimen310
+\aboverulesep=\dimen311
+\abovetopsep=\dimen312
+\cmidrulesep=\dimen313
+\cmidrulekern=\dimen314
+\defaultaddspace=\dimen315
+\@cmidla=\count356
+\@cmidlb=\count357
+\@aboverulesep=\dimen316
+\@belowrulesep=\dimen317
+\@thisruleclass=\count358
+\@lastruleclass=\count359
+\@thisrulewidth=\dimen318
 ) (/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
  (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
 Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
-\col@sep=\dimen347
-\ar@mcellbox=\box85
-\extrarowheight=\dimen348
-\NC@list=\toks54
+\col@sep=\dimen319
+\ar@mcellbox=\box79
+\extrarowheight=\dimen320
+\NC@list=\toks45
 \extratabsurround=\skip68
 \backup@length=\skip69
-\ar@cellbox=\box86
+\ar@cellbox=\box80
 )
-\TX@col@width=\dimen349
-\TX@old@table=\dimen350
-\TX@old@col=\dimen351
-\TX@target=\dimen352
-\TX@delta=\dimen353
-\TX@cols=\count376
-\TX@ftn=\toks55
+\TX@col@width=\dimen321
+\TX@old@table=\dimen322
+\TX@old@col=\dimen323
+\TX@target=\dimen324
+\TX@delta=\dimen325
+\TX@cols=\count360
+\TX@ftn=\toks46
 ) (/usr/share/texlive/texmf-dist/tex/latex/overpic/overpic.sty
 Package: overpic 2020/02/22 1.3 picture overlays (RN)
  (/usr/share/texlive/texmf-dist/tex/latex/eepic/epic.sty
 Enhancements to Picture Environment. Version 1.2 - Released June 1, 1986
-\@@multicnt=\count377
-\d@lta=\count378
-\@delta=\dimen354
-\@@delta=\dimen355
-\@gridcnt=\count379
-\@joinkind=\count380
-\@dotgap=\dimen356
-\@ddotgap=\dimen357
-\@x@diff=\count381
-\@y@diff=\count382
-\x@diff=\dimen358
-\y@diff=\dimen359
-\@dotbox=\box87
-\num@segments=\count383
-\num@segmentsi=\count384
+\@@multicnt=\count361
+\d@lta=\count362
+\@delta=\dimen326
+\@@delta=\dimen327
+\@gridcnt=\count363
+\@joinkind=\count364
+\@dotgap=\dimen328
+\@ddotgap=\dimen329
+\@x@diff=\count365
+\@y@diff=\count366
+\x@diff=\dimen330
+\y@diff=\dimen331
+\@dotbox=\box81
+\num@segments=\count367
+\num@segmentsi=\count368
 \@datafile=\read4
 )
-\OVP@box=\box88
+\OVP@box=\box82
+) (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2022/07/12 v3.18b programmable bibliographies (PK/MW)
+ (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count369
+ (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+\c@tabx@nest=\count370
+\c@listtotal=\count371
+\c@listcount=\count372
+\c@liststart=\count373
+\c@liststop=\count374
+\c@citecount=\count375
+\c@citetotal=\count376
+\c@multicitecount=\count377
+\c@multicitetotal=\count378
+\c@instcount=\count379
+\c@maxnames=\count380
+\c@minnames=\count381
+\c@maxitems=\count382
+\c@minitems=\count383
+\c@citecounter=\count384
+\c@maxcitecounter=\count385
+\c@savedcitecounter=\count386
+\c@uniquelist=\count387
+\c@uniquename=\count388
+\c@refsection=\count389
+\c@refsegment=\count390
+\c@maxextratitle=\count391
+\c@maxextratitleyear=\count392
+\c@maxextraname=\count393
+\c@maxextradate=\count394
+\c@maxextraalpha=\count395
+\c@abbrvpenalty=\count396
+\c@highnamepenalty=\count397
+\c@lownamepenalty=\count398
+\c@maxparens=\count399
+\c@parenlevel=\count400
+\blx@tempcnta=\count401
+\blx@tempcntb=\count402
+\blx@tempcntc=\count403
+\c@blx@maxsection=\count404
+\blx@maxsegment@0=\count405
+\blx@notetype=\count406
+\blx@parenlevel@text=\count407
+\blx@parenlevel@foot=\count408
+\blx@sectionciteorder@0=\count409
+\blx@sectionciteorderinternal@0=\count410
+\blx@entrysetcounter=\count411
+\blx@biblioinstance=\count412
+\labelnumberwidth=\skip70
+\labelalphawidth=\skip71
+\biblabelsep=\skip72
+\bibitemsep=\skip73
+\bibnamesep=\skip74
+\bibinitsep=\skip75
+\bibparsep=\skip76
+\bibhang=\skip77
+\blx@bcfin=\read5
+\blx@bcfout=\write5
+\blx@langwohyphens=\language87
+\c@mincomprange=\count413
+\c@maxcomprange=\count414
+\c@mincompwidth=\count415
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+ (/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-dm.def
+File: blx-dm.def 2022/07/12 v3.18b biblatex localization (PK/MW)
 )
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count416
+\c@savedafterword=\count417
+\c@annotator=\count418
+\c@savedannotator=\count419
+\c@author=\count420
+\c@savedauthor=\count421
+\c@bookauthor=\count422
+\c@savedbookauthor=\count423
+\c@commentator=\count424
+\c@savedcommentator=\count425
+\c@editor=\count426
+\c@savededitor=\count427
+\c@editora=\count428
+\c@savededitora=\count429
+\c@editorb=\count430
+\c@savededitorb=\count431
+\c@editorc=\count432
+\c@savededitorc=\count433
+\c@foreword=\count434
+\c@savedforeword=\count435
+\c@holder=\count436
+\c@savedholder=\count437
+\c@introduction=\count438
+\c@savedintroduction=\count439
+\c@namea=\count440
+\c@savednamea=\count441
+\c@nameb=\count442
+\c@savednameb=\count443
+\c@namec=\count444
+\c@savednamec=\count445
+\c@translator=\count446
+\c@savedtranslator=\count447
+\c@shortauthor=\count448
+\c@savedshortauthor=\count449
+\c@shorteditor=\count450
+\c@savedshorteditor=\count451
+\c@labelname=\count452
+\c@savedlabelname=\count453
+\c@institution=\count454
+\c@savedinstitution=\count455
+\c@lista=\count456
+\c@savedlista=\count457
+\c@listb=\count458
+\c@savedlistb=\count459
+\c@listc=\count460
+\c@savedlistc=\count461
+\c@listd=\count462
+\c@savedlistd=\count463
+\c@liste=\count464
+\c@savedliste=\count465
+\c@listf=\count466
+\c@savedlistf=\count467
+\c@location=\count468
+\c@savedlocation=\count469
+\c@organization=\count470
+\c@savedorganization=\count471
+\c@origlocation=\count472
+\c@savedoriglocation=\count473
+\c@origpublisher=\count474
+\c@savedorigpublisher=\count475
+\c@publisher=\count476
+\c@savedpublisher=\count477
+\c@language=\count478
+\c@savedlanguage=\count479
+\c@origlanguage=\count480
+\c@savedoriglanguage=\count481
+\c@pageref=\count482
+\c@savedpageref=\count483
+\shorthandwidth=\skip78
+\shortjournalwidth=\skip79
+\shortserieswidth=\skip80
+\shorttitlewidth=\skip81
+\shortauthorwidth=\skip82
+\shorteditorwidth=\skip83
+\locallabelnumberwidth=\skip84
+\locallabelalphawidth=\skip85
+\localshorthandwidth=\skip86
+\localshortjournalwidth=\skip87
+\localshortserieswidth=\skip88
+\localshorttitlewidth=\skip89
+\localshortauthorwidth=\skip90
+\localshorteditorwidth=\skip91
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+ (/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2022/07/12 v3.18b biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+ (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
+File: biblatex.def 2022/07/12 v3.18b biblatex compatibility (PK/MW)
+\c@textcitecount=\count484
+\c@textcitetotal=\count485
+\c@textcitemaxnames=\count486
+\c@biburlbigbreakpenalty=\count487
+\c@biburlbreakpenalty=\count488
+\c@biburlnumpenalty=\count489
+\c@biburlucpenalty=\count490
+\c@biburllcpenalty=\count491
+\biburlbigskip=\muskip18
+\biburlnumskip=\muskip19
+\biburlucskip=\muskip20
+\biburllcskip=\muskip21
+\c@smartand=\count492
+)
+Package biblatex Info: Trying to load natbib compatibility...
+Package biblatex Info: ... file 'blx-natbib.def' found.
+ (/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-natbib.def
+File: blx-natbib.def 2022/07/12 v3.18b biblatex compatibility (PK/MW)
+Package biblatex Info: Delimiter 'nameyeardelim' in context '' already defined, overwriting.
+)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+ (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+File: numeric.bbx 2022/07/12 v3.18b biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+ (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2022/07/12 v3.18b biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count493
+\c@bbx:relatedtotal=\count494
+))
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
+ (/usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
+File: numeric.cbx 2022/07/12 v3.18b biblatex citation style (PK/MW)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+ (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Document encoding is UTF8 ....
+ (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2023-01-16 L3 programming layer (loader) 
+)
+Package biblatex Info: ... and expl3
+(biblatex)             2023-01-16 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+ (/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2023-01-16 L3 Experimental document command parser
+)
+Package: blx-case-expl3 2022/07/12 v3.18b expl3 case changing code for biblatex
+)) (./aas_macros.sty)
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 24.
+(hyperref)                removing `\\' on input line 28.
 
+\@quotelevel=\count495
+\@quotereset=\count496
 (./prezka.aux)
 \openout1 = `prezka.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 27.
-LaTeX Font Info:    Trying to load font information for OT4+cmr on input line 27.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 31.
+LaTeX Font Info:    Trying to load font information for OT4+cmr on input line 31.
  (/usr/share/texlive/texmf-dist/tex/latex/polski/ot4cmr.fd
 File: ot4cmr.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
-LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    ... okay on input line 31.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -891,27 +1018,27 @@ LaTeX Font Info:    ... okay on input line 27.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count385
-\scratchdimen=\dimen360
-\scratchbox=\box89
-\nofMPsegments=\count386
-\nofMParguments=\count387
-\everyMPshowfont=\toks56
-\MPscratchCnt=\count388
-\MPscratchDim=\dimen361
-\MPnumerator=\count389
-\makeMPintoPDFobject=\count390
-\everyMPtoPDFconversion=\toks57
+\scratchcounter=\count497
+\scratchdimen=\dimen332
+\scratchbox=\box83
+\nofMPsegments=\count498
+\nofMParguments=\count499
+\everyMPshowfont=\toks47
+\MPscratchCnt=\count500
+\MPscratchDim=\dimen333
+\MPnumerator=\count501
+\makeMPintoPDFobject=\count502
+\everyMPtoPDFconversion=\toks48
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 27.
+Package hyperref Info: Link coloring OFF on input line 31.
  (./prezka.out) (./prezka.out)
-\@outlinefile=\write5
-\openout5 = `prezka.out'.
+\@outlinefile=\write6
+\openout6 = `prezka.out'.
 
  (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
@@ -926,485 +1053,498 @@ Dictionary: translator-numbers-dictionary, Language: English
 ) (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-Package pgfplots notification 'compat/show suggested version=true': you might benefit from \pgfplotsset{compat=1.18} (current compat level: 1.15).
-
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-(./prezka.nav) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+ (/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2022/07/12 v3.18b biblatex localization (PK/MW)
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout5 = `prezka.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'prezka.bbl' found.
+ (./prezka.bbl)
+Package biblatex Info: Reference section=0 on input line 31.
+Package biblatex Info: Reference segment=0 on input line 31.
+ (./prezka.nav) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-LaTeX Font Info:    Trying to load font information for OML+plm on input line 54.
+LaTeX Font Info:    Trying to load font information for OML+plm on input line 58.
  (/usr/share/texlive/texmf-dist/tex/latex/polski/omlplm.fd
 File: omlplm.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
-LaTeX Font Info:    Trying to load font information for OMS+plsy on input line 54.
+LaTeX Font Info:    Trying to load font information for OMS+plsy on input line 58.
  (/usr/share/texlive/texmf-dist/tex/latex/polski/omsplsy.fd
 File: omsplsy.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
-LaTeX Font Info:    Trying to load font information for OMX+plex on input line 54.
+LaTeX Font Info:    Trying to load font information for OMX+plex on input line 58.
  (/usr/share/texlive/texmf-dist/tex/latex/polski/omxplex.fd
 File: omxplex.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <10.95> on input line 54.
+(Font)              <10.95> on input line 58.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <8> on input line 54.
+(Font)              <8> on input line 58.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <6> on input line 54.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 54.
+(Font)              <6> on input line 58.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 58.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 54.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 58.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 54.
- (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
-File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-)
-<A_Horseshoe_Einstein_Ring_from_Hubble.jpeg, id=83, 763.35187pt x 504.38437pt>
+<A_Horseshoe_Einstein_Ring_from_Hubble.jpeg, id=89, 763.35187pt x 504.38437pt>
 File: A_Horseshoe_Einstein_Ring_from_Hubble.jpeg Graphic file (type jpg)
 <use A_Horseshoe_Einstein_Ring_from_Hubble.jpeg>
-Package pdftex.def Info: A_Horseshoe_Einstein_Ring_from_Hubble.jpeg  used on input line 54.
+Package pdftex.def Info: A_Horseshoe_Einstein_Ring_from_Hubble.jpeg  used on input line 58.
 (pdftex.def)             Requested size: 153.64493pt x 101.52156pt.
  [2
 
  <./A_Horseshoe_Einstein_Ring_from_Hubble.jpeg>]
-<Screenshot from 2024-06-10 13-41-41.png, id=100, 1429.34pt x 789.95125pt>
+<Screenshot from 2024-06-10 13-41-41.png, id=107, 1429.34pt x 789.95125pt>
 File: Screenshot from 2024-06-10 13-41-41.png Graphic file (type png)
 <use Screenshot from 2024-06-10 13-41-41.png>
-Package pdftex.def Info: Screenshot from 2024-06-10 13-41-41.png  used on input line 67.
+Package pdftex.def Info: Screenshot from 2024-06-10 13-41-41.png  used on input line 71.
 (pdftex.def)             Requested size: 184.3758pt x 101.88966pt.
  [3
 
  <./Screenshot from 2024-06-10 13-41-41.png>]
-<animation1/Scott_Gaudi_anim-0.png, id=121, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-0.png, id=135, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-0.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-0.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-0.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-0.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-0.png> <a0,fr0>
-<animation1/Scott_Gaudi_anim-1.png, id=125, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-1.png, id=139, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-1.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-1.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-1.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-1.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-1.png> <a0,fr1>
-<animation1/Scott_Gaudi_anim-2.png, id=129, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-2.png, id=143, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-2.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-2.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-2.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-2.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-2.png> <a0,fr2>
-<animation1/Scott_Gaudi_anim-3.png, id=133, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-3.png, id=147, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-3.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-3.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-3.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-3.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-3.png> <a0,fr3>
-<animation1/Scott_Gaudi_anim-4.png, id=137, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-4.png, id=151, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-4.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-4.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-4.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-4.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-4.png> <a0,fr4>
-<animation1/Scott_Gaudi_anim-5.png, id=141, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-5.png, id=155, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-5.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-5.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-5.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-5.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-5.png> <a0,fr5>
-<animation1/Scott_Gaudi_anim-6.png, id=145, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-6.png, id=159, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-6.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-6.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-6.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-6.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-6.png> <a0,fr6>
-<animation1/Scott_Gaudi_anim-7.png, id=149, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-7.png, id=163, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-7.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-7.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-7.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-7.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-7.png> <a0,fr7>
-<animation1/Scott_Gaudi_anim-8.png, id=153, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-8.png, id=167, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-8.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-8.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-8.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-8.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-8.png> <a0,fr8>
-<animation1/Scott_Gaudi_anim-9.png, id=157, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-9.png, id=171, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-9.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-9.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-9.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-9.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-9.png> <a0,fr9>
-<animation1/Scott_Gaudi_anim-10.png, id=161, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-10.png, id=175, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-10.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-10.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-10.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-10.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-10.png> <a0,fr10>
-<animation1/Scott_Gaudi_anim-11.png, id=165, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-11.png, id=179, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-11.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-11.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-11.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-11.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-11.png> <a0,fr11>
-<animation1/Scott_Gaudi_anim-12.png, id=169, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-12.png, id=183, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-12.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-12.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-12.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-12.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-12.png> <a0,fr12>
-<animation1/Scott_Gaudi_anim-13.png, id=173, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-13.png, id=187, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-13.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-13.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-13.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-13.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-13.png> <a0,fr13>
-<animation1/Scott_Gaudi_anim-14.png, id=177, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-14.png, id=191, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-14.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-14.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-14.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-14.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-14.png> <a0,fr14>
-<animation1/Scott_Gaudi_anim-15.png, id=181, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-15.png, id=195, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-15.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-15.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-15.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-15.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-15.png> <a0,fr15>
-<animation1/Scott_Gaudi_anim-16.png, id=185, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-16.png, id=199, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-16.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-16.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-16.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-16.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-16.png> <a0,fr16>
-<animation1/Scott_Gaudi_anim-17.png, id=189, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-17.png, id=203, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-17.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-17.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-17.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-17.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-17.png> <a0,fr17>
-<animation1/Scott_Gaudi_anim-18.png, id=193, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-18.png, id=207, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-18.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-18.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-18.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-18.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-18.png> <a0,fr18>
-<animation1/Scott_Gaudi_anim-19.png, id=197, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-19.png, id=211, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-19.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-19.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-19.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-19.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-19.png> <a0,fr19>
-<animation1/Scott_Gaudi_anim-20.png, id=201, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-20.png, id=215, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-20.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-20.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-20.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-20.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-20.png> <a0,fr20>
-<animation1/Scott_Gaudi_anim-21.png, id=205, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-21.png, id=219, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-21.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-21.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-21.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-21.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-21.png> <a0,fr21>
-<animation1/Scott_Gaudi_anim-22.png, id=209, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-22.png, id=223, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-22.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-22.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-22.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-22.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-22.png> <a0,fr22>
-<animation1/Scott_Gaudi_anim-23.png, id=213, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-23.png, id=227, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-23.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-23.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-23.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-23.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-23.png> <a0,fr23>
-<animation1/Scott_Gaudi_anim-24.png, id=217, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-24.png, id=231, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-24.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-24.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-24.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-24.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-24.png> <a0,fr24>
-<animation1/Scott_Gaudi_anim-25.png, id=221, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-25.png, id=235, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-25.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-25.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-25.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-25.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-25.png> <a0,fr25>
-<animation1/Scott_Gaudi_anim-26.png, id=225, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-26.png, id=239, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-26.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-26.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-26.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-26.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-26.png> <a0,fr26>
-<animation1/Scott_Gaudi_anim-27.png, id=229, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-27.png, id=243, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-27.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-27.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-27.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-27.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-27.png> <a0,fr27>
-<animation1/Scott_Gaudi_anim-28.png, id=233, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-28.png, id=247, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-28.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-28.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-28.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-28.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-28.png> <a0,fr28>
-<animation1/Scott_Gaudi_anim-29.png, id=237, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-29.png, id=251, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-29.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-29.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-29.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-29.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-29.png> <a0,fr29>
-<animation1/Scott_Gaudi_anim-30.png, id=241, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-30.png, id=255, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-30.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-30.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-30.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-30.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-30.png> <a0,fr30>
-<animation1/Scott_Gaudi_anim-31.png, id=245, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-31.png, id=259, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-31.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-31.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-31.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-31.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-31.png> <a0,fr31>
-<animation1/Scott_Gaudi_anim-32.png, id=249, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-32.png, id=264, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-32.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-32.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-32.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-32.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-32.png> <a0,fr32>
-<animation1/Scott_Gaudi_anim-33.png, id=253, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-33.png, id=268, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-33.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-33.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-33.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-33.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-33.png> <a0,fr33>
-<animation1/Scott_Gaudi_anim-34.png, id=257, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-34.png, id=272, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-34.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-34.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-34.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-34.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-34.png> <a0,fr34>
-<animation1/Scott_Gaudi_anim-35.png, id=261, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-35.png, id=276, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-35.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-35.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-35.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-35.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-35.png> <a0,fr35>
-<animation1/Scott_Gaudi_anim-36.png, id=265, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-36.png, id=280, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-36.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-36.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-36.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-36.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-36.png> <a0,fr36>
-<animation1/Scott_Gaudi_anim-37.png, id=269, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-37.png, id=284, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-37.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-37.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-37.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-37.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-37.png> <a0,fr37>
-<animation1/Scott_Gaudi_anim-38.png, id=273, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-38.png, id=288, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-38.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-38.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-38.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-38.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-38.png> <a0,fr38>
-<animation1/Scott_Gaudi_anim-39.png, id=278, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-39.png, id=292, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-39.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-39.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-39.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-39.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-39.png> <a0,fr39>
-<animation1/Scott_Gaudi_anim-40.png, id=282, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-40.png, id=296, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-40.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-40.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-40.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-40.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-40.png> <a0,fr40>
-<animation1/Scott_Gaudi_anim-41.png, id=286, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-41.png, id=300, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-41.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-41.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-41.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-41.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-41.png> <a0,fr41>
-<animation1/Scott_Gaudi_anim-42.png, id=290, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-42.png, id=304, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-42.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-42.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-42.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-42.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-42.png> <a0,fr42>
-<animation1/Scott_Gaudi_anim-43.png, id=294, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-43.png, id=308, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-43.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-43.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-43.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-43.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-43.png> <a0,fr43>
-<animation1/Scott_Gaudi_anim-44.png, id=298, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-44.png, id=312, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-44.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-44.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-44.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-44.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-44.png> <a0,fr44>
-<animation1/Scott_Gaudi_anim-45.png, id=302, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-45.png, id=316, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-45.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-45.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-45.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-45.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-45.png> <a0,fr45>
-<animation1/Scott_Gaudi_anim-46.png, id=306, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-46.png, id=320, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-46.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-46.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-46.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-46.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-46.png> <a0,fr46>
-<animation1/Scott_Gaudi_anim-47.png, id=310, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-47.png, id=324, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-47.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-47.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-47.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-47.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-47.png> <a0,fr47>
-<animation1/Scott_Gaudi_anim-48.png, id=314, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-48.png, id=328, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-48.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-48.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-48.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-48.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-48.png> <a0,fr48>
-<animation1/Scott_Gaudi_anim-49.png, id=318, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-49.png, id=332, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-49.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-49.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-49.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-49.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-49.png> <a0,fr49>
-<animation1/Scott_Gaudi_anim-50.png, id=322, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-50.png, id=336, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-50.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-50.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-50.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-50.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-50.png> <a0,fr50>
-<animation1/Scott_Gaudi_anim-51.png, id=326, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-51.png, id=340, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-51.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-51.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-51.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-51.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-51.png> <a0,fr51>
-<animation1/Scott_Gaudi_anim-52.png, id=330, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-52.png, id=344, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-52.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-52.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-52.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-52.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-52.png> <a0,fr52>
-<animation1/Scott_Gaudi_anim-53.png, id=334, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-53.png, id=348, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-53.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-53.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-53.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-53.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-53.png> <a0,fr53>
-<animation1/Scott_Gaudi_anim-54.png, id=338, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-54.png, id=352, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-54.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-54.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-54.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-54.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-54.png> <a0,fr54>
-<animation1/Scott_Gaudi_anim-55.png, id=342, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-55.png, id=356, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-55.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-55.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-55.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-55.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-55.png> <a0,fr55>
-<animation1/Scott_Gaudi_anim-56.png, id=346, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-56.png, id=360, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-56.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-56.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-56.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-56.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-56.png> <a0,fr56>
-<animation1/Scott_Gaudi_anim-57.png, id=350, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-57.png, id=364, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-57.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-57.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-57.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-57.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-57.png> <a0,fr57>
-<animation1/Scott_Gaudi_anim-58.png, id=354, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-58.png, id=368, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-58.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-58.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-58.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-58.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-58.png> <a0,fr58>
-<animation1/Scott_Gaudi_anim-59.png, id=358, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-59.png, id=372, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-59.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-59.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-59.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-59.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-59.png> <a0,fr59>
-<animation1/Scott_Gaudi_anim-60.png, id=362, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-60.png, id=376, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-60.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-60.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-60.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-60.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-60.png> <a0,fr60>
-<animation1/Scott_Gaudi_anim-61.png, id=366, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-61.png, id=380, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-61.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-61.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-61.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-61.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-61.png> <a0,fr61>
-<animation1/Scott_Gaudi_anim-62.png, id=370, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-62.png, id=384, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-62.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-62.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-62.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-62.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-62.png> <a0,fr62>
-<animation1/Scott_Gaudi_anim-63.png, id=374, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-63.png, id=388, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-63.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-63.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-63.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-63.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-63.png> <a0,fr63>
-<animation1/Scott_Gaudi_anim-64.png, id=378, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-64.png, id=392, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-64.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-64.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-64.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-64.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
  <./animation1/Scott_Gaudi_anim-64.png> <a0,fr64>
-<animation1/Scott_Gaudi_anim-65.png, id=382, 602.25pt x 602.25pt>
+<animation1/Scott_Gaudi_anim-65.png, id=396, 602.25pt x 602.25pt>
 File: animation1/Scott_Gaudi_anim-65.png Graphic file (type png)
 <use animation1/Scott_Gaudi_anim-65.png>
-Package pdftex.def Info: animation1/Scott_Gaudi_anim-65.png  used on input line 90.
+Package pdftex.def Info: animation1/Scott_Gaudi_anim-65.png  used on input line 94.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
- <./animation1/Scott_Gaudi_anim-65.png> <a0,fr65> [4
+ <./animation1/Scott_Gaudi_anim-65.png> <a0,fr65>
+Overfull \vbox (22.88261pt too high) detected at line 94
+ []
+
+[4
 
 ]
-Overfull \hbox (7.19267pt too wide) detected at line 113
+Overfull \hbox (7.19267pt too wide) detected at line 117
 []
  []
 
-<../sim30/parallax/png/PAR-20-noaver.dat-.png, id=473, 462.528pt x 346.896pt>
+<../sim30/parallax/png/PAR-20-noaver.dat-.png, id=488, 462.528pt x 346.896pt>
 File: ../sim30/parallax/png/PAR-20-noaver.dat-.png Graphic file (type png)
 <use ../sim30/parallax/png/PAR-20-noaver.dat-.png>
-Package pdftex.def Info: ../sim30/parallax/png/PAR-20-noaver.dat-.png  used on input line 113.
+Package pdftex.def Info: ../sim30/parallax/png/PAR-20-noaver.dat-.png  used on input line 117.
 (pdftex.def)             Requested size: 153.64493pt x 115.23296pt.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <5> on input line 113.
+(Font)              <5> on input line 117.
 [5
 
  <../sim30/parallax/png/PAR-20-noaver.dat-.png>]
-<../sim30/xallarap/png/PAR-06-noaver.dat.10.png, id=489, 462.528pt x 346.896pt>
+<../sim30/xallarap/png/PAR-06-noaver.dat.10.png, id=506, 462.528pt x 346.896pt>
 File: ../sim30/xallarap/png/PAR-06-noaver.dat.10.png Graphic file (type png)
 <use ../sim30/xallarap/png/PAR-06-noaver.dat.10.png>
-Package pdftex.def Info: ../sim30/xallarap/png/PAR-06-noaver.dat.10.png  used on input line 129.
+Package pdftex.def Info: ../sim30/xallarap/png/PAR-06-noaver.dat.10.png  used on input line 133.
 (pdftex.def)             Requested size: 153.64493pt x 115.23296pt.
  [6
 
  <../sim30/xallarap/png/PAR-06-noaver.dat.10.png>]
 LaTeX Font Info:    Font shape `OT4/cmss/m/it' in size <10.95> not available
-(Font)              Font shape `OT4/cmss/m/sl' tried instead on input line 147.
-<logoMM_crop_4_372x260.png, id=504, 67.2111pt x 46.9755pt>
+(Font)              Font shape `OT4/cmss/m/sl' tried instead on input line 151.
+<logoMM_crop_4_372x260.png, id=524, 67.2111pt x 46.9755pt>
 File: logoMM_crop_4_372x260.png Graphic file (type png)
 <use logoMM_crop_4_372x260.png>
-Package pdftex.def Info: logoMM_crop_4_372x260.png  used on input line 147.
+Package pdftex.def Info: logoMM_crop_4_372x260.png  used on input line 151.
 (pdftex.def)             Requested size: 153.64493pt x 107.39838pt.
  [7
 
@@ -1413,22 +1553,22 @@ Package pdftex.def Info: logoMM_crop_4_372x260.png  used on input line 147.
 ] [9
 
 ]
-<../sim30/parallax/png/PAR-06-noaver.dat-.png, id=537, 462.528pt x 346.896pt>
+<../sim30/parallax/png/PAR-06-noaver.dat-.png, id=563, 462.528pt x 346.896pt>
 File: ../sim30/parallax/png/PAR-06-noaver.dat-.png Graphic file (type png)
 <use ../sim30/parallax/png/PAR-06-noaver.dat-.png>
-Package pdftex.def Info: ../sim30/parallax/png/PAR-06-noaver.dat-.png  used on input line 213.
+Package pdftex.def Info: ../sim30/parallax/png/PAR-06-noaver.dat-.png  used on input line 217.
 (pdftex.def)             Requested size: 153.64493pt x 115.23296pt.
 File: ../sim30/xallarap/png/PAR-06-noaver.dat.10.png Graphic file (type png)
 <use ../sim30/xallarap/png/PAR-06-noaver.dat.10.png>
-Package pdftex.def Info: ../sim30/xallarap/png/PAR-06-noaver.dat.10.png  used on input line 213.
+Package pdftex.def Info: ../sim30/xallarap/png/PAR-06-noaver.dat.10.png  used on input line 217.
 (pdftex.def)             Requested size: 153.64493pt x 115.23296pt.
-<../sim30/paraxall/png/PAR-06-noaver.dat-.png, id=538, 462.528pt x 346.896pt>
+<../sim30/paraxall/png/PAR-06-noaver.dat-.png, id=564, 462.528pt x 346.896pt>
 File: ../sim30/paraxall/png/PAR-06-noaver.dat-.png Graphic file (type png)
 <use ../sim30/paraxall/png/PAR-06-noaver.dat-.png>
-Package pdftex.def Info: ../sim30/paraxall/png/PAR-06-noaver.dat-.png  used on input line 213.
+Package pdftex.def Info: ../sim30/paraxall/png/PAR-06-noaver.dat-.png  used on input line 217.
 (pdftex.def)             Requested size: 153.64493pt x 115.23296pt.
 
-Overfull \vbox (10.23907pt too high) detected at line 213
+Overfull \vbox (16.73904pt too high) detected at line 217
  []
 
 [10
@@ -1438,32 +1578,48 @@ Overfull \vbox (10.23907pt too high) detected at line 213
 ] [12
 
 ]
-\tf@nav=\write6
-\openout6 = `prezka.nav'.
+LaTeX Font Info:    Font shape `OT4/cmss/m/it' in size <6> not available
+(Font)              Font shape `OT4/cmss/m/sl' tried instead on input line 245.
 
-\tf@toc=\write7
-\openout7 = `prezka.toc'.
 
-\tf@snm=\write8
-\openout8 = `prezka.snm'.
+LaTeX Font Warning: Font shape `OT4/cmss/m/sc' in size <6> not available
+(Font)              Font shape `OT4/cmr/m/sc' tried instead on input line 245.
+
+LaTeX Font Info:    Trying to load font information for OT4+cmtt on input line 245.
+(/usr/share/texlive/texmf-dist/tex/latex/polski/ot4cmtt.fd
+File: ot4cmtt.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
+) [13
+
+]
+\tf@nav=\write7
+\openout7 = `prezka.nav'.
+
+\tf@toc=\write8
+\openout8 = `prezka.toc'.
+
+\tf@snm=\write9
+\openout9 = `prezka.snm'.
 
  (./prezka.aux)
 Package rerunfilecheck Info: File `prezka.out' has not changed.
-(rerunfilecheck)             Checksum: 8DBC6AA7413D729565942E50B0658FC2;1334.
+(rerunfilecheck)             Checksum: 3D68EBDA7CC04896D3B879375E819177;1427.
+Package logreq Info: Writing requests to 'prezka.run.xml'.
+\openout1 = `prezka.run.xml'.
+
  ) 
 Here is how much of TeX's memory you used:
- 39875 strings out of 476091
- 957805 string characters out of 5794082
- 1865330 words of memory out of 5000000
- 59411 multiletter control sequences out of 15000+600000
- 523957 words of font info for 67 fonts, out of 8000000 for 9000
+ 33598 strings out of 476091
+ 679440 string characters out of 5794082
+ 1867330 words of memory out of 5000000
+ 53254 multiletter control sequences out of 15000+600000
+ 524640 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,19n,122p,784b,779s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plrm.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plsc.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plmi.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plms.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plme.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/pl/plex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plsy8.pfb>
-Output written on prezka.pdf (12 pages, 1504178 bytes).
+ 128i,19n,122p,1188b,1794s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/pltt.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plsc.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plrm.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plmi.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plms.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plme.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/pl/plcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/pltt8.pfb>
+Output written on prezka.pdf (13 pages, 1536112 bytes).
 PDF statistics:
- 649 PDF objects out of 1000 (max. 8388607)
- 367 compressed objects within 4 object streams
- 32 named destinations out of 1000 (max. 500000)
- 938 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 717 PDF objects out of 1000 (max. 8388607)
+ 425 compressed objects within 5 object streams
+ 41 named destinations out of 1000 (max. 500000)
+ 946 words of extra memory for PDF output out of 10000 (max. 10000000)
 

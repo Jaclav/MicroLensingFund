@@ -3,20 +3,24 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{polski}
-\usepackage{pgfplots}
-\pgfplotsset{compat=1.15}
-\usepackage{mathrsfs}
-\usetikzlibrary{arrows}
+
 \usetheme{Warsaw}
 \usefonttheme[onlymath]{serif}
+
 \usepackage{animate}
 \usepackage{caption}
+
 \usepackage{graphicx}
 \usepackage{booktabs}
 \usepackage{tabularx}
 \usepackage{overpic}
 \renewcommand{\arraystretch}{1.5}
 \beamertemplatenavigationsymbolsempty
+
+\usepackage[backend=biber,natbib=true]{biblatex}
+\usepackage{aas_macros}
+\addbibresource{bibliography.bib}
+\renewcommand*{\bibfont}{\tiny}
 
 \title{Być albo nie być czarną dziurą}
 \author[F. Hansdorfer \and J. Winiarczyk \and Ł. Parda
@@ -58,11 +62,11 @@
         \centering
         \includegraphics[width=0.6\textwidth]{Screenshot from 2024-06-10 13-41-41.png}
         \caption*{\tiny{Principles of Gravitational
-                Lensing, Arthur B. Congdon, Charles R. Keeton}}
+                Lensing, Arthur B. Congdon, Charles R. Keeton\cite{Congdon2018}}}
     \end{figure}
     \textbf{Równanie soczewki}:
     \[\beta = \theta - \alpha(\theta)\]
-    Dla punktowej masy mamy:
+    Dla punktowej masy mamy\cite{Schneider1992}:
     \[\theta_E = \sqrt{\frac{4GM}{c^2}\frac{D_s-D_l}{D_s D_l}}\]
 \end{frame}
 
@@ -73,7 +77,7 @@
             \[M \sim M_{\odot}\]
             Na przykład dla $D_s = 8 \text{ kpc}$, $D_l = 4 \text{ kpc}$, $M = 1 M_{\odot}$:
             \[\theta_E = 0.32 \text{ mas}\]
-            Dla $u = \frac{\beta}{\theta_E}$ wzmocnienie źródła określa wzór:
+            Dla $u = \frac{\beta}{\theta_E}$ wzmocnienie źródła określa wzór\cite{Schneider1992}:
             \[A(u) = \frac{u^2 + 2}{u \sqrt{u^2 + 4}}\]
             $u$ możemy natomiast obliczyć znając $u_0, t_0, t_E$:
             \[u(t) = \sqrt{u_0^2 + \left(\frac{t-t_0}{t_E}\right)^2}\]
@@ -116,7 +120,7 @@
     \begin{columns}
         \begin{column}{0.5\linewidth}
             Jeżeli źródło jest częścią układu podwójnego, to jego ruch orbitalny może mieć znaczący wpływ na parametr $u(t)$.
-            Ten feonomen nosi nazwę xallarap (Parallax od tyłu).
+            Ten feonomen nosi nazwę xallarap (Parallax od tyłu)\cite{Xallarap_paper}.
         \end{column}
         \begin{column}{0.5\linewidth}
             \begin{figure}
@@ -133,7 +137,7 @@
 \begin{frame}
     \begin{columns}
         \begin{column}{0.5\linewidth}
-            \emph{Mulens Model}, to paczka służąca do modelowania zjawisk mikrosoczewkowania.
+            \emph{Mulens Model}\cite{MulensModel_paper}, to paczka służąca do modelowania zjawisk mikrosoczewkowania.
             Do dopasowania krzywej, używany jest algorytm MCMC (Próbkowanie Monte Carlo łańcuchami Markowa).
 
         \end{column}
@@ -149,7 +153,7 @@
 \section{Rezultaty}
 
 \begin{frame}{Opis projektu}
-    59 zjawisk wykazujących dominujący wpływ paralaksy(?), z przeglądu OGLE-III (Wyrzykowski et al. 2016).
+    59 zjawisk wykazujących dominujący wpływ paralaksy(?), z przeglądu OGLE-III (Wyrzykowski et al. 2016)\cite{Basis_paper}.
 
     \bigskip
     \bigskip
@@ -215,17 +219,16 @@
 \begin{frame}{Wyniki}
     \begin{tabularx}{\linewidth}{X r r r}
         \toprule
-        Nazwa                                 & $t_0$                           & $u_0$                      & $t_E$                       \\
+        Nazwa  & $t_0$                           & $u_0$                      & $t_E$                       \\
         \midrule
         PAR-06 & $2454179.345_{-5.95 } ^{+7.17}$ & $-0.722_{-0.05 } ^{+0.05}$ & $203.621_{-7.99 } ^{+8.04}$ \\
         \midrule\midrule
-        Nazwa                                 & $\xi_{period}$                  & $\pi_{EN}$                 & $\pi_{EE}$                  \\
+        Nazwa  & $\xi_{period}$                  & $\pi_{EN}$                 & $\pi_{EE}$                  \\
         \midrule
         PAR-06 & $392.271_{-3.58 } ^{+3.46}$     & $-0.014_{-0.02 } ^{+0.02}$ & $-0.035_{-0.01 } ^{+0.01}$  \\
         \bottomrule
     \end{tabularx}
 \end{frame}
-
 
 \begin{frame}{Dalsze kontynuacje badań}
     \begin{itemize}
@@ -233,6 +236,12 @@
         \item Ponowne wymodelowanie zjawisk, w celu zmniejszenia niepewności
         \item Zbadanie wpływu innych efektów na model (np. soczewka potrójna)
     \end{itemize}
+\end{frame}
+
+\begin{frame}{Bibliografia}
+
+    \printbibliography
+    \nocite{*}
 \end{frame}
 
 \end{document}
