@@ -11,41 +11,43 @@
 \headcommand {\beamer@framepages {3}{3}}
 \headcommand {\beamer@subsectionpages {2}{3}}
 \headcommand {\beamer@subsectionentry {0}{1}{2}{4}{Mikrosoczewkowanie}}
-\headcommand {\slideentry {1}{2}{1}{4/4}{Mikrosoczewkowanie}{0}}
-\headcommand {\beamer@framepages {4}{4}}
-\headcommand {\beamer@subsectionpages {4}{4}}
-\headcommand {\beamer@subsectionentry {0}{1}{3}{5}{Odchylenia od modelu punktowego źródła i soczewki}}
-\headcommand {\slideentry {1}{3}{1}{5/5}{Odchylenia od modelu punktowego źródła i soczewki}{0}}
-\headcommand {\beamer@framepages {5}{5}}
-\headcommand {\slideentry {1}{3}{2}{6/6}{Odchylenia od modelu punktowego źródła i soczewki}{0}}
-\headcommand {\beamer@framepages {6}{6}}
-\headcommand {\beamer@sectionpages {2}{6}}
-\headcommand {\beamer@subsectionpages {5}{6}}
-\headcommand {\sectionentry {2}{Modelowanie mikrosoczewkowania}{7}{Modelowanie mikrosoczewkowania}{0}}
-\headcommand {\beamer@subsectionpages {7}{6}}
-\headcommand {\beamer@subsectionentry {0}{2}{1}{7}{MulensModel}}
-\headcommand {\slideentry {2}{1}{1}{7/7}{MulensModel}{0}}
-\headcommand {\beamer@framepages {7}{7}}
-\headcommand {\beamer@sectionpages {7}{7}}
-\headcommand {\beamer@subsectionpages {7}{7}}
-\headcommand {\sectionentry {3}{Rezultaty}{8}{Rezultaty}{0}}
-\headcommand {\slideentry {3}{0}{1}{8/8}{}{0}}
-\headcommand {\beamer@framepages {8}{8}}
-\headcommand {\slideentry {3}{0}{2}{9/9}{}{0}}
-\headcommand {\beamer@framepages {9}{9}}
-\headcommand {\slideentry {3}{0}{3}{10/10}{}{0}}
-\headcommand {\beamer@framepages {10}{10}}
-\headcommand {\slideentry {3}{0}{4}{11/11}{}{0}}
-\headcommand {\beamer@framepages {11}{11}}
-\headcommand {\slideentry {3}{0}{5}{12/12}{}{0}}
-\headcommand {\beamer@framepages {12}{12}}
-\headcommand {\beamer@sectionpages {8}{12}}
-\headcommand {\beamer@subsectionpages {8}{12}}
-\headcommand {\sectionentry {4}{References}{13}{References}{0}}
-\headcommand {\slideentry {4}{0}{0}{13/13}{}{0}}
-\headcommand {\beamer@framepages {13}{13}}
-\headcommand {\beamer@partpages {1}{13}}
-\headcommand {\beamer@subsectionpages {8}{13}}
-\headcommand {\beamer@sectionpages {8}{13}}
-\headcommand {\beamer@documentpages {13}}
-\headcommand {\gdef \inserttotalframenumber {13}}
+\headcommand {\slideentry {1}{2}{1}{4/19}{Mikrosoczewkowanie}{0}}
+\headcommand {\beamer@framepages {4}{19}}
+\headcommand {\beamer@subsectionpages {4}{19}}
+\headcommand {\beamer@subsectionentry {0}{1}{3}{20}{Odchylenia od modelu punktowego źródła i soczewki}}
+\headcommand {\slideentry {1}{3}{1}{20/20}{Odchylenia od modelu punktowego źródła i soczewki}{0}}
+\headcommand {\beamer@framepages {20}{20}}
+\headcommand {\slideentry {1}{3}{2}{21/21}{Odchylenia od modelu punktowego źródła i soczewki}{0}}
+\headcommand {\beamer@framepages {21}{21}}
+\headcommand {\beamer@sectionpages {2}{21}}
+\headcommand {\beamer@subsectionpages {20}{21}}
+\headcommand {\sectionentry {2}{Modelowanie mikrosoczewkowania}{22}{Modelowanie mikrosoczewkowania}{0}}
+\headcommand {\beamer@subsectionpages {22}{21}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{22}{MulensModel}}
+\headcommand {\slideentry {2}{1}{1}{22/22}{MulensModel}{0}}
+\headcommand {\beamer@framepages {22}{22}}
+\headcommand {\beamer@sectionpages {22}{22}}
+\headcommand {\beamer@subsectionpages {22}{22}}
+\headcommand {\sectionentry {3}{Rezultaty}{23}{Rezultaty}{0}}
+\headcommand {\slideentry {3}{0}{1}{23/23}{}{0}}
+\headcommand {\beamer@framepages {23}{23}}
+\headcommand {\slideentry {3}{0}{2}{24/24}{}{0}}
+\headcommand {\beamer@framepages {24}{24}}
+\headcommand {\slideentry {3}{0}{3}{25/25}{}{0}}
+\headcommand {\beamer@framepages {25}{25}}
+\headcommand {\slideentry {3}{0}{4}{26/26}{}{0}}
+\headcommand {\beamer@framepages {26}{26}}
+\headcommand {\slideentry {3}{0}{5}{27/27}{}{0}}
+\headcommand {\beamer@framepages {27}{27}}
+\headcommand {\slideentry {3}{0}{6}{28/28}{}{0}}
+\headcommand {\beamer@framepages {28}{28}}
+\headcommand {\beamer@sectionpages {23}{28}}
+\headcommand {\beamer@subsectionpages {23}{28}}
+\headcommand {\sectionentry {4}{References}{29}{References}{0}}
+\headcommand {\slideentry {4}{0}{0}{29/29}{}{0}}
+\headcommand {\beamer@framepages {29}{29}}
+\headcommand {\beamer@partpages {1}{29}}
+\headcommand {\beamer@subsectionpages {23}{29}}
+\headcommand {\beamer@sectionpages {23}{29}}
+\headcommand {\beamer@documentpages {29}}
+\headcommand {\gdef \inserttotalframenumber {14}}
