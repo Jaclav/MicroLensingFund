@@ -19,5 +19,6 @@ fitting_parameters:
 plots:
     best model:
         file: sim30/nothing/png/PAR-01-noaver.dat.png
+        time range: 2452800 2454700
     trajectory:
         file: sim30/nothing/png/PAR-01-noaver.dat.trj.png

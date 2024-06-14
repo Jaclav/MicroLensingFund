@@ -1,22 +1,22 @@
 # Fdb version 4
-["biber prezka"] 0 "prezka.bcf" "prezka.bbl" "prezka" 1718364181 -1
+["biber prezka"] 0 "prezka.bcf" "prezka.bbl" "prezka" 1718366867 -1
   "./bibliography.bib" 1718283574 3296 1ea5454c10e1395d53d308c5e9736471 ""
-  "prezka.bcf" 1718364181 108834 6e4a4e77e80832e27859bdcd4239f803 "pdflatex"
+  "prezka.bcf" 1718366867 108834 6e4a4e77e80832e27859bdcd4239f803 "pdflatex"
   (generated)
   "prezka.bbl"
   "prezka.blg"
   (rewritten before read)
-["pdflatex"] 1718364173 "/home/franciszek/Documents/MicroLensingFund/Presentation/prezka.tex" "prezka.pdf" "prezka" 1718364181 0
-  "../sim30/nothing/png/PAR-01-noaver.dat.png" 1718363953 90016 24079c1fcf32d12d5e9398da554a3ffc ""
-  "../sim30/nothing/png/PAR-01-noaver.dat.trj.png" 1718363954 36583 8b9c53ef5a4c7655188605f55cb72429 ""
+["pdflatex"] 1718366859 "/home/franciszek/Documents/MicroLensingFund/Presentation/prezka.tex" "prezka.pdf" "prezka" 1718366867 0
+  "../sim30/nothing/png/PAR-01-noaver.dat.png" 1718366358 143703 2e01862d6f355b8defda2256e3a856fa ""
+  "../sim30/nothing/png/PAR-01-noaver.dat.trj.png" 1718366358 44112 8c588a0bb921b42047aa4a65c0af4458 ""
   "../sim30/parallax/png/PAR-01-noaver.dat-.png" 1717414035 144112 48fb6aa3cf84009ede7bb6e32401f157 ""
   "../sim30/parallax/png/PAR-01-noaver.dat-.trj.png" 1717414035 80052 ea6956640a1da8b728fded78750c0a85 ""
-  "../sim30/parallax/png/PAR-06-noaver.dat-.png" 1717414035 150025 90b8de093a363541e1e04f2c354ba88a ""
+  "../sim30/parallax/png/PAR-06-noaver.dat-.png" 1718366834 161724 a85bd9646c2261c1a7c82c2111b42ebf ""
   "../sim30/parallax/png/PAR-20-noaver.dat-.png" 1717414036 135185 094b405b2570b051dad5750ea4e36883 ""
   "../sim30/paraxall/png/PAR-06-noaver.dat-.png" 1717414037 179680 7c37600b10a4685ffe1e95a16b7eb548 ""
   "../sim30/xallarap/png/PAR-06-noaver.dat.10.png" 1717414040 167516 e3bfaf6bac7ba968f0ea3c7c3477518e ""
   "/etc/texmf/web2c/texmf.cnf" 1715022795 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/franciszek/Documents/MicroLensingFund/Presentation/prezka.tex" 1718364173 11484 b916a2884743cfb795af9888d2dd773b ""
+  "/home/franciszek/Documents/MicroLensingFund/Presentation/prezka.tex" 1718366859 11484 b916a2884743cfb795af9888d2dd773b ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plme.enc" 1136849721 3126 59f33ff3e396436ebc36f4e7b444d5c4 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plmi.enc" 1136849721 2005 f094775651a1386335c158fb632529f1 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plms.enc" 1136849721 2468 3f9e2f3088bcf5b581dfc367d71e7d95 ""
@@ -302,12 +302,12 @@
   "animation1/Scott_Gaudi_anim-60.png" 1718057958 6045 7404d0c5d404b68b449289f5e19a637e ""
   "animation1/Scott_Gaudi_anim-65.png" 1718057958 5950 736005e80251bb0ba89441c7787cac23 ""
   "logoMM_crop_4_372x260.png" 1718120705 34946 9066fff72c35241dc89bc41cc0466db0 ""
-  "prezka.aux" 1718364181 7449 b38fb478476273e6a11719c116da61cf "pdflatex"
+  "prezka.aux" 1718366867 7449 b38fb478476273e6a11719c116da61cf "pdflatex"
   "prezka.bbl" 1718361308 19725 42eeb52a93d6117a170a2929788bd3e3 "biber prezka"
-  "prezka.nav" 1718364181 3069 ac8b6082f63c3e8134d6575bae20be29 "pdflatex"
-  "prezka.out" 1718364181 1429 1ec8e9af352999de31cae5929dde9b09 "pdflatex"
-  "prezka.run.xml" 1718364181 2355 e488b85f01b30d65e2e8f6d0bc1737c1 "pdflatex"
-  "prezka.tex" 1718364173 11484 b916a2884743cfb795af9888d2dd773b ""
+  "prezka.nav" 1718366867 3069 ac8b6082f63c3e8134d6575bae20be29 "pdflatex"
+  "prezka.out" 1718366867 1429 1ec8e9af352999de31cae5929dde9b09 "pdflatex"
+  "prezka.run.xml" 1718366867 2355 e488b85f01b30d65e2e8f6d0bc1737c1 "pdflatex"
+  "prezka.tex" 1718366859 11484 b916a2884743cfb795af9888d2dd773b ""
   (generated)
   "prezka.aux"
   "prezka.bcf"
