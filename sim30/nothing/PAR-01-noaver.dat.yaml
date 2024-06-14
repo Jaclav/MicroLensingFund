@@ -18,4 +18,6 @@ fitting_parameters:
     n_walkers: 12
 plots:
     best model:
-        file: sim28/nothing/png/PAR-01-noaver.dat.png
+        file: sim30/nothing/png/PAR-01-noaver.dat.png
+    trajectory:
+        file: sim30/nothing/png/PAR-01-noaver.dat.trj.png
