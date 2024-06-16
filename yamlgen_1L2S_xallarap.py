@@ -60,7 +60,7 @@ for i in range(len(xallarapPath)):
         # PARAXALL https://doi.org/10.3847/1538-3881/ad284f
         "    xi_Omega_node: uniform -20 380",
         "    xi_inclination: uniform -20 380",
-        "    xi_period: log-uniform 50 500"
+        "    xi_period: log-uniform 50 500",
         "    xi_argument_of_latitude_reference: uniform -20 380",
         "    xi_semimajor_axis: log-uniform 0.01 0.5",
         "    q_source: log-uniform 0.001 0.5",

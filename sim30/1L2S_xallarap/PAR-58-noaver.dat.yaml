@@ -8,7 +8,8 @@ starting_parameters:
     pi_E_E: gauss 0.00 0.01
     xi_Omega_node: uniform -20 380
     xi_inclination: uniform -20 380
-    xi_period: log-uniform 50 500    xi_argument_of_latitude_reference: uniform -20 380
+    xi_period: log-uniform 50 500
+    xi_argument_of_latitude_reference: uniform -20 380
     xi_semimajor_axis: log-uniform 0.01 0.5
     q_source: log-uniform 0.001 0.5
     xi_eccentricity: log-uniform 0.01 1
