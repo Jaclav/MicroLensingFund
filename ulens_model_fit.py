@@ -433,7 +433,8 @@ class UlensModelFit(object):
             'dalpha_dt x_caustic_in x_caustic_out t_caustic_in ' +
             't_caustic_out xi_period xi_semimajor_axis xi_Omega_node ' +
             'xi_inclination xi_argument_of_latitude_reference ' +
-            'xi_eccentricity xi_omega_periapsis')
+            'xi_eccentricity xi_omega_periapsis' + 
+            'q_source')
         self._all_MM_parameters = parameters_str.split()
         self._other_parameters = []
 
@@ -456,8 +457,8 @@ class UlensModelFit(object):
             xi_inclination='\\xi_i',
             xi_argument_of_latitude_reference='\\xi_u',
             xi_eccentricity='\\xi_e',
-            xi_omega_periapsis='\\xi_{\\omege}',
-            )
+            xi_omega_periapsis='\\xi_{\\omega}',
+            q_source='q_{\\rm source}')
         self._latex_conversion_other = dict()
 
     def _guess_fitting_method(self):
