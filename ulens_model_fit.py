@@ -433,8 +433,7 @@ class UlensModelFit(object):
             'dalpha_dt x_caustic_in x_caustic_out t_caustic_in ' +
             't_caustic_out xi_period xi_semimajor_axis xi_Omega_node ' +
             'xi_inclination xi_argument_of_latitude_reference ' +
-            'xi_eccentricity xi_omega_periapsis' + 
-            'q_source')
+            'xi_eccentricity xi_omega_periapsis q_source')
         self._all_MM_parameters = parameters_str.split()
         self._other_parameters = []
 
