@@ -3249,12 +3249,17 @@ class UlensModelFit(object):
             t_1 = self._model.parameters.t_0 - tau * self._model.parameters.t_E
             t_2 = self._model.parameters.t_0 + tau * self._model.parameters.t_E
         elif self._model.n_sources == 2:
-            t_1 = self._model.parameters.t_0_1
-            t_2 = self._model.parameters.t_0_2
-            if t_1 > t_2:
-                (t_1, t_2) = (t_2, t_1)
-            t_1 -= tau * self._model.parameters.t_E
-            t_2 += tau * self._model.parameters.t_E
+            if "q_source" not in self._model_parameters:
+                t_1 = self._model.parameters.t_0_1
+                t_2 = self._model.parameters.t_0_2
+                if t_1 > t_2:
+                    (t_1, t_2) = (t_2, t_1)
+                t_1 -= tau * self._model.parameters.t_E
+                t_2 += tau * self._model.parameters.t_E
+            else:
+                t_1 = self._model.parameters.t_0 - tau * self._model.parameters.t_E
+                t_2 = self._model.parameters.t_0 + tau * self._model.parameters.t_E
+
         else:
             raise ValueError('internal issue: ' + str(self._model.n_sources))
 
