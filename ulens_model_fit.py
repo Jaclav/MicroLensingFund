@@ -3240,6 +3240,7 @@ class UlensModelFit(object):
         """
         find limits for the best model or trajectory plot
         """
+        
         if 'time range' in self._plots[plot_type]:
             t_1 = self._plots[plot_type]['time range'][0]
             t_2 = self._plots[plot_type]['time range'][1]
@@ -3249,7 +3250,7 @@ class UlensModelFit(object):
             t_1 = self._model.parameters.t_0 - tau * self._model.parameters.t_E
             t_2 = self._model.parameters.t_0 + tau * self._model.parameters.t_E
         elif self._model.n_sources == 2:
-            if "q_source" not in self._model_parameters:
+            if 'q_source' not in self._fit_parameters:
                 t_1 = self._model.parameters.t_0_1
                 t_2 = self._model.parameters.t_0_2
                 if t_1 > t_2:
