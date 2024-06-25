@@ -54,9 +54,6 @@ for i in range(len(xallarapPath)):
         "    t_0: gauss " + str(t0) + " 0.1",
         "    u_0: gauss " + str(u0) + " " + str(0.3 * u0),
         "    t_E: gauss " + str(tE) + " " + str(tE * 0.1),
-        # parallax piE=sqrt(PiN^2+pIEE^2)
-        "    pi_E_N: gauss 0.00 0.01",
-        "    pi_E_E: gauss 0.00 0.01",
         # PARAXALL https://doi.org/10.3847/1538-3881/ad284f
         "    xi_Omega_node: uniform -20 380",
         "    xi_inclination: uniform -20 380",
@@ -80,8 +77,6 @@ for i in range(len(xallarapPath)):
         "    xi_Omega_node: -20.",
         "    xi_inclination: -20.",
         "    xi_argument_of_latitude_reference: -20.",
-        "    pi_E_N: -1.",
-        "    pi_E_E: -1.",
         "    q_source: 0.",
         "    xi_eccentricity: 0.",
         "    xi_omega_periapsis: -20.",
@@ -89,8 +84,6 @@ for i in range(len(xallarapPath)):
         "    xi_Omega_node: 380.",
         "    xi_inclination: 380.",
         "    xi_argument_of_latitude_reference: 380.",
-        "    pi_E_N: 1.",
-        "    pi_E_E: 1.",
         "    xi_eccentricity: 1.",
         "    xi_omega_periapsis: 380.",
         "fitting_parameters:",
