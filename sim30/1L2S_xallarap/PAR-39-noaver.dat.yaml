@@ -15,7 +15,6 @@ starting_parameters:
 model:
    coords: 17:46:25.67 -22:51:37.3
 fixed_parameters:
-    t_0_par: 2454580.0
     t_0_xi: 2454580.0
 min_values:
     u_0: 0.

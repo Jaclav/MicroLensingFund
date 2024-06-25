@@ -67,7 +67,6 @@ for i in range(len(xallarapPath)):
         "model:",
         "   coords: " + right_ascension[i] + " " + declination[i],
         "fixed_parameters:",
-        "    t_0_par: " + str(t0par),
         "    t_0_xi: " + str(t0par),
         "min_values:",
         "    u_0: 0.",
