@@ -1,0 +1,15 @@
+Mean acceptance fraction: 0.534
+Mean autocorrelation time [steps]: 63.8
+Fitted parameters:
+t_0 : 2453777.87064 +0.80539 -0.67514
+u_0 : 0.12814 +0.00969 -0.00757
+t_E : 249.94897 +11.05378 -12.33184
+Fitted fluxes (source and blending):
+flux_s_1 : 13.74711 +1.17520 -0.90988
+flux_b_1 : 182.61435 +0.86703 -1.12811
+Best model:
+chi2: 1466.5365
+t_0 u_0 t_E
+2453777.783079999 0.12750645175862188 250.80795807852084
+Fluxes:
+13.668602893105959 182.6897613695837
