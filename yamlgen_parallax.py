@@ -41,7 +41,7 @@ for index, file in enumerate(listFiles):
             "photometry_files:",
             "    dataPoleski/" + file,
             "starting_parameters:",
-            "    t_0: gauss 245" + str(t0) + " 0.01",
+            "    t_0: gauss " + str(t0) + " 0.01",
             "    u_0: gauss " + sign + str(u0) + " " + format(u0_err, '.10f'),
             "    t_E: gauss " + str(tE) + " " + " 0.01",
             # parallax
@@ -51,7 +51,7 @@ for index, file in enumerate(listFiles):
             "model:",
             "   coords: " + right_ascension[index] + " " + declination[index],
             "fixed_parameters:",
-            "    t_0_par: 245" + str(t0par),
+            "    t_0_par: " + str(t0par),
             "min_values:",
             ("    u_0: 0." if sign == "+" else ""),
             "    t_E: 0.",
