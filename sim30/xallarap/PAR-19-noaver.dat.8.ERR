@@ -1,4 +1,0 @@
-The chain is shorter than 50 times the integrated autocorrelation time for 8 parameter(s). Use this estimate with caution and run a longer chain!
-N/50 = 6;
-tau: [39.34188745 31.60797574 32.80447789 31.30156054 31.32679475 35.46994704
- 32.85337674 31.24596291]

@@ -1,8 +1,0 @@
-/home/franciszek/Documents/MicroLensingFund/ulens_model_fit.py:2865: UserWarning: Existing file sim30/parallax/png/PAR-06-noaver.dat-.trg.png will be overwritten
-  warnings.warn(msg)
-/home/franciszek/Documents/MicroLensingFund/ulens_model_fit.py:2865: UserWarning: Existing file sim30/parallax/png/PAR-06-noaver.dat-.tra.png will be overwritten
-  warnings.warn(msg)
-/home/franciszek/Documents/MicroLensingFund/ulens_model_fit.py:2865: UserWarning: Existing file sim30/parallax/png/PAR-06-noaver.dat-.png will be overwritten
-  warnings.warn(msg)
-/home/franciszek/Documents/MicroLensingFund/ulens_model_fit.py:2865: UserWarning: Existing file sim30/parallax/png/PAR-06-noaver.dat-.trj.png will be overwritten
-  warnings.warn(msg)

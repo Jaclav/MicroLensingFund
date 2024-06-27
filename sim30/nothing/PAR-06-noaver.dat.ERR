@@ -1,2 +1,0 @@
-/home/franciszek/Documents/MicroLensingFund/ulens_model_fit.py:2865: UserWarning: Existing file sim30/nothing/png/PAR-06-noaver.dat.png will be overwritten
-  warnings.warn(msg)

@@ -1,5 +1,0 @@
-Traceback (most recent call last):
-  File "/home/franciszek/Documents/MicroLensingFund/ulens_model_fit.py", line 3260, in <module>
-    with open(input_file, 'r') as data:
-         ^^^^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: 'sim30/parallax/PAR-01-noaver.dat.yaml'

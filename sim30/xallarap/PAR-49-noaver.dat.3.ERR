@@ -1,7 +1,0 @@
-/usr/local/lib/python3.6/site-packages/emcee/autocorr.py:38: RuntimeWarning: invalid value encountered in true_divide
-  acf /= acf[0]
-/usr/local/lib/python3.6/site-packages/emcee/autocorr.py:43: RuntimeWarning: invalid value encountered in less
-  m = np.arange(len(taus)) < c * taus
-/usr/local/lib/python3.6/site-packages/emcee/autocorr.py:101: RuntimeWarning: invalid value encountered in greater
-  flag = tol * tau_est > n_t
-WARNING:root:Too few points to create valid contours
