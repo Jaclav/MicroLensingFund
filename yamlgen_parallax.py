@@ -19,19 +19,15 @@ for index, file in enumerate(listFiles):
     with open("../" + sys.argv[1] + "/nothing/" + file + ".OUT", "r") as fileOUT:
         print("../" + sys.argv[1] + "/nothing/" + file + ".OUT")
         lines = fileOUT.readlines()
-        string = lines[3][6:]
-        t0 = float(string[3 : string[3:].find(" ")])
-        string = lines[4][6:]
-        u0 = float(string[: string.find(" ")])
-        if abs(u0) > 2.0:
-            print("U:" + file)
-            u0 = 0.0
-        string = lines[5][6:]
-        tE = float(string[: string.find(" ")])
-        if tE > 1000.0:
-            print("E:" + file)
-            tE = 100.0
-        print(t0, " ", u0, " ", tE)
+        param_vals = lines[:][12]
+        param_vals_list = param_vals.split()
+        t0 = float(param_vals_list[0])
+        u0 = float(param_vals_list[1])
+        tE = float(param_vals_list[2])
+
+        u0_err = 10**(int(np.log10(u0))-4)
+
+
 
     for sign in ["+", "-"]:
         newFile = file + sign
@@ -45,9 +41,9 @@ for index, file in enumerate(listFiles):
             "photometry_files:",
             "    dataPoleski/" + file,
             "starting_parameters:",
-            "    t_0: gauss 245" + str(t0) + " 0.1",
-            "    u_0: gauss " + sign + str(u0) + " " + str(0.3 * u0),
-            "    t_E: gauss " + str(tE) + " " + str(tE * 0.5),
+            "    t_0: gauss 245" + str(t0) + " 0.01",
+            "    u_0: gauss " + sign + str(u0) + " " + format(u0_err, '.10f'),
+            "    t_E: gauss " + str(tE) + " " + " 0.01",
             # parallax
             "    pi_E_N: gauss 0.00 0.01",
             "    pi_E_E: gauss 0.00 0.01",
@@ -66,7 +62,7 @@ for index, file in enumerate(listFiles):
             "    pi_E_N: 1.",
             "    pi_E_E: 1.",
             "fitting_parameters:",
-            "    n_steps: 10000",
+            "    n_steps: 50000",
             "    n_walkers: 20",
             "plots:",
             "    best model:",
