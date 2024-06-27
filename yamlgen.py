@@ -2,8 +2,7 @@ import os
 import sys
 import numpy as np
 
-# run: python3 yamlgen.py simulation_date
-os.mkdir(sys.argv[1])
+# run: python3 yamlgen.py simulation_file_name
 os.mkdir(sys.argv[1] + "/nothing")
 os.mkdir(sys.argv[1] + "/nothing/png")
 os.chdir("dataPoleski")
