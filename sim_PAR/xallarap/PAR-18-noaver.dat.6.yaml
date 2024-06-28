@@ -1,0 +1,39 @@
+photometry_files:
+    dataPoleski/PAR-18-noaver.dat
+starting_parameters:
+    t_0: gauss 2454333.5434489376 0.01
+    u_0: gauss -0.11611661612920703 0.0001000000
+    t_E: gauss 368.21058675698606  0.01
+    xi_Omega_node: uniform -20 380
+    xi_inclination: uniform -20 380
+    xi_period: uniform 42.78634757682727 76.06461791435959
+    xi_semimajor_axis: log-uniform 0.001 0.1
+    xi_argument_of_latitude_reference: uniform -20 380
+model:
+   coords: 17:56:7.08 -28:41:37.3
+fixed_parameters:
+    t_0_xi: 2454333.5434489376
+min_values:
+    u_0: 0.
+    t_E: 0.
+    xi_semimajor_axis: 0.
+    xi_period: 0.
+    xi_Omega_node: -20.
+    xi_inclination: -20.
+    xi_argument_of_latitude_reference: -20.
+max_values:
+    xi_Omega_node: 380.
+    xi_inclination: 380.
+    xi_argument_of_latitude_reference: 380.
+fitting_parameters:
+    n_steps: 400
+    n_walkers: 1000
+plots:
+    best model:
+        file: sim_PAR/xallarap/png/PAR-18-noaver.dat.6.png
+    trajectory:
+        file: sim_PAR/xallarap/png/PAR-18-noaver.dat.6.trj.png
+    triangle:
+        file: sim_PAR/xallarap/png/PAR-18-noaver.dat.6.trg.png
+    trace:
+        file: sim_PAR/xallarap/png/PAR-18-noaver.dat.6.tra.png

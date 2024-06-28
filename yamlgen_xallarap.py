@@ -7,48 +7,53 @@ import numpy as np
 (name, right_ascension, declination) = np.loadtxt(
     "parallaxData/coords.csv", unpack=True, delimiter=",", dtype=str
 )
-indeks = -1
+
 os.mkdir(sys.argv[1] + "/xallarap")
 os.mkdir(sys.argv[1] + "/xallarap/png")
 os.chdir("dataPoleski")
 listFiles = os.listdir()
-for file in listFiles:
-    parN = "../" + sys.argv[1] + "/nothing/" + file + ".par"
-    (PARt0, PARu0, PARtE, PARA, PARtmin, PARtmax) = np.loadtxt(parN)
 
-    with open("../" + sys.argv[1] + "/nothing/" + file + ".OUT", "r") as fileOUT:
-        print("../" + sys.argv[1] + "/nothing/" + file + ".OUT")
-        lines = fileOUT.readlines()
-        string = lines[3][6:]
-        t0 = float(string[3 : string[3:].find(" ")])
-        string = lines[4][6:]
-        u0 = float(string[: string.find(" ")])
-        if abs(u0) > 2.0:
-            print("U:" + file)
-            u0 = 0.0
-        string = lines[5][6:]
-        tE = float(string[: string.find(" ")])
-        if tE > 500.0:
-            tE = 100.0
-            print("E:" + file)
-        print(t0, " ", u0, " ", tE)
+for index, file in enumerate(listFiles):
+    fileOUTm = open("../" + sys.argv[1] + "/parallax/" + file + "-" + ".OUT", "r") 
+    fileOUTp = open("../" + sys.argv[1] + "/parallax/" + file + "+" + ".OUT", "r")
+    linesm = fileOUTm.readlines()
+    linesp = fileOUTp.readlines()
 
+    chim = linesm[:][12]
+    chim = float(chim.split()[1])
+    chip = linesp[:][12]
+    chip = float(chip.split()[1])
+
+    if chim < chip:
+        lines = linesm
+    else:
+        lines = linesp
+
+
+    print("../" + sys.argv[1] + "/parallax/" + file + ".OUT")
+
+    param_vals = lines[:][14]
+    param_vals_list = param_vals.split()
+    t0 = float(param_vals_list[0])
+    u0 = float(param_vals_list[1])
+    tE = float(param_vals_list[2])
+
+    u0_err = 10**(int(np.log10(abs(u0)))-4)
+        
     for n in range(1, 11):
         newFile = file + "." + str(n)
         yamlN = "../" + sys.argv[1] + "/xallarap/" + newFile + ".yaml"
         yaml = open(yamlN, "w+")
         xi_P = r.gauss((80 ** ((n - 1) / 9)) * 5, 0.001)
-        t0par = round(t0, -1)
         graphicF = sys.argv[1] + "/xallarap/png/" + newFile
-        tmin = PARtmin
-        tmax = PARtmax
+
         YAML = [
             "photometry_files:",
             "    dataPoleski/" + file,
             "starting_parameters:",
-            "    t_0: gauss 245" + str(t0) + " 0.1",
-            "    u_0: gauss " + str(u0) + " " + str(0.3 * u0),
-            "    t_E: gauss " + str(tE) + " " + str(tE * 0.5),
+            "    t_0: gauss " + str(t0) + " 0.01",
+            "    u_0: gauss " + str(u0) + " " + format(u0_err, '.10f'),
+            "    t_E: gauss " + str(tE) + " " + " 0.01",
             # parallax
             # "    pi_E_N: uniform -1.0 1.0",
             # "    pi_E_E: uniform -1.0 1.0",
@@ -60,10 +65,10 @@ for file in listFiles:
             "    xi_argument_of_latitude_reference: uniform -20 380",
             # parallax
             "model:",
-            "   coords: " + right_ascension[indeks] + " " + declination[indeks],
+            "   coords: " + right_ascension[index] + " " + declination[index],
             "fixed_parameters:",
             # "    t_0_par: 245" + str(t0par),
-            "    t_0_xi: 245" + str(t0par),
+            "    t_0_xi: " + str(t0),
             "min_values:",
             "    u_0: 0.",
             "    t_E: 0.",
