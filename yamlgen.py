@@ -5,7 +5,7 @@ import numpy as np
 # run: python3 yamlgen.py simulation_file_name
 os.mkdir(sys.argv[1] + "/nothing")
 os.mkdir(sys.argv[1] + "/nothing/png")
-os.chdir("dataGAIA")
+os.chdir("dataPoleski")
 listFiles = os.listdir()
 for file in listFiles:
     yamlN = "../" + sys.argv[1] + "/nothing/" + file + ".yaml"
@@ -16,7 +16,7 @@ for file in listFiles:
     (t0, u0, tE, A, tmin, tmax) = np.loadtxt(parN)
     yaml = open(yamlN, "w+")
     yaml.writelines("photometry_files:\n")
-    yaml.writelines("    dataGAIA/" + file + "\n")
+    yaml.writelines("    dataPoleski/" + file + "\n")
     yaml.writelines("starting_parameters:\n")
     yaml.writelines("    t_0: gauss 245" + str(t0) + " 0.1\n")  # short to long julian
     yaml.writelines("    u_0: gauss " + str(u0) + " " + str(0.3 * u0) + "\n")
