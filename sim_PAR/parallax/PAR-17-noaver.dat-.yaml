@@ -3,7 +3,7 @@ photometry_files:
 starting_parameters:
     t_0: gauss 2454739.4750592113 0.01
     u_0: gauss -0.12384053995403377 0.0001000000
-    t_E: gauss 300.2381927551669  0.01
+    t_E: gauss 200  0.01
     pi_E_N: gauss 0.00 0.01
     pi_E_E: gauss 0.00 0.01
 model:

@@ -24,6 +24,8 @@ for index, file in enumerate(listFiles):
         t0 = float(param_vals_list[0])
         u0 = float(param_vals_list[1])
         tE = float(param_vals_list[2])
+        if tE > 200:
+            tE = 200
 
         u0_err = 10**(int(np.log10(u0))-4)
 
