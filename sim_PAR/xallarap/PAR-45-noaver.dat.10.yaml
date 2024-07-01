@@ -6,11 +6,11 @@ starting_parameters:
     t_E: gauss 119.38179932278327  0.01
     xi_Omega_node: uniform -20 380
     xi_inclination: uniform -20 380
-    xi_period: uniform 299.9995119477875 533.3324656849555
+    xi_period: uniform 299.99831971240314 533.3303461553833
     xi_semimajor_axis: log-uniform 0.001 0.1
     xi_argument_of_latitude_reference: uniform -20 380
 model:
-   coords: 18:05:51.80 -27:52:23.3
+   coords: 17:59:44.30 -29:41:7.3
 fixed_parameters:
     t_0_xi: 2453789.7026585154
 min_values:
