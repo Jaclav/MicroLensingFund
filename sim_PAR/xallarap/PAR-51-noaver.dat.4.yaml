@@ -6,11 +6,11 @@ starting_parameters:
     t_E: gauss 63.134603141371244  0.01
     xi_Omega_node: uniform -20 380
     xi_inclination: uniform -20 380
-    xi_period: uniform 16.157868974643666 28.725100399366514
+    xi_period: uniform 16.159630959957088 28.72823281770149
     xi_semimajor_axis: log-uniform 0.001 0.1
     xi_argument_of_latitude_reference: uniform -20 380
 model:
-   coords: 18:08:0.42 -26:39:15.4
+   coords: 18:06:34.67 -26:01:16.0
 fixed_parameters:
     t_0_xi: 2452863.1107975068
 min_values:
@@ -26,14 +26,14 @@ max_values:
     xi_inclination: 380.
     xi_argument_of_latitude_reference: 380.
 fitting_parameters:
-    n_steps: 400
+    n_steps: 10000
     n_walkers: 1000
 plots:
     best model:
-        file: sim_PAR/xallarap/png/PAR-51-noaver.dat.4.png
+        file: sim_PAR//xallarap/png/PAR-51-noaver.dat.4.png
     trajectory:
-        file: sim_PAR/xallarap/png/PAR-51-noaver.dat.4.trj.png
+        file: sim_PAR//xallarap/png/PAR-51-noaver.dat.4.trj.png
     triangle:
-        file: sim_PAR/xallarap/png/PAR-51-noaver.dat.4.trg.png
+        file: sim_PAR//xallarap/png/PAR-51-noaver.dat.4.trg.png
     trace:
-        file: sim_PAR/xallarap/png/PAR-51-noaver.dat.4.tra.png
+        file: sim_PAR//xallarap/png/PAR-51-noaver.dat.4.tra.png
