@@ -1,9 +1,21 @@
-/home/hansdorfer/.local/lib/python3.8/site-packages/emcee/autocorr.py:38: RuntimeWarning: invalid value encountered in divide
-  acf /= acf[0]
-The chain is shorter than 50 times the integrated autocorrelation time for 3 parameter(s). Use this estimate with caution and run a longer chain!
-N/50 = 6;
-tau: [        nan 31.59792268 33.11591176         nan 41.46033632         nan
-         nan         nan]
+The chain is shorter than 50 times the integrated autocorrelation time for 8 parameter(s). Use this estimate with caution and run a longer chain!
+N/50 = 150;
+tau: [522.77600168 549.52247681 606.13075079 469.3811351  534.94741526
+ 282.17179193 362.08751314 293.26399271]
 WARNING:root:Too few points to create valid contours
 WARNING:root:Too few points to create valid contours
 WARNING:root:Too few points to create valid contours
+WARNING:root:Too few points to create valid contours
+WARNING:root:Too few points to create valid contours
+WARNING:root:Too few points to create valid contours
+WARNING:root:Too few points to create valid contours
+WARNING:root:Too few points to create valid contours
+WARNING:root:Too few points to create valid contours
+ulens_model_fit.py:3108: UserWarning: Existing file sim_GAIA/xallarap/png/Gaia19dke_phot_public.dat.8.trg.png will be overwritten
+  warnings.warn(msg)
+ulens_model_fit.py:3108: UserWarning: Existing file sim_GAIA/xallarap/png/Gaia19dke_phot_public.dat.8.tra.png will be overwritten
+  warnings.warn(msg)
+ulens_model_fit.py:3108: UserWarning: Existing file sim_GAIA/xallarap/png/Gaia19dke_phot_public.dat.8.png will be overwritten
+  warnings.warn(msg)
+ulens_model_fit.py:3108: UserWarning: Existing file sim_GAIA/xallarap/png/Gaia19dke_phot_public.dat.8.trj.png will be overwritten
+  warnings.warn(msg)

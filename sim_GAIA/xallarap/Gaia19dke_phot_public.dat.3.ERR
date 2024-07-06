@@ -1,9 +1,12 @@
-/home/hansdorfer/.local/lib/python3.8/site-packages/emcee/autocorr.py:38: RuntimeWarning: invalid value encountered in divide
-  acf /= acf[0]
-The chain is shorter than 50 times the integrated autocorrelation time for 3 parameter(s). Use this estimate with caution and run a longer chain!
-N/50 = 6;
-tau: [        nan 35.5513231          nan 34.65522668         nan         nan
-         nan 33.02546909]
-WARNING:root:Too few points to create valid contours
-WARNING:root:Too few points to create valid contours
-WARNING:root:Too few points to create valid contours
+The chain is shorter than 50 times the integrated autocorrelation time for 8 parameter(s). Use this estimate with caution and run a longer chain!
+N/50 = 150;
+tau: [933.4939447  955.46711764 975.14539986 863.17113644 924.36205274
+ 694.9874891  795.5710376  714.77149123]
+ulens_model_fit.py:3108: UserWarning: Existing file sim_GAIA/xallarap/png/Gaia19dke_phot_public.dat.3.trg.png will be overwritten
+  warnings.warn(msg)
+ulens_model_fit.py:3108: UserWarning: Existing file sim_GAIA/xallarap/png/Gaia19dke_phot_public.dat.3.tra.png will be overwritten
+  warnings.warn(msg)
+ulens_model_fit.py:3108: UserWarning: Existing file sim_GAIA/xallarap/png/Gaia19dke_phot_public.dat.3.png will be overwritten
+  warnings.warn(msg)
+ulens_model_fit.py:3108: UserWarning: Existing file sim_GAIA/xallarap/png/Gaia19dke_phot_public.dat.3.trj.png will be overwritten
+  warnings.warn(msg)

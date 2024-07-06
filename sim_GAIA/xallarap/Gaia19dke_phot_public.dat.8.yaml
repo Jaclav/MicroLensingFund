@@ -26,7 +26,7 @@ max_values:
     xi_inclination: 380.
     xi_argument_of_latitude_reference: 380.
 fitting_parameters:
-    n_steps: 400
+    n_steps: 10000
     n_walkers: 1000
 plots:
     best model:
