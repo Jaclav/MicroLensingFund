@@ -11,7 +11,6 @@ os.chdir("dataPoleski")
     delimiter=",",
     dtype=str,
 )
-indeks = -1
 os.mkdir("../" + sys.argv[1] + "/1L2S_paraxall")
 os.mkdir("../" + sys.argv[1] + "/1L2S_paraxall/png")
 
