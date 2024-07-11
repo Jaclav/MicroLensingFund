@@ -13,9 +13,6 @@ starting_parameters:
     xi_argument_of_latitude_reference: gauss 286.6555155057564 1.
 model:
    coords: 19:25:58.78   28:24:24.70
-fixed_parameters:
-    t_0_par: 2459069.97145908
-    t_0_xi: 2459040.950908618
 min_values:
     t_E: 0.
     xi_semimajor_axis: 0.
@@ -43,4 +40,4 @@ plots:
     triangle:
         file: sim_GAIA/paraxall/png/Gaia19dke_phot_public.dat.trg.png
     trace:
-        file: sim_GAIA/paraxall/png/Gaia19dke_phot_public.dat.9.tra.png
+        file: sim_GAIA/paraxall/png/Gaia19dke_phot_public.dat.tra.png
