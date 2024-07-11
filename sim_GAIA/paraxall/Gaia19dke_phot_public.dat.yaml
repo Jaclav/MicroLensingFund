@@ -29,6 +29,7 @@ max_values:
     xi_argument_of_latitude_reference: 380.
     pi_E_N: 0.
     pi_E_E: 0.
+    t_E: 1000
 fitting_parameters:
     n_steps: 50000
     n_walkers: 40
