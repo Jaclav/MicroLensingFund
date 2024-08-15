@@ -3,7 +3,6 @@ import random as r
 import sys
 import numpy as np
 
-# run: ./yamlgen.sh P1
 os.chdir("dataPoleski")
 (name, right_ascension, declination) = np.loadtxt(
     "../" + "/parallaxData/coords.csv",
@@ -11,7 +10,6 @@ os.chdir("dataPoleski")
     delimiter=",",
     dtype=str,
 )
-indeks = -1
 os.mkdir("../" + sys.argv[1] + "/paraxall")
 os.mkdir("../" + sys.argv[1] + "/paraxall/png")
 
@@ -29,34 +27,34 @@ for i in range(len(xallarapPath)):
     with open(xallarapPath[i], "r") as fileOUT:
         print(fileOUT.name)
         lines = fileOUT.readlines()
-        for k in range(len(lines)):
-            if "t_0" in lines[k] and "u_0" in lines[k]:
-                keys = lines[k].split()
-                vals = lines[k + 1].split()
-                tab = {}
-                for j in range(len(keys)):
-                    tab[keys[j]] = vals[j]
-                t0 = float(tab["t_0"])
-                u0 = float(tab["u_0"])
-                tE = float(tab["t_E"])
-                xi_period = float(tab["xi_period"])
-                break
+        param_vals = lines[14]
+        param_vals_list = param_vals.split()
+        t0 = float(param_vals_list[0])
+        u0 = float(param_vals_list[1])
+        tE = float(param_vals_list[2])
+        xi_period = float(param_vals_list[3])
+        xi_semimajor_axis = float(param_vals_list[4])
+        xi_omega_node = float(param_vals_list[5])
+        xi_inclination = float(param_vals_list[6])
+        xi_argument_of_latitude_reference = float(param_vals_list[7])
+        
 
-    for sign in ["+", "-"]:
-        newFile = xallarapName[i] + sign
+
+        u0_err = 10**(int(np.log10(abs(u0)))-4)
+
+        newFile = xallarapName[i]
         yamlN = "../" + sys.argv[1] + "/paraxall/" + newFile + ".yaml"
         yaml = open(yamlN, "w+")
         t0par = round(t0, -1)
         graphicF = sys.argv[1] + "/paraxall/png/" + newFile
-        # TODO: gauss do tego
-        # TODO: bez 10 przedziałów
+
         YAML = [
             "photometry_files:",
             "    dataPoleski/" + xallarapName[i],
             "starting_parameters:",
-            "    t_0: gauss " + str(t0) + " 0.1",
-            "    u_0: gauss " + sign + str(u0) + " " + str(0.3 * u0),
-            "    t_E: gauss " + str(tE) + " " + str(tE * 0.1),
+            "    t_0: gauss " + str(t0) + " 0.01",
+            "    u_0: gauss " + str(u0) + " " + str(u0_err),
+            "    t_E: gauss " + str(tE) + " 0.01",
             # parallax piE=sqrt(PiN^2+pIEE^2)
             "    pi_E_N: gauss 0.00 0.01",
             "    pi_E_E: gauss 0.00 0.01",

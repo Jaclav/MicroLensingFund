@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/home/franciszek/Documents/MicroLensingFund/ulens_model_fit.py", line 3516, in <module>
+    ulens_model_fit = UlensModelFit(**settings)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: UlensModelFit.__init__() got an unexpected keyword argument 'Fluxes'

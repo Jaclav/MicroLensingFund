@@ -1,0 +1,30 @@
+/home/franciszek/.local/lib/python3.11/site-packages/MulensModel/modelparameters.py:1224: RuntimeWarning: Strange value of angle xi_argument_of_latitude_reference: 551.4796675976427
+  warnings.warn(fmt.format(name, value), RuntimeWarning)
+/home/franciszek/.local/lib/python3.11/site-packages/MulensModel/modelparameters.py:1224: RuntimeWarning: Strange value of angle xi_argument_of_latitude_reference: 541.0774010819098
+  warnings.warn(fmt.format(name, value), RuntimeWarning)
+/home/franciszek/.local/lib/python3.11/site-packages/MulensModel/modelparameters.py:1224: RuntimeWarning: Strange value of angle xi_argument_of_latitude_reference: 542.1929512644878
+  warnings.warn(fmt.format(name, value), RuntimeWarning)
+/home/franciszek/.local/lib/python3.11/site-packages/MulensModel/modelparameters.py:1224: RuntimeWarning: Strange value of angle xi_argument_of_latitude_reference: 544.202616174408
+  warnings.warn(fmt.format(name, value), RuntimeWarning)
+/home/franciszek/.local/lib/python3.11/site-packages/MulensModel/modelparameters.py:1224: RuntimeWarning: Strange value of angle xi_argument_of_latitude_reference: 548.1436084854158
+  warnings.warn(fmt.format(name, value), RuntimeWarning)
+/home/franciszek/.local/lib/python3.11/site-packages/MulensModel/modelparameters.py:1224: RuntimeWarning: Strange value of angle xi_argument_of_latitude_reference: 541.3927494200385
+  warnings.warn(fmt.format(name, value), RuntimeWarning)
+/home/franciszek/.local/lib/python3.11/site-packages/MulensModel/modelparameters.py:1224: RuntimeWarning: Strange value of angle xi_argument_of_latitude_reference: 543.9075374520021
+  warnings.warn(fmt.format(name, value), RuntimeWarning)
+/home/franciszek/.local/lib/python3.11/site-packages/MulensModel/modelparameters.py:1224: RuntimeWarning: Strange value of angle xi_argument_of_latitude_reference: 547.836688002492
+  warnings.warn(fmt.format(name, value), RuntimeWarning)
+/home/franciszek/.local/lib/python3.11/site-packages/MulensModel/modelparameters.py:1224: RuntimeWarning: Strange value of angle xi_argument_of_latitude_reference: 551.1655884967616
+  warnings.warn(fmt.format(name, value), RuntimeWarning)
+/home/franciszek/.local/lib/python3.11/site-packages/MulensModel/modelparameters.py:1224: RuntimeWarning: Strange value of angle xi_argument_of_latitude_reference: 540.0610387668446
+  warnings.warn(fmt.format(name, value), RuntimeWarning)
+/home/franciszek/.local/lib/python3.11/site-packages/MulensModel/modelparameters.py:1224: RuntimeWarning: Strange value of angle xi_argument_of_latitude_reference: 540.8076885954893
+  warnings.warn(fmt.format(name, value), RuntimeWarning)
+/home/franciszek/.local/lib/python3.11/site-packages/MulensModel/modelparameters.py:1224: RuntimeWarning: Strange value of angle xi_argument_of_latitude_reference: 542.231972597236
+  warnings.warn(fmt.format(name, value), RuntimeWarning)
+/home/franciszek/.local/lib/python3.11/site-packages/MulensModel/modelparameters.py:1224: RuntimeWarning: Strange value of angle xi_argument_of_latitude_reference: 558.6871532859857
+  warnings.warn(fmt.format(name, value), RuntimeWarning)
+/home/franciszek/.local/lib/python3.11/site-packages/MulensModel/modelparameters.py:1224: RuntimeWarning: Strange value of angle xi_argument_of_latitude_reference: 542.7547053100636
+  warnings.warn(fmt.format(name, value), RuntimeWarning)
+QSocketNotifier: Can only be used with threads started with QThread
+WARNING:root:Too few points to create valid contours
