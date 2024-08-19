@@ -1,0 +1,20 @@
+Mean acceptance fraction: 0.116
+Mean autocorrelation time [steps]: nan
+Fitted parameters:
+t_0 : 2452579.92769 +0.05522 -0.07199
+u_0 : -0.72812 +0.00073 -0.00051
+t_E : 113.70260 +0.07260 -0.06053
+xi_period : 37.55481 +87.18027 -14.24449
+xi_semimajor_axis : 0.03545 +0.03012 -0.01896
+xi_Omega_node : 182.50557 +155.87307 -139.42761
+xi_inclination : 177.14880 +147.41026 -145.23019
+xi_argument_of_latitude_reference : 153.15760 +141.60797 -117.62692
+Fitted fluxes (source and blending):
+flux_s_1 : 38.44797 +0.47728 -0.31128
+flux_b_1 : -17.01554 +0.31211 -0.48748
+Best model:
+chi2: 566.2489
+t_0 u_0 t_E xi_period xi_semimajor_axis xi_Omega_node xi_inclination xi_argument_of_latitude_reference
+2452579.7382219527 -0.7214039792317816 115.2097113747598 395.29937634784505 0.24644685794241072 140.71457254602007 9.09857092061904 48.161130186062714
+Fluxes:
+37.20534120070481 -15.869372681924677
