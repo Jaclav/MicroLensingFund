@@ -6,7 +6,7 @@ starting_parameters:
     t_E: gauss 2108.8648632090194  0.01
     xi_Omega_node: uniform -20 380
     xi_inclination: uniform -20 380
-    xi_period: uniform 184.36016330347275 327.751401428396
+    xi_period: uniform 184.36040861820516 327.75183754347586
     xi_semimajor_axis: log-uniform 0.001 0.1
     xi_argument_of_latitude_reference: uniform -20 380
 model:
@@ -26,7 +26,7 @@ max_values:
     xi_inclination: 380.
     xi_argument_of_latitude_reference: 380.
 fitting_parameters:
-    n_steps: 10000
+    n_steps: 400
     n_walkers: 1000
 plots:
     best model:

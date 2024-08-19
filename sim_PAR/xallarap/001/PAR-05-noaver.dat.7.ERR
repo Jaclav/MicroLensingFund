@@ -1,0 +1,8 @@
+/home/hansdorfer/.local/lib/python3.8/site-packages/emcee/autocorr.py:38: RuntimeWarning: invalid value encountered in divide
+  acf /= acf[0]
+The chain is shorter than 50 times the integrated autocorrelation time for 7 parameter(s). Use this estimate with caution and run a longer chain!
+N/50 = 6;
+tau: [31.85317991 31.88684168 32.78852441 36.13005534 39.98815666 32.02382623
+ 34.93741367         nan]
+WARNING:root:Too few points to create valid contours
+WARNING:root:Too few points to create valid contours
