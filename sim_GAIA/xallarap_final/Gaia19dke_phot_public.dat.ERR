@@ -1,0 +1,9 @@
+QSocketNotifier: Can only be used with threads started with QThread
+/home/franciszek/Documents/MicroLensingFund/ulens_model_fit.py:3108: UserWarning: Existing file sim_GAIA/xallarap_final/png/Gaia19dke_phot_public.dat.trg.png will be overwritten
+  warnings.warn(msg)
+/home/franciszek/Documents/MicroLensingFund/ulens_model_fit.py:3108: UserWarning: Existing file sim_GAIA/xallarap_final/png/Gaia19dke_phot_public.dat.tra.png will be overwritten
+  warnings.warn(msg)
+/home/franciszek/Documents/MicroLensingFund/ulens_model_fit.py:3108: UserWarning: Existing file sim_GAIA/xallarap_final/png/Gaia19dke_phot_public.dat.png will be overwritten
+  warnings.warn(msg)
+/home/franciszek/Documents/MicroLensingFund/ulens_model_fit.py:3108: UserWarning: Existing file sim_GAIA/xallarap_final/png/Gaia19dke_phot_public.dat.trj.png will be overwritten
+  warnings.warn(msg)
