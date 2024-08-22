@@ -21,7 +21,7 @@ with open(r'sim_GAIA/nothing/Gaia19dke_phot_public.dat.OUT','r') as file:
 standard_model = mm.Model({'t_0': t0, 'u_0': u0, 't_E': tE})
 
 
-with open(r'sim_GAIA/parallax/Gaia19dke_phot_public.dat-.OUT','r') as file:
+with open(r'sim_GAIA/parallax_2/Gaia19dke_phot_public.dat.OUT','r') as file:
     lines = file.readlines()
     for i in range(0,len(lines) - 1):
         

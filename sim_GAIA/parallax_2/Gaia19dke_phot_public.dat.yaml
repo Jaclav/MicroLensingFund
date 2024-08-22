@@ -9,7 +9,7 @@ starting_parameters:
 model:
    coords: 19:25:58.68   28:24:24.70
 fixed_parameters:
-    t_0_par: 2459060.9347339952
+    t_0_par: 2459070
 min_values:
 
     t_E: 0.
@@ -20,11 +20,12 @@ max_values:
     pi_E_N: 1.
     pi_E_E: 1.
 fitting_parameters:
-    n_steps: 50000
+    n_steps: 10000
     n_walkers: 20
 plots:
     best model:
         file: sim_GAIA/parallax_2/png/Gaia19dke_phot_public.dat-.png
+        time range: 2458000 2460000
     trajectory:
         file: sim_GAIA/parallax_2/png/Gaia19dke_phot_public.dat-.trj.png
     triangle:
