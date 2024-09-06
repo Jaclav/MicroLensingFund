@@ -1,6 +1,0 @@
-/home/hansdorfer/.local/lib/python3.8/site-packages/emcee/autocorr.py:38: RuntimeWarning: invalid value encountered in divide
-  acf /= acf[0]
-The chain is shorter than 50 times the integrated autocorrelation time for 6 parameter(s). Use this estimate with caution and run a longer chain!
-N/50 = 6;
-tau: [32.60508218 33.30010805 32.73034838 31.4596168  38.47529856 33.54310743
-         nan         nan]

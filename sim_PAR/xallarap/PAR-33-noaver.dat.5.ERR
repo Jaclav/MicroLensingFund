@@ -1,4 +1,0 @@
-/home/hansdorfer/.local/lib/python3.8/site-packages/emcee/autocorr.py:38: RuntimeWarning: invalid value encountered in divide
-  acf /= acf[0]
-WARNING:root:Too few points to create valid contours
-WARNING:root:Too few points to create valid contours
