@@ -1,9 +1,13 @@
-QSocketNotifier: Can only be used with threads started with QThread
-/home/franciszek/Documents/MicroLensingFund/ulens_model_fit.py:3108: UserWarning: Existing file sim_GAIA/xallarap_final/png/Gaia19dke_phot_public.dat.trg.png will be overwritten
+The chain is shorter than 50 times the integrated autocorrelation time for 8 parameter(s). Use this estimate with caution and run a longer chain!
+N/50 = 450;
+tau: [ 560.14620172  913.97966074  841.28835745  953.23306424  661.81481419
+  679.34717286 1598.58731024  662.35318602]
+WARNING:root:Too few points to create valid contours
+ulens_model_fit.py:3108: UserWarning: Existing file sim_GAIA/xallarap_final/png/Gaia19dke_phot_public.dat.trg.png will be overwritten
   warnings.warn(msg)
-/home/franciszek/Documents/MicroLensingFund/ulens_model_fit.py:3108: UserWarning: Existing file sim_GAIA/xallarap_final/png/Gaia19dke_phot_public.dat.tra.png will be overwritten
+ulens_model_fit.py:3108: UserWarning: Existing file sim_GAIA/xallarap_final/png/Gaia19dke_phot_public.dat.tra.png will be overwritten
   warnings.warn(msg)
-/home/franciszek/Documents/MicroLensingFund/ulens_model_fit.py:3108: UserWarning: Existing file sim_GAIA/xallarap_final/png/Gaia19dke_phot_public.dat.png will be overwritten
+ulens_model_fit.py:3108: UserWarning: Existing file sim_GAIA/xallarap_final/png/Gaia19dke_phot_public.dat.png will be overwritten
   warnings.warn(msg)
-/home/franciszek/Documents/MicroLensingFund/ulens_model_fit.py:3108: UserWarning: Existing file sim_GAIA/xallarap_final/png/Gaia19dke_phot_public.dat.trj.png will be overwritten
+ulens_model_fit.py:3108: UserWarning: Existing file sim_GAIA/xallarap_final/png/Gaia19dke_phot_public.dat.trj.png will be overwritten
   warnings.warn(msg)

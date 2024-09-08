@@ -1,0 +1,2 @@
+ulens_model_fit.py:3108: UserWarning: Existing file sim_GAIA/nothing/png/G_Gaia_scaled.png will be overwritten
+  warnings.warn(msg)

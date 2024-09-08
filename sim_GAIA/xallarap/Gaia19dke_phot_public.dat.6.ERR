@@ -1,24 +1,7 @@
 The chain is shorter than 50 times the integrated autocorrelation time for 8 parameter(s). Use this estimate with caution and run a longer chain!
 N/50 = 150;
-tau: [541.74367466 553.58726945 575.14072697 468.16000588 533.40319855
- 469.2452716  478.33833461 455.97566003]
+tau: [784.45296648 823.40707676 824.21461454 755.32523917 788.76095063
+ 717.32126864 734.34066617 709.7245443 ]
 WARNING:root:Too few points to create valid contours
 WARNING:root:Too few points to create valid contours
 WARNING:root:Too few points to create valid contours
-WARNING:root:Too few points to create valid contours
-WARNING:root:Too few points to create valid contours
-WARNING:root:Too few points to create valid contours
-WARNING:root:Too few points to create valid contours
-WARNING:root:Too few points to create valid contours
-WARNING:root:Too few points to create valid contours
-WARNING:root:Too few points to create valid contours
-WARNING:root:Too few points to create valid contours
-WARNING:root:Too few points to create valid contours
-ulens_model_fit.py:3108: UserWarning: Existing file sim_GAIA/xallarap/png/Gaia19dke_phot_public.dat.6.trg.png will be overwritten
-  warnings.warn(msg)
-ulens_model_fit.py:3108: UserWarning: Existing file sim_GAIA/xallarap/png/Gaia19dke_phot_public.dat.6.tra.png will be overwritten
-  warnings.warn(msg)
-ulens_model_fit.py:3108: UserWarning: Existing file sim_GAIA/xallarap/png/Gaia19dke_phot_public.dat.6.png will be overwritten
-  warnings.warn(msg)
-ulens_model_fit.py:3108: UserWarning: Existing file sim_GAIA/xallarap/png/Gaia19dke_phot_public.dat.6.trj.png will be overwritten
-  warnings.warn(msg)

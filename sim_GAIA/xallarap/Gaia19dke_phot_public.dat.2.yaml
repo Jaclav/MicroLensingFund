@@ -1,9 +1,9 @@
 photometry_files:
-    dataGAIA/Gaia19dke_phot_public.dat
+    - {file_name: dataGAIA/G_Gaia_scaled.dat, add_2450000: false}
 starting_parameters:
-    t_0: gauss 2459069.97145908 0.01
-    u_0: gauss -0.6487780470290423 0.0001
-    t_E: gauss 155.1010446516601  0.01
+    t_0: gauss 2459070.9781585652 0.01
+    u_0: gauss -0.6866120165424736 0.0001
+    t_E: gauss 149.43217644482147  0.01
     xi_Omega_node: uniform -20 380
     xi_inclination: uniform -20 380
     xi_period: uniform 6.102079996194407 10.848142215456722
@@ -12,7 +12,7 @@ starting_parameters:
 model:
    coords: 19:25:58.68   28:24:24.70
 fixed_parameters:
-    t_0_xi: 2459069.97145908
+    t_0_xi: 2459071
 min_values:
     t_E: 0.
     xi_semimajor_axis: 0.

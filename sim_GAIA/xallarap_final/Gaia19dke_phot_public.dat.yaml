@@ -1,18 +1,18 @@
 photometry_files:
-    dataGAIA/Gaia19dke_phot_public.dat
+    - {file_name: dataGAIA/G_Gaia_scaled.dat, add_2450000: false}
 starting_parameters:
-    t_0: gauss 2459052.4687005407 0.01
-    u_0: gauss   -0.5482346949195112 0.0001
-    t_E: gauss 407.4648075167554  0.01
-    xi_period: gauss 368.42357952398334 0.01
-    xi_Omega_node: gauss  12.740149552793932 1.
-    xi_inclination: gauss 219.3716130740491 1.
-    xi_semimajor_axis: gauss   0.20393913569244632 0.01
-    xi_argument_of_latitude_reference: gauss 258.14833424643206 1.      
+    t_0: gauss 2459042.2290091882 0.01
+    u_0: gauss   -0.722256185138869 0.0001
+    t_E: gauss 399.1865870504552  0.01
+    xi_period: gauss 368.5435625861707 0.01
+    xi_semimajor_axis: gauss   0.2081548694589883 0.01
+    xi_Omega_node: gauss  192.36018405213247 1.
+    xi_inclination: gauss  139.98039872763152 1.
+    xi_argument_of_latitude_reference: gauss 106.6739016876136 1.    
 model:
    coords: 19:25:58.78   28:24:24.70
 fixed_parameters:
-    t_0_xi: 2459052.4687005407
+    t_0_xi: 2459042
 min_values:
     t_E: 0.
     xi_semimajor_axis: 0.
@@ -26,7 +26,7 @@ max_values:
     xi_inclination: 380.
     xi_argument_of_latitude_reference: 380.
 fitting_parameters:
-    n_steps: 20000
+    n_steps: 30000
     n_walkers: 25
 plots:
     best model:

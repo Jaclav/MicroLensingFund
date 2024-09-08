@@ -6,7 +6,7 @@ import re
 #this script reads the output files of the models and stores the values of the fitted parameters in a table
 
 # List of files
-files = [r'sim_GAIA/parallax_2/Gaia19dke_phot_public.dat.OUT', r'sim_GAIA/xallarap_final/Gaia19dke_phot_public.dat.OUT', r'sim_GAIA/1L2S_xallarap_final/Gaia19dke_phot_public.dat.OUT']
+files = [r'sim_GAIA/parallax_final/Gaia19dke_phot_public.dat.OUT', r'sim_GAIA/xallarap_final/Gaia19dke_phot_public.dat.OUT', r'sim_GAIA/1L2S_xallarap_final/Gaia19dke_phot_public.dat.OUT']
 new_files = [f'{file}.yaml' for file in files]
 
 # Cut the files after the line containing "chi2"

@@ -1,0 +1,35 @@
+photometry_files:
+    - {file_name: dataGAIA/G_Gaia_scaled.dat, add_2450000: false}
+starting_parameters:
+    t_0: gauss 2459070.9781585652  0.01
+    u_0: gauss -0.6866120165424736 0.001
+    t_E: gauss 149.43217644482147  0.01
+    pi_E_N: gauss -0.087853427869352 0.001
+    pi_E_E: gauss -0.21359054111238604 0.001
+        
+
+model:
+   coords: 19:25:58.68   28:24:24.70
+fixed_parameters:
+    t_0_par: 2459071
+min_values:
+
+    t_E: 0.
+    pi_E_N: -1.
+    pi_E_E: -1.
+max_values:
+    u_0: 0.
+    pi_E_N: 1.
+    pi_E_E: 1.
+fitting_parameters:
+    n_steps: 40000
+    n_walkers: 20
+plots:
+    best model:
+        file: sim_GAIA/parallax_final/png/G_Gaia_scaled-.png
+    trajectory:
+        file: sim_GAIA/parallax_final/png/G_Gaia_scaled-.trj.png
+    triangle:
+        file: sim_GAIA/parallax_final/png/G_Gaia_scaled-.trg.png
+    trace:
+        file: sim_GAIA/parallax_final/png/G_Gaia_scaled-.tra.png

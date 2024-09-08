@@ -24,7 +24,7 @@ with open(r'sim_GAIA/nothing/Gaia19dke_phot_public.dat.OUT','r') as file:
 standard_model = mm.Model({'t_0': t0, 'u_0': u0, 't_E': tE})
 
 
-with open(r'sim_GAIA/parallax_2/Gaia19dke_phot_public.dat.OUT','r') as file:
+with open(r'sim_GAIA/parallax_final/Gaia19dke_phot_public.dat.OUT','r') as file:
     lines = file.readlines()
     parallax_fluxes = [0,0]
     for i in range(0,len(lines) - 1):
@@ -38,7 +38,7 @@ with open(r'sim_GAIA/parallax_2/Gaia19dke_phot_public.dat.OUT','r') as file:
             coords = '19:25:58.68  28:24:24.70'
             parallax_fluxes[0] = float(lines[i + 3].split()[0])
             parallax_fluxes[1] = float(lines[i + 3].split()[1])
-parallax_model = mm.Model({'t_0': t0, 'u_0': u0, 't_E': tE, 'pi_E_N': pi_E_N, 'pi_E_E': pi_E_E, 't_0_par': 2459070}, coords=coords)
+parallax_model = mm.Model({'t_0': t0, 'u_0': u0, 't_E': tE, 'pi_E_N': pi_E_N, 'pi_E_E': pi_E_E, 't_0_par': 2459071}, coords=coords)
 
 with open(r'sim_GAIA/1L2S_xallarap_final/Gaia19dke_phot_public.dat.OUT','r') as file:
     lines = file.readlines()
@@ -60,7 +60,7 @@ with open(r'sim_GAIA/1L2S_xallarap_final/Gaia19dke_phot_public.dat.OUT','r') as 
             xallarap_fluxes[2] = float(lines[i + 3].split()[2])
 xallarap_model = mm.Model({'t_0': t0, 'u_0': u0, 't_E': tE, 'xi_period': xi_period, 'xi_semimajor_axis': xi_semimajor_axis,
                             'xi_Omega_node': xi_Omega_node, 'xi_inclination': xi_inclination, 'xi_argument_of_latitude_reference': xi_argument_of_latitude_reference,
-                            'q_source': q_source, 't_0_xi': 2459092.363055342})
+                            'q_source': q_source, 't_0_xi': 2459078})
 
  #----------------------------- dataset ----------------------------------#
 
@@ -91,7 +91,7 @@ standard_event.plot_data(show_errorbars=True, subtract_2450000=True, markersize=
 parallax_event.plot_model(t_range=[t_1, t_2], subtract_2450000=True, color='red')
 xallarap_event.plot_model(t_range=[t_1, t_2],subtract_2450000=True, color='tab:blue')
 
-plt.legend(['Parallax', '1L2S_xallarap'], loc='upper right')
+plt.legend(['Parallax','1L2S_xallarap'], loc='upper right')
 
 ax = plt.gca()
 ax.get_xaxis().set_visible(False)
@@ -102,6 +102,7 @@ axes = plt.subplot(gs[1])
 
 # standard_event.plot_residuals(subtract_2450000=True,markersize=3, show_errorbars=True)
 parallax_event.plot_residuals(subtract_2450000=True,markersize=3, show_errorbars=True)
+# xallarap_event.plot_residuals(subtract_2450000=True,markersize=3, show_errorbars=True)
 plt.ylim(-0.03, 0.03)
 plt.gca().invert_yaxis()
 

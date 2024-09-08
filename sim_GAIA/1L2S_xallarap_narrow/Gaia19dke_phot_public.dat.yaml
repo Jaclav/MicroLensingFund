@@ -1,19 +1,19 @@
 photometry_files:
-    dataGAIA/Gaia19dke_phot_public.dat
+    - {file_name: dataGAIA/G_Gaia_scaled.dat, add_2450000: false}
 starting_parameters:
-    t_0: gauss 2459040.950908618 0.01
-    u_0: gauss -0.7044835185074403 0.0001
-    t_E: gauss 408.93633143974336  0.01
-    xi_Omega_node: gauss 372.9139777966661 1.
-    xi_inclination: gauss 140.9969444255046 1.
-    xi_period: gauss 368.24279734119216 0.01
-    xi_semimajor_axis: gauss 0.201737529051864 0.01
-    xi_argument_of_latitude_reference: gauss 286.6555155057564 1.
+    t_0: gauss 2459052.5546182957 0.01
+    u_0: gauss -0.5840674011703204 0.0001
+    t_E: gauss 391.5346597894536  0.01
+    xi_period: gauss 367.7535973802844 0.01
+    xi_semimajor_axis: gauss 0.21111229450527466 0.01
+    xi_Omega_node: gauss 192.15331579750696 1.
+    xi_inclination: gauss 140.60546640988485 1.
+    xi_argument_of_latitude_reference: gauss 78.37950641555688 1.
     q_source: log-uniform 0.001 0.5
 model:
    coords: 19:25:58.78   28:24:24.70
 fixed_parameters:
-    t_0_xi: 2459040.950908618
+    t_0_xi: 2459052
 min_values:
     t_E: 0.
     xi_semimajor_axis: 0.
@@ -33,10 +33,10 @@ fitting_parameters:
     n_walkers: 40
 plots:
     best model:
-        file: sim_GAIA/1L2S_xallarap/png/Gaia19dke_phot_public.dat.png
+        file: sim_GAIA/1L2S_xallarap_narrow/png/Gaia19dke_phot_public.dat.png
     trajectory:
-        file: sim_GAIA/1L2S_xallarap/png/Gaia19dke_phot_public.dat.trj.png
+        file: sim_GAIA/1L2S_xallarap_narrow/png/Gaia19dke_phot_public.dat.trj.png
     triangle:
-        file: sim_GAIA/1L2S_xallarap/png/Gaia19dke_phot_public.dat.trg.png
+        file: sim_GAIA/1L2S_xallarap_narrow/png/Gaia19dke_phot_public.dat.trg.png
     trace:
-        file: sim_GAIA/1L2S_xallarap/png/Gaia19dke_phot_public.dat.9.tra.png
+        file: sim_GAIA/1L2S_xallarap_narrow/png/Gaia19dke_phot_public.dat.tra.png

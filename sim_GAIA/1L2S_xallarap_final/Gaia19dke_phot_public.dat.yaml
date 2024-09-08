@@ -1,19 +1,19 @@
 photometry_files:
-    dataGAIA/Gaia19dke_phot_public.dat
+    - {file_name: dataGAIA/G_Gaia_scaled.dat, add_2450000: false}
 starting_parameters:
-    t_0: gauss 2459092.363055342 0.01
-    u_0: gauss  -0.5471162854444533 0.0001
-    t_E: gauss 417.95191051182115  0.01
-    xi_period: gauss 367.96606434117797 0.01
-    xi_Omega_node: gauss  13.313217184425934 1.
-    xi_inclination: gauss 218.1178586693791 1.
-    xi_semimajor_axis: gauss   0.19738327376239118 0.01
-    xi_argument_of_latitude_reference: gauss 258.542034894323 1.
-    q_source: gauss  0.04223409397963615 0.01
+    t_0: gauss 2459078.7476512645 0.01
+    u_0: gauss -0.5130766994591288 0.0001
+    t_E: gauss 426.78144905085657  0.01
+    xi_period: gauss 369.82123357667484 0.01
+    xi_semimajor_axis: gauss 0.1999992363162071 0.01
+    xi_Omega_node: gauss 193.15077104989268 1.
+    xi_inclination: gauss 138.9019945990537 1.
+    xi_argument_of_latitude_reference: gauss 89.13855574025307 1.
+    q_source: gauss 0.03154528269058188 0.001
 model:
    coords: 19:25:58.78   28:24:24.70
 fixed_parameters:
-    t_0_xi: 2459092.363055342
+    t_0_xi: 2459078
 min_values:
     t_E: 0.
     xi_semimajor_axis: 0.
@@ -29,8 +29,8 @@ max_values:
     xi_argument_of_latitude_reference: 380.
     q_source: 1
 fitting_parameters:
-    n_steps: 20000
-    n_walkers: 25
+    n_steps: 40000
+    n_walkers: 40
 plots:
     best model:
         file: sim_GAIA/1L2S_xallarap_final/png/Gaia19dke_phot_public.dat.png
