@@ -43,7 +43,7 @@ load("parallax", 2)
 load("xallarap", 10)
 
 # difference needed to fit better xallarap than parallax
-DIFF = 10
+DIFF = 20
 csv.write("name,better,parallax,parallaxPath,xallarap,xallarapPath,deltaChi\n")
 for j in data:
     csv.write(j + ",")
