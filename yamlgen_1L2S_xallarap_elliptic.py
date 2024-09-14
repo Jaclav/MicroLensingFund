@@ -12,8 +12,8 @@ os.chdir("dataPoleski")
     dtype=str,
 )
 indeks = -1
-os.mkdir("../" + sys.argv[1] + "/1L2S_xallarap")
-os.mkdir("../" + sys.argv[1] + "/1L2S_xallarap/png")
+os.mkdir("../" + sys.argv[1] + "/1L2S_xallarap_eccentric")
+os.mkdir("../" + sys.argv[1] + "/1L2S_xallarap_eccentric/png")
 
 (name, better, parallax, parallaxPath, xallarap, xallarapPaths, deltaChi) = np.loadtxt(
     "../" + sys.argv[1] + "/chi2.csv", unpack=True, delimiter=",", dtype=str, skiprows=1
@@ -37,23 +37,24 @@ for i in range(len(xallarapPath)):
                 for j in range(len(keys)):
                     tab[keys[j]] = vals[j]
                 t0 = float(tab["t_0"])
-                u0 = float(tab["u_0"])
+                u0 = abs(float(tab["u_0"]))
                 tE = float(tab["t_E"])
                 xi_period = float(tab["xi_period"])
+
+                u0_err = 10**(int(np.log10(abs(u0)))-4)
                 break
 
     newFile = xallarapName[i]
-    yamlN = "../" + sys.argv[1] + "/1L2S_xallarap/" + newFile + ".yaml"
+    yamlN = "../" + sys.argv[1] + "/1L2S_xallarap_eccentric/" + newFile + ".yaml"
     yaml = open(yamlN, "w+")
-    t0par = round(t0, -1)
-    graphicF = sys.argv[1] + "/1L2S_xallarap/png/" + newFile
+    graphicF = sys.argv[1] + "/1L2S_xallarap_eccentric/png/" + newFile
     YAML = [
         "photometry_files:",
         "    dataPoleski/" + xallarapName[i],
         "starting_parameters:",
-        "    t_0: gauss " + str(t0) + " 0.1",
-        "    u_0: gauss " + str(u0) + " " + str(0.3 * u0),
-        "    t_E: gauss " + str(tE) + " " + str(tE * 0.1),
+        "    t_0: gauss " + str(t0) + " 0.01",
+        "    u_0: gauss " + str(u0) + " " + format(u0_err, '.10f'),
+        "    t_E: gauss " + str(tE) + " " + "0.01",
         # PARAXALL https://doi.org/10.3847/1538-3881/ad284f
         "    xi_Omega_node: uniform -20 380",
         "    xi_inclination: uniform -20 380",
@@ -67,7 +68,7 @@ for i in range(len(xallarapPath)):
         "model:",
         "   coords: " + right_ascension[i] + " " + declination[i],
         "fixed_parameters:",
-        "    t_0_xi: " + str(t0par),
+        "    t_0_xi: " + str(round(t0)),
         "min_values:",
         "    u_0: 0.",
         "    t_E: 0.",
