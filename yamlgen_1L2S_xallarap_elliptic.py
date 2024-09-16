@@ -12,8 +12,8 @@ os.chdir("dataPoleski")
     dtype=str,
 )
 indeks = -1
-os.mkdir("../" + sys.argv[1] + "/1L2S_xallarap_eccentric")
-os.mkdir("../" + sys.argv[1] + "/1L2S_xallarap_eccentric/png")
+os.mkdir("../" + sys.argv[1] + "/1L2S_xallarap_elliptic")
+os.mkdir("../" + sys.argv[1] + "/1L2S_xallarap_elliptic/png")
 
 (name, better, parallax, parallaxPath, xallarap, xallarapPaths, deltaChi) = np.loadtxt(
     "../" + sys.argv[1] + "/chi2.csv", unpack=True, delimiter=",", dtype=str, skiprows=1
@@ -45,9 +45,9 @@ for i in range(len(xallarapPath)):
                 break
 
     newFile = xallarapName[i]
-    yamlN = "../" + sys.argv[1] + "/1L2S_xallarap_eccentric/" + newFile + ".yaml"
+    yamlN = "../" + sys.argv[1] + "/1L2S_xallarap_elliptic/" + newFile + ".yaml"
     yaml = open(yamlN, "w+")
-    graphicF = sys.argv[1] + "/1L2S_xallarap_eccentric/png/" + newFile
+    graphicF = sys.argv[1] + "/1L2S_xallarap_elliptic/png/" + newFile
     YAML = [
         "photometry_files:",
         "    dataPoleski/" + xallarapName[i],

@@ -1,0 +1,39 @@
+photometry_files:
+    dataPoleski/PAR-06-noaver.dat
+starting_parameters:
+    t_0: gauss 2454167.722253974 0.01
+    u_0: gauss 1.1787658196832016 0.0001000000
+    t_E: gauss 159.3772659153071 0.01
+    xi_period: gauss 383.9632519153214 0.0100000000
+    xi_semimajor_axis: gauss 0.19008779702694706 0.0001000000
+    xi_Omega_node: gauss 49.87540736814241 1.0
+    xi_inclination: gauss 13.608288122947343 1.0
+    xi_argument_of_latitude_reference: gauss 113.85233724821981 1.0
+model:
+   coords: 17:57:23.14 -28:46:32.0
+fixed_parameters:
+    t_0_xi: 2454168
+min_values:
+    u_0: 0.
+    t_E: 0.
+    xi_semimajor_axis: 0.
+    xi_period: 0.
+    xi_Omega_node: -20.
+    xi_inclination: -20.
+    xi_argument_of_latitude_reference: -20.
+max_values:
+    xi_Omega_node: 380.
+    xi_inclination: 380.
+    xi_argument_of_latitude_reference: 380.
+fitting_parameters:
+    n_steps: 50000
+    n_walkers: 20
+plots:
+    best model:
+        file: sim_PAR/xallarap_final/png/PAR-06-noaver.dat.png
+    trajectory:
+        file: sim_PAR/xallarap_final/png/PAR-06-noaver.dat.trj.png
+    triangle:
+        file: sim_PAR/xallarap_final/png/PAR-06-noaver.dat.trg.png
+    trace:
+        file: sim_PAR/xallarap_final/png/PAR-06-noaver.dat.tra.png
