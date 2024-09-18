@@ -11,7 +11,7 @@ os.chdir("dataPoleski")
     delimiter=",",
     dtype=str,
 )
-indeks = -1
+
 os.mkdir("../" + sys.argv[1] + "/1L2S_xallarap_elliptic")
 os.mkdir("../" + sys.argv[1] + "/1L2S_xallarap_elliptic/png")
 
@@ -21,9 +21,10 @@ os.mkdir("../" + sys.argv[1] + "/1L2S_xallarap_elliptic/png")
 xallarapName = []
 xallarapPath = []
 for i in range(len(name)):
-    if better[i] == "xallarap":
-        xallarapPath.append(xallarapPaths[i])
+    if float(deltaChi[i]) > 0.0:
+        xallarapPath.append('../sim_PAR/xallarap_final/' + name[i] + '.OUT')
         xallarapName.append(name[i])
+print(xallarapName)
 # katalog z xalarap
 for i in range(len(xallarapPath)):
     with open(xallarapPath[i], "r") as fileOUT:
@@ -81,6 +82,7 @@ for i in range(len(xallarapPath)):
         "    xi_eccentricity: 0.",
         "    xi_omega_periapsis: -20.",
         "max_values:",
+        "    q_source: 1.",
         "    xi_Omega_node: 380.",
         "    xi_inclination: 380.",
         "    xi_argument_of_latitude_reference: 380.",
