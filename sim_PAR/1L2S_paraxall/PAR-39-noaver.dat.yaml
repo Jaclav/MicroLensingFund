@@ -1,0 +1,54 @@
+photometry_files:
+    dataPoleski/PAR-39-noaver.dat
+starting_parameters:
+    t_0: gauss 2454577.1020693956 0.01
+    u_0: gauss 0.02315339498697837 0.0000100000
+    t_E: gauss 74.77645322869316 0.01
+    pi_E_N: gauss -0.07661707730252741 0.01
+    pi_E_E: gauss -0.09256394179050108 0.01
+    xi_Omega_node: gauss 140.79363028733852 1.0
+    xi_inclination: gauss 153.69320261537106 1.0
+    xi_period: gauss321.31414755631533 1.0000000000
+    xi_argument_of_latitude_reference: gauss 109.40957865427455 1.0
+    xi_semimajor_axis: gauss 0.0025660512136276266 0.0000100000
+    q_source: gauss 0.12883592069239277 0.0100000000
+    xi_eccentricity: gauss 0.4973914917318164 0.01
+    xi_omega_periapsis: gauss 64.99894994431514 1.0
+model:
+   coords: 17:55:59.44 -29:38:28.8
+fixed_parameters:
+    t_0_par: 2454577
+    t_0_xi: 2454577
+min_values:
+    u_0: 0.
+    t_E: 0.
+    xi_semimajor_axis: 0.
+    xi_period: 0.
+    xi_Omega_node: -20.
+    xi_inclination: -20.
+    xi_argument_of_latitude_reference: -20.
+    pi_E_N: -1.
+    pi_E_E: -1.
+    q_source: 0.
+    xi_eccentricity: 0.
+    xi_omega_periapsis: -20.
+max_values:
+    xi_Omega_node: 380.
+    xi_inclination: 380.
+    xi_argument_of_latitude_reference: 380.
+    pi_E_N: 1.
+    pi_E_E: 1.
+    xi_eccentricity: 1.
+    xi_omega_periapsis: 380.
+fitting_parameters:
+    n_steps: 50000
+    n_walkers: 40
+plots:
+    best model:
+        file: sim_PAR//1L2S_paraxall/png/PAR-39-noaver.dat.png
+    trajectory:
+        file: sim_PAR//1L2S_paraxall/png/PAR-39-noaver.dat.trj.png
+    triangle:
+        file: sim_PAR//1L2S_paraxall/png/PAR-39-noaver.dat.trg.png
+    trace:
+        file: sim_PAR//1L2S_paraxall/png/PAR-39-noaver.dat.tra.png
