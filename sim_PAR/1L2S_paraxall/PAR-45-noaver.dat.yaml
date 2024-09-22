@@ -8,7 +8,7 @@ starting_parameters:
     pi_E_E: gauss -0.14521721824020709 0.01
     xi_Omega_node: gauss 44.98783057863394 1.0
     xi_inclination: gauss 126.02699423738123 1.0
-    xi_period: gauss702.353823260342 1.0000000000
+    xi_period: gauss 702.353823260342 1.0000000000
     xi_argument_of_latitude_reference: gauss 341.8814120269483 1.0
     xi_semimajor_axis: gauss 0.4713511010369766 0.0010000000
     q_source: gauss 0.17263928668906423 0.0100000000
@@ -40,6 +40,7 @@ max_values:
     pi_E_E: 1.
     xi_eccentricity: 1.
     xi_omega_periapsis: 380.
+    q_source: 1.
 fitting_parameters:
     n_steps: 50000
     n_walkers: 40
