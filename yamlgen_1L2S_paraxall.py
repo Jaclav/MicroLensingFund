@@ -167,6 +167,7 @@ for i in range(len(xallarapPath)):
         YAML = [
             "photometry_files:",
             "    dataPoleski/" + xallarapName[i],
+            "starting_parameters:",
             "    t_0: gauss " + str(t0) + " 0.01",
             "    u_0: gauss " + str(u0) + " " + format(u0_err, '.10f'),
             "    t_E: gauss " + str(tE) + " 0.01",
