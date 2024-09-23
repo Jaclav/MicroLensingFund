@@ -1,0 +1,49 @@
+photometry_files:
+    dataPoleski/PAR-35-noaver.dat
+starting_parameters:
+    t_0: gauss 2453005.9199655238 0.01
+    u_0: gauss -2.812947061176883 0.0001000000
+    t_E: gauss 26.33613749194602 0.01
+    pi_E_N: gauss 0.2194289911480102 0.01
+    pi_E_E: gauss -0.1307797034142275 0.01
+    xi_Omega_node: gauss 32.0128211000826 1.0
+    xi_inclination: gauss 256.88825481094887 1.0
+    xi_period: gauss 199.54610847285014 1.0000000000
+    xi_argument_of_latitude_reference: gauss 178.3330194591487 1.0
+    xi_semimajor_axis: gauss 1.9235921205911002 0.0010000000
+    q_source: gauss 0.08982137988378489 0.0010000000
+model:
+   coords: 18:03:52.40 -27:54:1.3
+fixed_parameters:
+    t_0_par: 2453006
+    t_0_xi: 2453006
+min_values:
+    t_E: 0.
+    xi_semimajor_axis: 0.
+    xi_period: 0.
+    xi_Omega_node: -20.
+    xi_inclination: -20.
+    xi_argument_of_latitude_reference: -20.
+    pi_E_N: -1.
+    pi_E_E: -1.
+    q_source: 0.
+max_values:
+    u_0: 0.
+    xi_Omega_node: 380.
+    xi_inclination: 380.
+    xi_argument_of_latitude_reference: 380.
+    pi_E_N: 1.
+    pi_E_E: 1.
+    q_source: 1.
+fitting_parameters:
+    n_steps: 50000
+    n_walkers: 40
+plots:
+    best model:
+        file: sim_PAR//1L2S_paraxall/png/PAR-35-noaver.dat.png
+    trajectory:
+        file: sim_PAR//1L2S_paraxall/png/PAR-35-noaver.dat.trj.png
+    triangle:
+        file: sim_PAR//1L2S_paraxall/png/PAR-35-noaver.dat.trg.png
+    trace:
+        file: sim_PAR//1L2S_paraxall/png/PAR-35-noaver.dat.tra.png
