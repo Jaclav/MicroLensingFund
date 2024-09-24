@@ -1,9 +1,20 @@
+/home/franciszek/.local/lib/python3.11/site-packages/matplotlib/projections/__init__.py:63: UserWarning: Unable to import Axes3D. This may be due to multiple versions of Matplotlib being installed (e.g. as a system package and as a pip package). As a result, the 3D projection is not available.
+  warnings.warn("Unable to import Axes3D. This may be due to multiple versions of "
 The chain is shorter than 50 times the integrated autocorrelation time for 5 parameter(s). Use this estimate with caution and run a longer chain!
 N/50 = 750;
-tau: [1933.34958642 2161.35073616 4242.69359272 4227.18899974 4249.30994243]
+tau: [3783.88073025 3743.1890249  4246.73821181 4409.97681258 4561.25399193]
+QSocketNotifier: Can only be used with threads started with QThread
 WARNING:root:Too few points to create valid contours
 WARNING:root:Too few points to create valid contours
 WARNING:root:Too few points to create valid contours
 WARNING:root:Too few points to create valid contours
 WARNING:root:Too few points to create valid contours
 WARNING:root:Too few points to create valid contours
+/home/franciszek/Documents/MicroLensingFund/ulens_model_fit.py:3402: UserWarning: Existing file sim_PAR/parallax/png/PAR-01-noaver.dat-.trg.png will be overwritten
+  warnings.warn(msg)
+/home/franciszek/Documents/MicroLensingFund/ulens_model_fit.py:3402: UserWarning: Existing file sim_PAR/parallax/png/PAR-01-noaver.dat-.tra.png will be overwritten
+  warnings.warn(msg)
+/home/franciszek/Documents/MicroLensingFund/ulens_model_fit.py:3402: UserWarning: Existing file sim_PAR/parallax/png/PAR-01-noaver.dat-.png will be overwritten
+  warnings.warn(msg)
+/home/franciszek/Documents/MicroLensingFund/ulens_model_fit.py:3402: UserWarning: Existing file sim_PAR/parallax/png/PAR-01-noaver.dat-.trj.png will be overwritten
+  warnings.warn(msg)
