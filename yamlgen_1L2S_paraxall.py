@@ -20,11 +20,16 @@ os.mkdir("../" + sys.argv[1] + "/1L2S_paraxall/png")
 xallarapName = []
 xallarap_circular = []
 xallarap_elliptic = []
+
+RA = []
+DEC = []
 for i in range(len(name)):
     if float(deltaChi[i]) > 0.0:
         xallarap_circular.append('../sim_PAR/1L2S_xallarap_circular/' + name[i] + '.OUT')
         xallarap_elliptic.append('../sim_PAR/1L2S_xallarap_elliptic/' + name[i] + '.OUT')
         xallarapName.append(name[i])
+        RA.append(right_ascension[i])
+        DEC.append(declination[i])
 print(xallarapName)
 
 chi2_circular = []
@@ -125,7 +130,7 @@ for i in range(len(xallarapPath)):
             "    xi_omega_periapsis: gauss " + str(xi_omega_per) + " 1.0",
             # parallax
             "model:",
-            "   coords: " + right_ascension[i] + " " + declination[i],
+            "   coords: " + RA[i] + " " + DEC[i],
             "fixed_parameters:",
             "    t_0_par: " + str(round(t0)),
             "    t_0_xi: " + str(round(t0)),
@@ -153,7 +158,7 @@ for i in range(len(xallarapPath)):
             "    q_source: 1.",
             "fitting_parameters:",
             "    n_steps: 50000",
-            "    n_walkers: 40",
+            "    n_walkers: 52",
             "plots:",
             "    best model:",
             "        file: " + graphicF + ".png",
@@ -184,7 +189,7 @@ for i in range(len(xallarapPath)):
             "    q_source: gauss " + str(q_source) + " " + format(q_source_err, '.10f'),
             # parallax
             "model:",
-            "   coords: " + right_ascension[i] + " " + declination[i],
+            "   coords: " + RA[i] + " " + DEC[i],
             "fixed_parameters:",
             "    t_0_par: " + str(round(t0)),
             "    t_0_xi: " + str(round(t0)),
@@ -208,7 +213,7 @@ for i in range(len(xallarapPath)):
             "    q_source: 1.",
             "fitting_parameters:",
             "    n_steps: 50000",
-            "    n_walkers: 40",
+            "    n_walkers: 52",
             "plots:",
             "    best model:",
             "        file: " + graphicF + ".png",

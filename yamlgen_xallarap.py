@@ -3,10 +3,7 @@ import random as r
 import sys
 import numpy as np
 
-# run: ./yamlgen.sh P1
-(name, right_ascension, declination) = np.loadtxt(
-    "parallaxData/coords.csv", unpack=True, delimiter=",", dtype=str
-)
+# run: python3 yamlgen_xallarap.py DirName
 
 os.mkdir(sys.argv[1] + "/xallarap")
 os.mkdir(sys.argv[1] + "/xallarap/png")
@@ -54,20 +51,13 @@ for index, file in enumerate(listFiles):
                 "    t_0: gauss " + str(t0) + " 0.01",
                 "    u_0: gauss " + str(u0) + " " + format(u0_err, '.10f'),
                 "    t_E: gauss " + str(tE) + " " + " 0.01",
-                # parallax
-                # "    pi_E_N: uniform -1.0 1.0",
-                # "    pi_E_E: uniform -1.0 1.0",
                 # xallarap https://doi.org/10.3847/1538-3881/ad284f
                 "    xi_Omega_node: uniform -20 380",
                 "    xi_inclination: uniform -20 380",
                 "    xi_period: uniform " + str(3 / 4 * xi_P) + " " + str(4 / 3 * xi_P),
                 "    xi_semimajor_axis: log-uniform 0.001 0.1",
                 "    xi_argument_of_latitude_reference: uniform -20 380",
-                # parallax
-                "model:",
-                "   coords: " + right_ascension[index] + " " + declination[index],
                 "fixed_parameters:",
-                # "    t_0_par: 245" + str(t0par),
                 "    t_0_xi: " + str(round(t0)),
                 "min_values:",
                 "    u_0: 0.",
@@ -102,20 +92,13 @@ for index, file in enumerate(listFiles):
                 "    t_0: gauss " + str(t0) + " 0.01",
                 "    u_0: gauss " + str(u0) + " " + format(u0_err, '.10f'),
                 "    t_E: gauss " + str(tE) + " " + " 0.01",
-                # parallax
-                # "    pi_E_N: uniform -1.0 1.0",
-                # "    pi_E_E: uniform -1.0 1.0",
                 # xallarap https://doi.org/10.3847/1538-3881/ad284f
                 "    xi_Omega_node: uniform -20 380",
                 "    xi_inclination: uniform -20 380",
                 "    xi_period: uniform " + str(3 / 4 * xi_P) + " " + str(4 / 3 * xi_P),
                 "    xi_semimajor_axis: log-uniform 0.001 0.1",
                 "    xi_argument_of_latitude_reference: uniform -20 380",
-                # parallax
-                "model:",
-                "   coords: " + right_ascension[index] + " " + declination[index],
                 "fixed_parameters:",
-                # "    t_0_par: 245" + str(t0par),
                 "    t_0_xi: " + str(round(t0)),
                 "min_values:",
                 "    t_E: 0.",

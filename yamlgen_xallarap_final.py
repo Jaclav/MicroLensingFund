@@ -5,12 +5,6 @@ import numpy as np
 
 # run: ./yamlgen.sh P1
 os.chdir("dataPoleski")
-(name, right_ascension, declination) = np.loadtxt(
-    "../" + "/parallaxData/coords.csv",
-    unpack=True,
-    delimiter=",",
-    dtype=str,
-)
 
 os.mkdir("../" + sys.argv[1] + "/xallarap_final")
 os.mkdir("../" + sys.argv[1] + "/xallarap_final/png")
@@ -63,15 +57,11 @@ for i in range(len(xallarapPath)):
         "    t_0: gauss " + str(t0) + " 0.01",
         "    u_0: gauss " + str(u0) + " " + format(u0_err, '.10f'),
         "    t_E: gauss " + str(tE) + " " + "0.01",
-        # PARAXALL https://doi.org/10.3847/1538-3881/ad284f
         "    xi_period: gauss " + str(xi_period) + " " + format(xi_period_err, '.10f'),
         "    xi_semimajor_axis: gauss " + str(xi_a) + " " + format(xi_a_err, '.10f'),
         "    xi_Omega_node: gauss " + str(xi_Omega) + " 1.0",
         "    xi_inclination: gauss " + str(xi_i) + " 1.0",
         "    xi_argument_of_latitude_reference: gauss " + str(xi_u) + " 1.0",
-        # parallax
-        "model:",
-        "   coords: " + right_ascension[i] + " " + declination[i],
         "fixed_parameters:",
         "    t_0_xi: " + str(round(t0)),
         "min_values:",
