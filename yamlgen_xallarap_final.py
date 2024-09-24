@@ -46,9 +46,9 @@ for i in range(len(xallarapPath)):
                 xi_i = float(tab["xi_inclination"])
                 xi_u = float(tab["xi_argument_of_latitude_reference"])
 
-                u0_err = 10**(int(np.log10(abs(u0)))-4)
-                xi_a_err = 10**(int(np.log10(xi_a))-4)
-                xi_period_err = 10**(int(np.log10(xi_period))-4)
+                u0_err = 10**(int(np.log10(abs(u0)))-2)
+                xi_a_err = 10**(int(np.log10(xi_a))-2)
+                xi_period_err = 10**(int(np.log10(xi_period))-2)
                 break
 
         

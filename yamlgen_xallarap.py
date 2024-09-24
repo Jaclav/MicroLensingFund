@@ -38,7 +38,7 @@ for index, file in enumerate(listFiles):
     u0 = float(param_vals_list[1])
     tE = float(param_vals_list[2])
 
-    u0_err = 10**(int(np.log10(abs(u0)))-4)
+    u0_err = 10**(int(np.log10(abs(u0)))-2)
         
     for n in range(1, 11):
         newFile = file + "." + str(n)

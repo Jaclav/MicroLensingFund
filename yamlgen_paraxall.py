@@ -40,7 +40,7 @@ for i in range(len(xallarapPath)):
         
 
 
-        u0_err = 10**(int(np.log10(abs(u0)))-4)
+        u0_err = 10**(int(np.log10(abs(u0)))-2)
 
         newFile = xallarapName[i]
         yamlN = "../" + sys.argv[1] + "/paraxall/" + newFile + ".yaml"

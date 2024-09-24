@@ -27,7 +27,7 @@ for index, file in enumerate(listFiles):
         if tE > 200:
             tE = 200
 
-        u0_err = 10**(int(np.log10(u0))-4)
+        u0_err = 10**(int(np.log10(u0))-2)
 
 
 

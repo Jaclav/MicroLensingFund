@@ -42,7 +42,7 @@ for i in range(len(xallarapPath)):
                 tE = float(tab["t_E"])
                 xi_period = float(tab["xi_period"])
 
-                u0_err = 10**(int(np.log10(abs(u0)))-4)
+                u0_err = 10**(int(np.log10(abs(u0)))-2)
                 break
 
     newFile = xallarapName[i]

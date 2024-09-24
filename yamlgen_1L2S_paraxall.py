@@ -81,8 +81,8 @@ for i in range(len(xallarapPath)):
                     xi_e = float(tab["xi_eccentricity"])
                     xi_omega_per = float(tab["xi_omega_periapsis"])                    
 
-                u0_err = 10**(int(np.log10(abs(u0)))-4)
-                xi_a_err = 10**(int(np.log10(xi_a))-3)
+                u0_err = 10**(int(np.log10(abs(u0)))-2)
+                xi_a_err = 10**(int(np.log10(xi_a))-2)
                 xi_period_err = 10**(int(np.log10(xi_period))-2)
                 q_source_err = 10**(int(np.log10(q_source))-2)
                 break
