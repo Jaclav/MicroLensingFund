@@ -65,7 +65,7 @@ for index, file in enumerate(listFiles):
             "    pi_E_E: 1.",
             "fitting_parameters:",
             "    n_steps: 50000",
-            "    n_walkers: 20",
+            "    n_walkers: 30",
             "plots:",
             "    best model:",
             "        file: " + graphicF + ".png",

@@ -2,7 +2,7 @@ photometry_files:
     dataPoleski/PAR-56-noaver.dat
 starting_parameters:
     t_0: gauss 2454692.708369396 0.01
-    u_0: gauss -0.15053749666713842 0.0001000000
+    u_0: gauss -0.15053749666713842 0.0100000000
     t_E: gauss 52.86691553151803  0.01
     pi_E_N: gauss 0.00 0.01
     pi_E_E: gauss 0.00 0.01
@@ -21,7 +21,7 @@ max_values:
     pi_E_E: 1.
 fitting_parameters:
     n_steps: 50000
-    n_walkers: 20
+    n_walkers: 30
 plots:
     best model:
         file: sim_PAR/parallax/png/PAR-56-noaver.dat-.png
