@@ -3,6 +3,7 @@ import random as r
 import sys
 import numpy as np
 
+# run: ./yamlgen.sh P1
 os.chdir("dataPoleski")
 (name, right_ascension, declination) = np.loadtxt(
     "../" + "/parallaxData/coords.csv",
@@ -17,64 +18,121 @@ os.mkdir("../" + sys.argv[1] + "/paraxall/png")
     "../" + sys.argv[1] + "/chi2.csv", unpack=True, delimiter=",", dtype=str, skiprows=1
 )
 xallarapName = []
-xallarapPath = []
+xallarap_circular = []
+xallarap_elliptic = []
+
+RA = []
+DEC = []
 for i in range(len(name)):
-    if better[i] == "xallarap":
-        xallarapPath.append(xallarapPaths[i])
+    if float(deltaChi[i]) > 0.0:
+        xallarap_circular.append('../sim_PAR/1L2S_xallarap_circular/' + name[i] + '.OUT')
+        xallarap_elliptic.append('../sim_PAR/1L2S_xallarap_elliptic/' + name[i] + '.OUT')
         xallarapName.append(name[i])
-# katalog z xalarap
+        RA.append(right_ascension[i])
+        DEC.append(declination[i])
+print(xallarapName)
+
+chi2_circular = []
+chi2_elliptic = []
+for i in range(len(xallarap_circular)):
+    with open(xallarap_circular[i], "r") as file:
+        lines = file.readlines()
+        for k in range(len(lines)):
+            if "chi2" in lines[k]:
+                keys = lines[k].split()
+                
+                chi2_circular.append(float(keys[1]))
+                break
+for i in range(len(xallarap_elliptic)):
+    with open(xallarap_elliptic[i], "r") as file:
+        lines = file.readlines()
+        for k in range(len(lines)):
+            if "chi2" in lines[k]:
+                keys = lines[k].split()
+                
+                chi2_elliptic.append(float(keys[1]))
+                break
+
+xallarapPath = []
+parallax_path = []
+for i in range(len(xallarapName)):
+    if chi2_circular[i] < chi2_elliptic[i]:
+        xallarapPath.append(xallarap_circular[i])
+    else:
+        xallarapPath.append(xallarap_elliptic[i])    
+
 for i in range(len(xallarapPath)):
     with open(xallarapPath[i], "r") as fileOUT:
         print(fileOUT.name)
         lines = fileOUT.readlines()
-        param_vals = lines[14]
-        param_vals_list = param_vals.split()
-        t0 = float(param_vals_list[0])
-        u0 = float(param_vals_list[1])
-        tE = float(param_vals_list[2])
-        xi_period = float(param_vals_list[3])
-        xi_semimajor_axis = float(param_vals_list[4])
-        xi_omega_node = float(param_vals_list[5])
-        xi_inclination = float(param_vals_list[6])
-        xi_argument_of_latitude_reference = float(param_vals_list[7])
-        
+        for k in range(len(lines)):
+            if "t_0" in lines[k] and "u_0" in lines[k]:
+                keys = lines[k].split()
+                vals = lines[k + 1].split()
+                tab = {}
+                for j in range(len(keys)):
+                    tab[keys[j]] = vals[j]
+                t0 = float(tab["t_0"])
+                u0 = abs(float(tab["u_0"]))
+                tE = float(tab["t_E"])
+
+                xi_period = float(tab["xi_period"])
+                xi_a = float(tab["xi_semimajor_axis"])
+                xi_Omega = float(tab["xi_Omega_node"])
+                xi_i = float(tab["xi_inclination"])
+                xi_u = float(tab["xi_argument_of_latitude_reference"])
+                if chi2_elliptic[i] < chi2_circular[i]:
+                    xi_e = float(tab["xi_eccentricity"])
+                    xi_omega_per = float(tab["xi_omega_periapsis"])                    
+
+                u0_err = 10**(int(np.log10(abs(u0)))-2)
+                xi_a_err = 10**(int(np.log10(xi_a))-2)
+                xi_period_err = 10**(int(np.log10(xi_period))-2)
+                break
+    with open(parallaxPath[i], "r") as fileOUT:
+        lines = fileOUT.readlines()
+        for k in range(len(lines)):
+            if "t_0" in lines[k] and "u_0" in lines[k]:
+                keys = lines[k].split()
+                vals = lines[k + 1].split()
+                tab = {}
+                for j in range(len(keys)):
+                    tab[keys[j]] = vals[j]
+                piE_N = float(tab["pi_E_N"])
+                piE_E = float(tab["pi_E_E"])
 
 
-        u0_err = 10**(int(np.log10(abs(u0)))-2)
-
-        newFile = xallarapName[i]
-        yamlN = "../" + sys.argv[1] + "/paraxall/" + newFile + ".yaml"
-        yaml = open(yamlN, "w+")
-        t0par = round(t0, -1)
-        graphicF = sys.argv[1] + "/paraxall/png/" + newFile
-
+    newFile = xallarapName[i]
+    yamlN = "../" + sys.argv[1] + "/paraxall/" + newFile + ".yaml"
+    yaml = open(yamlN, "w+")
+    graphicF = sys.argv[1] + "/paraxall/png/" + newFile
+    if chi2_elliptic[i] < chi2_circular[i]:
         YAML = [
             "photometry_files:",
             "    dataPoleski/" + xallarapName[i],
             "starting_parameters:",
             "    t_0: gauss " + str(t0) + " 0.01",
-            "    u_0: gauss " + str(u0) + " " + str(u0_err),
+            "    u_0: gauss " + str(u0) + " " + format(u0_err, '.10f'),
             "    t_E: gauss " + str(tE) + " 0.01",
             # parallax piE=sqrt(PiN^2+pIEE^2)
-            "    pi_E_N: gauss 0.00 0.01",
-            "    pi_E_E: gauss 0.00 0.01",
+            "    pi_E_N: gauss " + str(piE_N) + " 0.01",
+            "    pi_E_E: gauss " + str(piE_E) + " 0.01",
             # PARAXALL https://doi.org/10.3847/1538-3881/ad284f
-            "    xi_Omega_node: uniform -20 380",
-            "    xi_inclination: uniform -20 380",
-            "    xi_period: uniform "
-            + str(3 / 4 * xi_period)
-            + " "
-            + str(4 / 3 * xi_period),
-            "    xi_semimajor_axis: log-uniform 0.001 0.1",
-            "    xi_argument_of_latitude_reference: uniform -20 380",
+            "    xi_Omega_node: gauss " + str(xi_Omega) + " 1.0",
+            "    xi_inclination: gauss " + str(xi_i) + " 1.0",
+            "    xi_period: gauss " + str(xi_period) + " " + format(xi_period_err, '.10f'),
+            "    xi_argument_of_latitude_reference: gauss " + str(xi_u) + " 1.0",
+            "    xi_semimajor_axis: gauss " + str(xi_a) + " " + format(xi_a_err, '.10f'),
+            "    xi_eccentricity: gauss " + str(xi_e) + " 0.01",
+            "    xi_omega_periapsis: gauss " + str(xi_omega_per) + " 1.0",
             # parallax
             "model:",
-            "   coords: " + right_ascension[i] + " " + declination[i],
+            "   coords: " + RA[i] + " " + DEC[i],
             "fixed_parameters:",
-            "    t_0_par: " + str(t0par),
-            "    t_0_xi: " + str(t0par),
+            "    t_0_par: " + str(round(t0)),
+            "    t_0_xi: " + str(round(t0)),
             "min_values:",
-            ("    u_0: 0." if sign == "+" else ""),
+            "    u_0: 0.",
             "    t_E: 0.",
             "    xi_semimajor_axis: 0.",
             "    xi_period: 0.",
@@ -83,16 +141,21 @@ for i in range(len(xallarapPath)):
             "    xi_argument_of_latitude_reference: -20.",
             "    pi_E_N: -1.",
             "    pi_E_E: -1.",
+            "    q_source: 0.",
+            "    xi_eccentricity: 0.",
+            "    xi_omega_periapsis: -20.",
             "max_values:",
             "    xi_Omega_node: 380.",
             "    xi_inclination: 380.",
             "    xi_argument_of_latitude_reference: 380.",
-            ("    u_0: 0." if sign == "-" else ""),
             "    pi_E_N: 1.",
             "    pi_E_E: 1.",
+            "    xi_eccentricity: 1.",
+            "    xi_omega_periapsis: 380.",
+            "    q_source: 1.",
             "fitting_parameters:",
-            "    n_steps: 5000",
-            "    n_walkers: 1000",
+            "    n_steps: 50000",
+            "    n_walkers: 40",
             "plots:",
             "    best model:",
             "        file: " + graphicF + ".png",
@@ -103,5 +166,60 @@ for i in range(len(xallarapPath)):
             "    trace:",
             "        file: " + graphicF + ".tra.png",
         ]
-        for line in YAML:
-            yaml.writelines(str(line) + "\n")
+    else:
+        YAML = [
+            "photometry_files:",
+            "    dataPoleski/" + xallarapName[i],
+            "starting_parameters:",
+            "    t_0: gauss " + str(t0) + " 0.01",
+            "    u_0: gauss " + str(u0) + " " + format(u0_err, '.10f'),
+            "    t_E: gauss " + str(tE) + " 0.01",
+            # parallax piE=sqrt(PiN^2+pIEE^2)
+            "    pi_E_N: gauss " + str(piE_N) + " 0.01",
+            "    pi_E_E: gauss " + str(piE_E) + " 0.01",
+            # PARAXALL https://doi.org/10.3847/1538-3881/ad284f
+            "    xi_Omega_node: gauss " + str(xi_Omega) + " 1.0",
+            "    xi_inclination: gauss " + str(xi_i) + " 1.0",
+            "    xi_period: gauss " + str(xi_period) + " " + format(xi_period_err, '.10f'),
+            "    xi_argument_of_latitude_reference: gauss " + str(xi_u) + " 1.0",
+            "    xi_semimajor_axis: gauss " + str(xi_a) + " " + format(xi_a_err, '.10f'),
+            # parallax
+            "model:",
+            "   coords: " + RA[i] + " " + DEC[i],
+            "fixed_parameters:",
+            "    t_0_par: " + str(round(t0)),
+            "    t_0_xi: " + str(round(t0)),
+            "min_values:",
+            "    u_0: 0.",
+            "    t_E: 0.",
+            "    xi_semimajor_axis: 0.",
+            "    xi_period: 0.",
+            "    xi_Omega_node: -20.",
+            "    xi_inclination: -20.",
+            "    xi_argument_of_latitude_reference: -20.",
+            "    pi_E_N: -1.",
+            "    pi_E_E: -1.",
+            "    q_source: 0.",
+            "max_values:",
+            "    xi_Omega_node: 380.",
+            "    xi_inclination: 380.",
+            "    xi_argument_of_latitude_reference: 380.",
+            "    pi_E_N: 1.",
+            "    pi_E_E: 1.",
+            "    q_source: 1.",
+            "fitting_parameters:",
+            "    n_steps: 50000",
+            "    n_walkers: 40",
+            "plots:",
+            "    best model:",
+            "        file: " + graphicF + ".png",
+            "    trajectory:",
+            "        file: " + graphicF + ".trj.png",
+            "    triangle:",
+            "        file: " + graphicF + ".trg.png",
+            "    trace:",
+            "        file: " + graphicF + ".tra.png",
+        ]
+
+    for line in YAML:
+        yaml.writelines(str(line) + "\n")
