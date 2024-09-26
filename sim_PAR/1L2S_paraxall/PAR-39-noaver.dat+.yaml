@@ -33,6 +33,7 @@ min_values:
     xi_eccentricity: 0.
     xi_omega_periapsis: -20.
 max_values:
+
     xi_Omega_node: 380.
     xi_inclination: 380.
     xi_argument_of_latitude_reference: 380.
@@ -46,10 +47,10 @@ fitting_parameters:
     n_walkers: 52
 plots:
     best model:
-        file: sim_PAR//1L2S_paraxall/png/PAR-39-noaver.dat+.png
+        file: sim_PAR/1L2S_paraxall/png/PAR-39-noaver.dat+.png
     trajectory:
-        file: sim_PAR//1L2S_paraxall/png/PAR-39-noaver.dat+.trj.png
+        file: sim_PAR/1L2S_paraxall/png/PAR-39-noaver.dat+.trj.png
     triangle:
-        file: sim_PAR//1L2S_paraxall/png/PAR-39-noaver.dat+.trg.png
+        file: sim_PAR/1L2S_paraxall/png/PAR-39-noaver.dat+.trg.png
     trace:
-        file: sim_PAR//1L2S_paraxall/png/PAR-39-noaver.dat+.tra.png
+        file: sim_PAR/1L2S_paraxall/png/PAR-39-noaver.dat+.tra.png
