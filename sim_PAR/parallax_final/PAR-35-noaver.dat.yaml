@@ -1,0 +1,27 @@
+photometry_files:
+    dataPoleski/PAR-35-noaver.dat
+starting_parameters:
+    t_0: gauss 2452941.0663305833 0.01
+    u_0: gauss -0.1822177297129355 0.0100000000
+    t_E: gauss 208.73604315959702 0.01
+    pi_E_N: gauss -0.5480221294229533 0.0100000000
+    pi_E_E: gauss 0.22203010066762716 0.0100000000
+fixed_parameters:
+    t_0_par: 2452941
+min_values:
+
+    t_E: 0.
+max_values:
+    u_0: 0.
+fitting_parameters:
+    n_steps: 60000
+    n_walkers: 20
+plots:
+    best model:
+        file: sim_PAR/parallax_final/png/PAR-35-noaver.dat.png
+    trajectory:
+        file: sim_PAR/parallax_final/png/PAR-35-noaver.dat.trj.png
+    triangle:
+        file: sim_PAR/parallax_final/png/PAR-35-noaver.dat.trg.png
+    trace:
+        file: sim_PAR/parallax_final/png/PAR-35-noaver.dat.tra.png

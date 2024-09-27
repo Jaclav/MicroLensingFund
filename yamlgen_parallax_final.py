@@ -1,0 +1,86 @@
+import os
+import random as r
+import sys
+import numpy as np
+
+os.chdir("dataPoleski")
+
+os.mkdir("../" + sys.argv[1] + "/parallax_final")
+os.mkdir("../" + sys.argv[1] + "/parallax_final/png")
+
+(name, better, parallax, parallaxPath, xallarap, xallarapPaths, deltaChi) = np.loadtxt(
+    "../" + sys.argv[1] + "/chi2.csv", unpack=True, delimiter=",", dtype=str, skiprows=1
+)
+
+
+
+ParallaxName = []
+ParallaxPath = []
+for i in range(len(name)):
+    if float(deltaChi[i]) > 0.0:
+        ParallaxPath.append(parallaxPath[i])
+        ParallaxName.append(name[i])
+# katalog z xalarap
+for i in range(len(ParallaxPath)):
+    with open(ParallaxPath[i], "r") as fileOUT:
+        print(fileOUT.name)
+        lines = fileOUT.readlines()
+
+        for k in range(len(lines)):
+            if "t_0" in lines[k] and "u_0" in lines[k]:
+                keys = lines[k].split()
+                vals = lines[k + 1].split()
+                tab = {}
+                for j in range(len(keys)):
+                    tab[keys[j]] = vals[j]
+                t0 = float(tab["t_0"])
+                u0 = float(tab["u_0"])
+                tE = float(tab["t_E"])
+                pi_E_N = float(tab["pi_E_N"])
+                pi_E_E = float(tab["pi_E_E"])
+
+                u0_err = 10**(int(np.log10(abs(u0)))-2)
+                Pi_E_N_err = 10**(int(np.log10(abs(pi_E_N)))-2)
+                Pi_E_E_err = 10**(int(np.log10(abs(pi_E_E)))-2)
+                break
+
+        
+    newFile = ParallaxName[i]
+    yamlN = "../" + sys.argv[1] + "/parallax_final/" + newFile + ".yaml"
+    yaml = open(yamlN, "w+")
+    graphicF = sys.argv[1] + "/parallax_final/png/" + newFile
+    YAML = [
+        "photometry_files:",
+        "    dataPoleski/" + ParallaxName[i],
+        "starting_parameters:",
+        "    t_0: gauss " + str(t0) + " 0.01",
+        "    u_0: gauss " + str(u0) + " " + format(u0_err, '.10f'),
+        "    t_E: gauss " + str(tE) + " " + "0.01",
+        "    pi_E_N: gauss " + str(pi_E_N) + " " + format(Pi_E_N_err, '.10f'),
+        "    pi_E_E: gauss " + str(pi_E_E) + " " + format(Pi_E_E_err, '.10f'),
+        "fixed_parameters:",
+        "    t_0_par: " + str(round(t0)),
+        "min_values:",
+        ("    u_0: 0." if u0>0 else ""),
+        "    t_E: 0.",
+        "max_values:",
+        ("    u_0: 0." if u0<0 else ""),
+        "fitting_parameters:",
+        "    n_steps: 60000",
+        "    n_walkers: 20",
+        "plots:",
+        "    best model:",
+        "        file: " + graphicF + ".png",
+        "    trajectory:",
+        "        file: " + graphicF + ".trj.png",
+        "    triangle:",
+        "        file: " + graphicF + ".trg.png",
+        "    trace:",
+        "        file: " + graphicF + ".tra.png",
+    ]
+    for line in YAML:
+        yaml.writelines(str(line) + "\n")
+
+
+
+
