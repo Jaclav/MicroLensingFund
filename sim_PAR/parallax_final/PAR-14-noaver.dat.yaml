@@ -6,6 +6,8 @@ starting_parameters:
     t_E: gauss 105.34430824724365 0.01
     pi_E_N: gauss 0.9781233589825413 0.0100000000
     pi_E_E: gauss -0.09050120273951798 0.0010000000
+model:
+   coords: 17:53:28.47 -29:57:44.7
 fixed_parameters:
     t_0_par: 2454717
 min_values:
@@ -18,10 +20,10 @@ fitting_parameters:
     n_walkers: 20
 plots:
     best model:
-        file: sim_PAR/parallax_final/png/PAR-14-noaver.dat.png
+        file: sim_PAR//parallax_final/png/PAR-14-noaver.dat.png
     trajectory:
-        file: sim_PAR/parallax_final/png/PAR-14-noaver.dat.trj.png
+        file: sim_PAR//parallax_final/png/PAR-14-noaver.dat.trj.png
     triangle:
-        file: sim_PAR/parallax_final/png/PAR-14-noaver.dat.trg.png
+        file: sim_PAR//parallax_final/png/PAR-14-noaver.dat.trg.png
     trace:
-        file: sim_PAR/parallax_final/png/PAR-14-noaver.dat.tra.png
+        file: sim_PAR//parallax_final/png/PAR-14-noaver.dat.tra.png

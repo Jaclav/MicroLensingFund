@@ -1,0 +1,5 @@
+The chain is shorter than 50 times the integrated autocorrelation time for 5 parameter(s). Use this estimate with caution and run a longer chain!
+N/50 = 900;
+tau: [1517.97361774 4772.97654215 4760.06794962 4778.81152664 4777.43098392]
+/home/hansdorfer/.local/lib/python3.8/site-packages/erfa/core.py:154: ErfaWarning: ERFA function "epv00" yielded 227 of "warning: date outsidethe range 1900-2100 AD"
+  warnings.warn('ERFA function "{}" yielded {}'.format(func_name, wmsg),
