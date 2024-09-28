@@ -4,6 +4,12 @@ import sys
 import numpy as np
 
 os.chdir("dataPoleski")
+(name, right_ascension, declination) = np.loadtxt(
+    "../" + "/parallaxData/coords.csv",
+    unpack=True,
+    delimiter=",",
+    dtype=str,
+)
 
 os.mkdir("../" + sys.argv[1] + "/parallax_final")
 os.mkdir("../" + sys.argv[1] + "/parallax_final/png")
@@ -16,10 +22,14 @@ os.mkdir("../" + sys.argv[1] + "/parallax_final/png")
 
 ParallaxName = []
 ParallaxPath = []
+RA = []
+DEC = []
 for i in range(len(name)):
     if float(deltaChi[i]) > 0.0:
         ParallaxPath.append(parallaxPath[i])
         ParallaxName.append(name[i])
+        RA.append(right_ascension[i])
+        DEC.append(declination[i])
 # katalog z xalarap
 for i in range(len(ParallaxPath)):
     with open(ParallaxPath[i], "r") as fileOUT:
@@ -58,6 +68,8 @@ for i in range(len(ParallaxPath)):
         "    t_E: gauss " + str(tE) + " " + "0.01",
         "    pi_E_N: gauss " + str(pi_E_N) + " " + format(Pi_E_N_err, '.10f'),
         "    pi_E_E: gauss " + str(pi_E_E) + " " + format(Pi_E_E_err, '.10f'),
+        "model:",
+        "   coords: " + RA[i] + " " + DEC[i],
         "fixed_parameters:",
         "    t_0_par: " + str(round(t0)),
         "min_values:",
