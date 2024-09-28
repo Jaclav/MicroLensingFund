@@ -18,48 +18,50 @@ def dms_to_dd(dms_str):
     dd = float(parts[0]) + float(parts[1])/60 + float(parts[2])/(60*60)
     return dd
 
-os.mkdir( sys.argv[1] + "/galaxymodel")
-os.mkdir(sys.argv[1] + "/galaxymodel/png")
-
-
-dat = pd.read_csv(
-    "./"+sys.argv[1] + "/chi2_with_paraxall.csv", delimiter=",", dtype=str, header=None
-)
-for i in range(0, 9):
-    dat[i].pop(0)
-
-name = dat[0]
-better = dat[1]
-parallaxPath = dat[3]
-xallarapPath = dat[5]
-pathParaxall = dat[8]
-
-listFiles = []
-listNames = []
-for i in range(1, len(name)+1):
-    if better[i] == "xallarap":
-        listFiles.append(pathParaxall[i])
-        listNames.append(pathParaxall[i][15:33])
-    else:
-         listFiles.append(np.nan)
-         listNames.append(np.nan)
-
+os.mkdir( sys.argv[1] + "/galaxymodel_parallax")
 
 (name, right_ascension, declination) = np.loadtxt(
-    "parallaxData/coords.csv", unpack=True, delimiter=",", dtype=str
+    "parallaxData/coords.csv",
+    unpack=True,
+    delimiter=",",
+    dtype=str,
 )
-right_ascension = list(map(dms_to_dd, right_ascension))
-declination = list(map(dms_to_dd, declination))
 
-(mu_E_source, mu_E_err_source,mu_N_source, mu_N_err_source, pm_corr_source) = np.loadtxt(
-       "parallaxData/proper_motions.csv", unpack=True, delimiter=",", dtype=str
+(name, better, parallax, parallaxpath, xallarap, xallarapPaths, deltaChi) = np.loadtxt(
+    sys.argv[1] + "/chi2.csv", unpack=True, delimiter=",", dtype=str, skiprows=1
+)
+
+PM = np.loadtxt(
+       "parallaxData/proper_motions.csv", unpack=True, delimiter=",", dtype=float, skiprows=1
 ) 
 
+ParallaxName = []
+ParallaxPath = []
+ParallaxYaml = []
+RA = []
+DEC = []
+ProperMotion = []
+for i in range(len(name)):
+    if float(deltaChi[i]) > 0.0:
+        ParallaxPath.append('sim_PAR/parallax_final/' + name[i] + '.OUT')
+        ParallaxYaml.append('sim_PAR/parallax_final/' + name[i] + '.yaml')
+        ParallaxName.append(name[i])
+        RA.append(right_ascension[i])
+        DEC.append(declination[i])
+        ProperMotion.append(PM[:,i])
 
-for index, file in enumerate(listNames):
-    if type(listFiles[index]) == str:
-        (l, b) = convert_ra_dec_to_galactic(right_ascension[index], declination[index])
-        f = open(listFiles[index],"r")
+ProperMotion = np.array(ProperMotion).T
+mu_E_source, mu_E_err_source, mu_N_source, mu_N_err_source, pm_corr_source = ProperMotion[:5,:]
+
+
+RA = list(map(dms_to_dd, RA))
+DEC = list(map(dms_to_dd, DEC))
+
+
+
+for index, file in enumerate(ParallaxName):
+        (l, b) = convert_ra_dec_to_galactic(RA[index], DEC[index])
+        f = open(ParallaxPath[index],"r")
         lines = f.readlines()
         for line in lines:
             if "t_0" in line and "u_0" in line:
@@ -79,20 +81,28 @@ for index, file in enumerate(listNames):
             elif "pi_E_E" in line:
                     piEE = float(line.split()[2])
                     piEE_err = max(float(line.split()[3]), - float(line.split()[4])) 
+        f.close()
 
-        yamlN = Path("./"+sys.argv[1] + "/galaxymodel/" + file + ".yaml")
+        f = open(ParallaxYaml[index],"r")
+        lines = f.readlines()
+        for line in lines:
+            if "t_0_par" in line:
+                t0par = float(line.split()[1]) - 2450000
+                break
+        f.close()
+
+        yamlN = sys.argv[1] + "/galaxymodel_parallax/" + file + ".yaml"
         print(yamlN)
 
 
         yaml = open(yamlN, 'w+')
-        t0par = round(t0, -1)
         v_Earth_perp_N, v_Earth_perp_E =velocity_of_Earth_projected(
-    t0+2450000, right_ascension[index], declination[index])
+    t0+2450000, RA[index], DEC[index])
         
         YAML = [
-        "photfile : " + "dataPoleski/" + file[:-1],
-        "alpha : " + str(right_ascension[index]),
-        "delta : " + str(declination[index]),
+        "photfile : " + "dataPoleski/" + file,
+        "alpha : " + str(RA[index]),
+        "delta : " + str(DEC[index]),
         "t0_par : " + str(t0par),
         "l : " + str(l),
         "b : " + str(b),
@@ -105,10 +115,10 @@ for index, file in enumerate(listNames):
         "mu_E_err_source : " + str(mu_E_err_source[index]),
         "mu_N_err_source : " + str(mu_N_err_source[index]),
         "pm_corr_source : " + str(pm_corr_source[index]),
-        "output : " + sys.argv[1] + "/galaxymodel/" + str(file),
+        "output : " + sys.argv[1] + "/galaxymodel_parallax" + str(file),
         "nwalkers : " + "32",
-        "nburnin : " + "1000",
-        "nsamples : " + "4000",
+        "nburnin : " + "10000",
+        "nsamples : " + "40000",
         "t0 : " + str(t0),
         "tE : " + str(tE),
         "u0 : " + str(u0),
