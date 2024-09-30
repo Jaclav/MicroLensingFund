@@ -1,0 +1,8 @@
+The chain is shorter than 50 times the integrated autocorrelation time for 9 parameter(s). Use this estimate with caution and run a longer chain!
+N/50 = 1050;
+tau: [3672.12157396 5723.77583791 5738.59068098 3589.06749422 4502.85843601
+ 4069.14833511 4018.0499641  3584.16932431 3977.28188819]
+/home/hansdorfer/.local/lib/python3.8/site-packages/MulensModel/utils.py:114: UserWarning: Flux to magnitude conversion approached negative flux
+  warnings.warn(
+/home/hansdorfer/.local/lib/python3.8/site-packages/MulensModel/utils.py:117: RuntimeWarning: invalid value encountered in log10
+  mag = zeropoint - 2.5 * np.log10(flux)
