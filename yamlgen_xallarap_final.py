@@ -2,12 +2,14 @@ import os
 import random as r
 import sys
 import numpy as np
+import yaml
 
 # run: ./yamlgen.sh P1
 os.chdir("dataPoleski")
-
 os.mkdir("../" + sys.argv[1] + "/xallarap_final")
 os.mkdir("../" + sys.argv[1] + "/xallarap_final/png")
+
+
 
 (name, better, parallax, parallaxPath, xallarap, xallarapPaths, deltaChi) = np.loadtxt(
     "../" + sys.argv[1] + "/chi2.csv", unpack=True, delimiter=",", dtype=str, skiprows=1
@@ -19,7 +21,12 @@ for i in range(len(name)):
         xallarapPath.append(xallarapPaths[i])
         xallarapName.append(name[i])
 # katalog z xalarap
-for i in range(len(xallarapPath)):
+for i, file in enumerate(xallarapName):
+    file_path = f"../{sys.argv[1]}/parallax/{file}-.yaml"
+    with open(file_path, "r") as yaml_file:
+        yaml_content = yaml.safe_load(yaml_file)
+        t_0_par = yaml_content.get("fixed_parameters", {}).get("t_0_par", None)
+
     with open(xallarapPath[i], "r") as fileOUT:
         print(fileOUT.name)
         lines = fileOUT.readlines()
@@ -40,16 +47,15 @@ for i in range(len(xallarapPath)):
                 xi_i = float(tab["xi_inclination"])
                 xi_u = float(tab["xi_argument_of_latitude_reference"])
 
-                u0_err = 10**(int(np.log10(abs(u0)))-2)
-                xi_a_err = 10**(int(np.log10(xi_a))-2)
-                xi_period_err = 10**(int(np.log10(xi_period))-2)
+                u0_err = 10**(int(np.log10(abs(u0)))-4)
+                xi_a_err = 10**(int(np.log10(xi_a))-4)
+                xi_period_err = 10**(int(np.log10(xi_period))-4)
                 break
 
         
-    newFile = xallarapName[i]
-    yamlN = "../" + sys.argv[1] + "/xallarap_final/" + newFile + ".yaml"
-    yaml = open(yamlN, "w+")
-    graphicF = sys.argv[1] + "/xallarap_final/png/" + newFile
+    yamlN = "../" + sys.argv[1] + "/xallarap_final/" + file + ".yaml"
+    yamlN = open(yamlN, "w+")
+    graphicF = sys.argv[1] + "/xallarap_final/png/" + file
     YAML = [
         "photometry_files:",
         "    dataPoleski/" + xallarapName[i],
@@ -63,7 +69,7 @@ for i in range(len(xallarapPath)):
         "    xi_inclination: gauss " + str(xi_i) + " 1.0",
         "    xi_argument_of_latitude_reference: gauss " + str(xi_u) + " 1.0",
         "fixed_parameters:",
-        "    t_0_xi: " + str(round(t0)),
+        "    t_0_xi: " + str(t_0_par),
         "min_values:",
         "    u_0: 0.",
         "    t_E: 0.",
@@ -79,6 +85,8 @@ for i in range(len(xallarapPath)):
         "fitting_parameters:",
         "    n_steps: 50000",
         "    n_walkers: 20",
+        "fit_constraints:",
+        "    negative_blending_flux_sigma_mag: 20.",
         "plots:",
         "    best model:",
         "        file: " + graphicF + ".png",
@@ -90,7 +98,7 @@ for i in range(len(xallarapPath)):
         "        file: " + graphicF + ".tra.png",
     ]
     for line in YAML:
-        yaml.writelines(str(line) + "\n")
+        yamlN.writelines(str(line) + "\n")
 
 
 

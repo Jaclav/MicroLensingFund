@@ -2,6 +2,7 @@ import os
 import random as r
 import sys
 import numpy as np
+import yaml
 
 os.chdir("dataPoleski")
 (name, right_ascension, declination) = np.loadtxt(
@@ -31,7 +32,12 @@ for i in range(len(name)):
         RA.append(right_ascension[i])
         DEC.append(declination[i])
 # katalog z xalarap
-for i in range(len(ParallaxPath)):
+for i, file in enumerate(ParallaxName):
+    file_path = f"../{sys.argv[1]}/parallax/{file}-.yaml"
+    with open(file_path, "r") as yaml_file:
+        yaml_content = yaml.safe_load(yaml_file)
+        t_0_par = yaml_content.get("fixed_parameters", {}).get("t_0_par", None)
+
     with open(ParallaxPath[i], "r") as fileOUT:
         print(fileOUT.name)
         lines = fileOUT.readlines()
@@ -55,10 +61,9 @@ for i in range(len(ParallaxPath)):
                 break
 
         
-    newFile = ParallaxName[i]
-    yamlN = "../" + sys.argv[1] + "/parallax_final/" + newFile + ".yaml"
-    yaml = open(yamlN, "w+")
-    graphicF = sys.argv[1] + "/parallax_final/png/" + newFile
+    yamlN = "../" + sys.argv[1] + "/parallax_final/" + file + ".yaml"
+    yamlN = open(yamlN, "w+")
+    graphicF = sys.argv[1] + "/parallax_final/png/" + file
     YAML = [
         "photometry_files:",
         "    dataPoleski/" + ParallaxName[i],
@@ -71,7 +76,7 @@ for i in range(len(ParallaxPath)):
         "model:",
         "   coords: " + RA[i] + " " + DEC[i],
         "fixed_parameters:",
-        "    t_0_par: " + str(round(t0)),
+        "    t_0_par: " + str(t_0_par),
         "min_values:",
         ("    u_0: 0." if u0>0 else ""),
         "    t_E: 0.",
@@ -80,6 +85,8 @@ for i in range(len(ParallaxPath)):
         "fitting_parameters:",
         "    n_steps: 60000",
         "    n_walkers: 20",
+        "fit_constraints:",
+        "    negative_blending_flux_sigma_mag: 20.",
         "plots:",
         "    best model:",
         "        file: " + graphicF + ".png",
@@ -91,7 +98,7 @@ for i in range(len(ParallaxPath)):
         "        file: " + graphicF + ".tra.png",
     ]
     for line in YAML:
-        yaml.writelines(str(line) + "\n")
+        yamlN.writelines(str(line) + "\n")
 
 
 

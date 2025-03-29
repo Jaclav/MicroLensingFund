@@ -2,15 +2,22 @@ import os
 import random as r
 import sys
 import numpy as np
+import yaml
 
 # run: python3 yamlgen_xallarap.py DirName
-
 os.mkdir(sys.argv[1] + "/xallarap")
 os.mkdir(sys.argv[1] + "/xallarap/png")
 os.chdir("dataPoleski")
 listFiles = os.listdir()
 
 for index, file in enumerate(listFiles):
+
+    file_path = f"../{sys.argv[1]}/parallax/{file}-.yaml"
+    with open(file_path, "r") as yaml_file:
+        yaml_content = yaml.safe_load(yaml_file)
+        t_0_par = yaml_content.get("fixed_parameters", {}).get("t_0_par", None)
+
+
     fileOUTm = open("../" + sys.argv[1] + "/parallax/" + file + "-" + ".OUT", "r") 
     fileOUTp = open("../" + sys.argv[1] + "/parallax/" + file + "+" + ".OUT", "r")
     linesm = fileOUTm.readlines()
@@ -40,7 +47,7 @@ for index, file in enumerate(listFiles):
     for n in range(1, 11):
         newFile = file + "." + str(n)
         yamlN = "../" + sys.argv[1] + "/xallarap/" + newFile + ".yaml"
-        yaml = open(yamlN, "w+")
+        yamlN = open(yamlN, "w+")
         xi_P = r.gauss((80 ** ((n - 1) / 9)) * 5, 0.001)
         graphicF = sys.argv[1] + "/xallarap/png/" + newFile
         if u0 > 0:
@@ -58,7 +65,7 @@ for index, file in enumerate(listFiles):
                 "    xi_semimajor_axis: log-uniform 0.001 0.1",
                 "    xi_argument_of_latitude_reference: uniform -20 380",
                 "fixed_parameters:",
-                "    t_0_xi: " + str(round(t0)),
+                "    t_0_xi: " + str(t_0_par),
                 "min_values:",
                 "    u_0: 0.",
                 "    t_E: 0.",
@@ -74,6 +81,8 @@ for index, file in enumerate(listFiles):
                 "fitting_parameters:",
                 "    n_steps: 800",
                 "    n_walkers: 1000",
+                "fit_constraints:",
+                "    negative_blending_flux_sigma_mag: 20.",
                 "plots:",
                 "    best model:",
                 "        file: " + graphicF + ".png",
@@ -99,7 +108,7 @@ for index, file in enumerate(listFiles):
                 "    xi_semimajor_axis: log-uniform 0.001 0.1",
                 "    xi_argument_of_latitude_reference: uniform -20 380",
                 "fixed_parameters:",
-                "    t_0_xi: " + str(round(t0)),
+                "    t_0_xi: " + str(t_0_par),
                 "min_values:",
                 "    t_E: 0.",
                 "    xi_semimajor_axis: 0.",
@@ -115,6 +124,8 @@ for index, file in enumerate(listFiles):
                 "fitting_parameters:",
                 "    n_steps: 800",
                 "    n_walkers: 1000",
+                "fit_constraints:",
+                "    negative_blending_flux_sigma_mag: 20.",
                 "plots:",
                 "    best model:",
                 "        file: " + graphicF + ".png",
@@ -126,4 +137,4 @@ for index, file in enumerate(listFiles):
                 "        file: " + graphicF + ".tra.png",
             ]
         for line in YAML:
-            yaml.writelines(line + "\n")
+            yamlN.writelines(line + "\n")

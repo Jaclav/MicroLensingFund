@@ -2,6 +2,7 @@ import os
 import random as r
 import sys
 import numpy as np
+import yaml
 
 # run: ./yamlgen.sh P1
 os.chdir("dataPoleski")
@@ -22,13 +23,18 @@ os.mkdir("../" + sys.argv[1] + "/1L2S_xallarap_circular/png")
 xallarapName = []
 xallarapPath = []
 for i in range(len(name)):
-    if float(deltaChi[i]) > 0.0:
-        xallarapPath.append('../sim_PAR/xallarap_final/' + name[i] + '.OUT')
+    if float(deltaChi[i]) > 10.0:
+        xallarapPath.append('../sim_PAR/xallarap_final_2/' + name[i] + '.OUT')
         xallarapName.append(name[i])
 print(xallarapName)
 
 # katalog z xalarap
-for i in range(len(xallarapPath)):
+for i, file in enumerate(xallarapName):
+    file_path = f"../{sys.argv[1]}/parallax/{file}-.yaml"
+    with open(file_path, "r") as yaml_file:
+        yaml_content = yaml.safe_load(yaml_file)
+        t_0_par = yaml_content.get("fixed_parameters", {}).get("t_0_par", None)
+
     with open(xallarapPath[i], "r") as fileOUT:
         print(fileOUT.name)
         lines = fileOUT.readlines()
@@ -53,10 +59,9 @@ for i in range(len(xallarapPath)):
                 xi_period_err = 10**(int(np.log10(xi_period))-2)
                 break
 
-    newFile = xallarapName[i]
-    yamlN = "../" + sys.argv[1] + "/1L2S_xallarap_circular/" + newFile + ".yaml"
-    yaml = open(yamlN, "w+")
-    graphicF = sys.argv[1] + "/1L2S_xallarap_circular/png/" + newFile
+    yamlN = "../" + sys.argv[1] + "/1L2S_xallarap_circular/" + file + ".yaml"
+    yamlN = open(yamlN, "w+")
+    graphicF = sys.argv[1] + "/1L2S_xallarap_circular/png/" + file
     YAML = [
         "photometry_files:",
         "    dataPoleski/" + xallarapName[i],
@@ -67,15 +72,15 @@ for i in range(len(xallarapPath)):
         # PARAXALL https://doi.org/10.3847/1538-3881/ad284f
         "    xi_period: gauss " + str(xi_period) + " " + format(xi_period_err, '.10f'),
         "    xi_semimajor_axis: gauss " + str(xi_a) + " " + format(xi_a_err, '.10f'),
-        "    xi_Omega_node: gauss " + str(xi_Omega) + " 1.0",
-        "    xi_inclination: gauss " + str(xi_i) + " 1.0",
-        "    xi_argument_of_latitude_reference: gauss " + str(xi_u) + " 1.0",
+        "    xi_Omega_node: gauss " + str(xi_Omega) + " 0.1",
+        "    xi_inclination: gauss " + str(xi_i) + " 0.1",
+        "    xi_argument_of_latitude_reference: gauss " + str(xi_u) + " 0.1",
         "    q_source: log-uniform 0.001 0.5",
         # parallax
         "model:",
         "   coords: " + right_ascension[i] + " " + declination[i],
         "fixed_parameters:",
-        "    t_0_xi: " + str(round(t0)),
+        "    t_0_xi: " + str(t_0_par),
         "min_values:",
         "    u_0: 0.",
         "    t_E: 0.",
@@ -91,8 +96,10 @@ for i in range(len(xallarapPath)):
         "    xi_argument_of_latitude_reference: 380.",
         "    q_source: 1.",
         "fitting_parameters:",
-        "    n_steps: 50000",
-        "    n_walkers: 40",
+        "    n_steps: 10000",
+        "    n_walkers: 100",
+        "fit_constraints:",
+        "    negative_blending_flux_sigma_mag: 20.",
         "plots:",
         "    best model:",
         "        file: " + graphicF + ".png",
@@ -104,4 +111,4 @@ for i in range(len(xallarapPath)):
         "        file: " + graphicF + ".tra.png",
     ]
     for line in YAML:
-        yaml.writelines(str(line) + "\n")
+        yamlN.writelines(str(line) + "\n")

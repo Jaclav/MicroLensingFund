@@ -12,7 +12,7 @@ def getChi(name):
     for i in lines:
         if i[:5] == "chi2:":
             return float(i[6:-1])
-    return 1000000
+    return np.inf
 
 
 csv = open(sys.argv[1] + "/chi2.csv", "w")
@@ -27,7 +27,6 @@ for i in data:
 
 
 def load(name, maxJ):
-    mini = 1000000
     parallax = glob.glob("../" + sys.argv[1] + "/" + name + "/*.OUT")
     parallax.sort()
     print(parallax)
@@ -43,7 +42,7 @@ load("parallax", 2)
 load("xallarap", 10)
 
 # difference needed to fit better xallarap than parallax
-DIFF = 25
+DIFF = 10
 csv.write("name,better,parallax,parallaxPath,xallarap,xallarapPath,deltaChi\n")
 for j in data:
     csv.write(j + ",")
@@ -63,7 +62,7 @@ for j in data:
         parallaxChi = dic[j][keys[2]]
         parallaxName = keys[2]
 
-    xallarapChi = 100000
+    xallarapChi = np.inf
     xallarapName = ""
     for i in range(3, 13):
         if xallarapChi > dic[j][keys[i]]:

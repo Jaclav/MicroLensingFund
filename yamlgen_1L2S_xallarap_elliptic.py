@@ -2,6 +2,7 @@ import os
 import random as r
 import sys
 import numpy as np
+import yaml
 
 # run: ./yamlgen.sh P1
 os.chdir("dataPoleski")
@@ -26,7 +27,12 @@ for i in range(len(name)):
         xallarapName.append(name[i])
 print(xallarapName)
 # katalog z xalarap
-for i in range(len(xallarapPath)):
+for i, file in enumerate(xallarapName):
+    file_path = f"../{sys.argv[1]}/parallax/{file}-.yaml"
+    with open(file_path, "r") as yaml_file:
+        yaml_content = yaml.safe_load(yaml_file)
+        t_0_par = yaml_content.get("fixed_parameters", {}).get("t_0_par", None)
+
     with open(xallarapPath[i], "r") as fileOUT:
         print(fileOUT.name)
         lines = fileOUT.readlines()
@@ -45,17 +51,16 @@ for i in range(len(xallarapPath)):
                 u0_err = 10**(int(np.log10(abs(u0)))-2)
                 break
 
-    newFile = xallarapName[i]
-    yamlN = "../" + sys.argv[1] + "/1L2S_xallarap_elliptic/" + newFile + ".yaml"
-    yaml = open(yamlN, "w+")
-    graphicF = sys.argv[1] + "/1L2S_xallarap_elliptic/png/" + newFile
+    yamlN = "../" + sys.argv[1] + "/1L2S_xallarap_elliptic/" + file + ".yaml"
+    yamlN = open(yamlN, "w+")
+    graphicF = sys.argv[1] + "/1L2S_xallarap_elliptic/png/" + file
     YAML = [
         "photometry_files:",
         "    dataPoleski/" + xallarapName[i],
         "starting_parameters:",
-        "    t_0: gauss " + str(t0) + " 0.01",
+        "    t_0: gauss " + str(t0) + " 1",
         "    u_0: gauss " + str(u0) + " " + format(u0_err, '.10f'),
-        "    t_E: gauss " + str(tE) + " " + "0.01",
+        "    t_E: gauss " + str(tE) + " " + "1",
         # PARAXALL https://doi.org/10.3847/1538-3881/ad284f
         "    xi_Omega_node: uniform -20 380",
         "    xi_inclination: uniform -20 380",
@@ -69,7 +74,7 @@ for i in range(len(xallarapPath)):
         "model:",
         "   coords: " + right_ascension[i] + " " + declination[i],
         "fixed_parameters:",
-        "    t_0_xi: " + str(round(t0)),
+        "    t_0_xi: " + str(t_0_par),
         "min_values:",
         "    u_0: 0.",
         "    t_E: 0.",
@@ -91,6 +96,8 @@ for i in range(len(xallarapPath)):
         "fitting_parameters:",
         "    n_steps: 5000",
         "    n_walkers: 1000",
+        "fit_constraints:",
+        "    negative_blending_flux_sigma_mag: 20.",
         "plots:",
         "    best model:",
         "        file: " + graphicF + ".png",
@@ -102,4 +109,4 @@ for i in range(len(xallarapPath)):
         "        file: " + graphicF + ".tra.png",
     ]
     for line in YAML:
-        yaml.writelines(str(line) + "\n")
+        yamlN.writelines(str(line) + "\n")
